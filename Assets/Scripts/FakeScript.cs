@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FakeScript : MonoBehaviour
 {
-    int  life=0;
+    int  life = 0;
+    bool conflit = true;
     float triggerLevel = 10;
 
     // Start is called before the first frame update
@@ -15,7 +16,6 @@ public class FakeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    }
 
+    }
+}
