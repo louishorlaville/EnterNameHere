@@ -5,6 +5,9 @@ using UnityEngine;
 public class FakeScript : MonoBehaviour
 {
     int  life=0;
+    float triggerLevel = 10;
+    float triggerLevel = 10;
+
     // Start is called before the first frame update
     void Start()
     {
