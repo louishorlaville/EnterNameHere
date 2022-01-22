@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{99B9C34D-DE98-4FA7-88FD-D07C148445A4}" SchemaVersion="103" RootDocumentID="{89F91558-FA45-4D55-9577-311A2B9F77D5}" ParentDocumentID="{89F91558-FA45-4D55-9577-311A2B9F77D5}">
+	<AudioObjects>
+		<WorkUnit Name="Banque Eric" ID="{99B9C34D-DE98-4FA7-88FD-D07C148445A4}" OwnerID="{89F91558-FA45-4D55-9577-311A2B9F77D5}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Test generate" ID="{C6F65408-42A9-4BFF-BD34-09DAA0D825AB}" ShortID="221201814">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C9C228BB-B924-4AF1-AAFA-20F8DCC44A27}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64BFEB13-9848-4E6C-B778-60011CAE1117}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Aircraft, Helicopter, Agusta, Model Aw139, Landing, Turn Off SND54098" ID="{E359D8CF-7F9A-4EAF-AA92-A3F6ED5AC030}" ShortID="186934534">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C9C228BB-B924-4AF1-AAFA-20F8DCC44A27}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64BFEB13-9848-4E6C-B778-60011CAE1117}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aircraft, Helicopter, Agusta, Model Aw139, Landing, Turn Off SND54098" ID="{27CF28BB-F210-4961-BA6F-8554EB9D6B40}">
+									<Language>SFX</Language>
+									<AudioFile>Aircraft, Helicopter, Agusta, Model Aw139, Landing, Turn Off SND54098.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="644906283"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aircraft, Helicopter, Agusta, Model Aw139, Landing, Turn Off SND54098" ID="{27CF28BB-F210-4961-BA6F-8554EB9D6B40}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
