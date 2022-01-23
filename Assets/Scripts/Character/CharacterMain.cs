@@ -8,7 +8,6 @@ public class CharacterMain : MonoBehaviour
     CircleCollider2D circleCollider;
     BoxCollider2D boxCollider;
     SpriteRenderer renderer;
-    Vector3 launchVector;
 
     bool toSquare;
     bool toCircle;
@@ -18,6 +17,8 @@ public class CharacterMain : MonoBehaviour
     public bool isCircle = true;
     public float movementSpeed;
     public float bounceHeight;
+    public float rollSpeed;
+    public float rollRotationSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -39,36 +40,53 @@ public class CharacterMain : MonoBehaviour
         if (Input.GetKey("space"))
         {
             SwitchToSquare();
-            print("to square: " + toSquare);
-
         }
 
         if (Input.GetKeyUp("space"))
         {
             BounceAlongNormal();
             SwitchToCircle();
-            print("to circle: " + toCircle);
         }
     }
 
     void FixedUpdate()
     {
+        Debug.DrawLine(transform.position, transform.position + (Vector3.down + Vector3.right) * 2.2f, Color.blue);
+        Debug.Log(rb.velocity.x);
 
         float _movementH = Input.GetAxis("Horizontal");
-        if(_movementH >= 0.1 || _movementH <= 0.1)
+
+        if (_movementH >= 0.2 || _movementH <= -0.2)
         {
-            if (isGrounded())
+            if (isGrounded() && isCircle)
             {
                 rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
             }
             else
             {
-                zAxis += (Time.deltaTime * _movementH * 150);
+                zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
                 transform.rotation = Quaternion.Euler(0, 0, -zAxis);
+
+                if (isGrounded())
+                {
+                    //Prevent momentum loss on single space bar press
+                    if (rb.velocity.x < -rollSpeed || rb.velocity.x > rollSpeed)
+                    {
+                        rb.velocity = new Vector2(rb.velocity.x * 0.99f, rb.velocity.y);
+                    }
+                    else
+                    {
+                        rb.velocity = new Vector2(rollSpeed * _movementH, rb.velocity.y);
+                    }
+                }
             }
         }
-
+        else
+        {
+            rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
+        }
     }
+    
 
     //Check if player is touching a surface
     public bool isGrounded()
@@ -85,7 +103,7 @@ public class CharacterMain : MonoBehaviour
     {
         boxCollider.enabled=true;
         circleCollider.enabled = false;
-
+        isCircle = false;
         renderer.sprite = sprites[1];
     }
 
@@ -93,7 +111,7 @@ public class CharacterMain : MonoBehaviour
     {
         boxCollider.enabled = false;
         circleCollider.enabled = true;
-
+        isCircle = true;
         renderer.sprite = sprites[0];  
     }
 
@@ -109,7 +127,5 @@ public class CharacterMain : MonoBehaviour
             circleCast.normal.Normalize();
             rb.AddForce(circleCast.normal * bounceHeight, ForceMode2D.Impulse);
         }
-
     }
-
 }
