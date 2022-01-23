@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 4660b0c3a5aa29428ee5ad86a4507ddc
     GuidInternal: 
-    m_lastTime: -8585587277575246328
+    m_lastTime: -8585587913658541711
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 13ebbf6448986c4eb77860011cae1117
     GuidInternal: 
-    m_lastTime: -8585587277580494772
+    m_lastTime: -8585587913658631411
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d14a49665f8ebc4c97c38729fcd2c329
     GuidInternal: 
-    m_lastTime: -8585587277575276427
-    List: []
+    m_lastTime: -8585587123602223923
+    List:
+    - name: Banque_Eric
+      guid: eedc4cd7a39c274885ab2bafed6b1272
+      id: 3529285007
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d14a49665f8ebc4c97c38729fcd2c329
+      - ElementName: Banque_Eric
+        ObjectType: 7
+        guid: eedc4cd7a39c274885ab2bafed6b1272
+      Path: SoundBanks\Default Work Unit\Banque_Eric
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 18e1ac5c96754d4db057026d6dab9198
     GuidInternal: 
-    m_lastTime: -8585587277580514776
-    List: []
+    m_lastTime: -8585587123602144128
+    List:
+    - name: Sons_Test_banque_de_son
+      guid: f56d73d6a92e1949801c74b1b8aec853
+      id: 377609045
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 18e1ac5c96754d4db057026d6dab9198
+      - ElementName: Sons_Test_banque_de_son
+        ObjectType: 3
+        guid: f56d73d6a92e1949801c74b1b8aec853
+      Path: Events\Default Work Unit\Sons_Test_banque_de_son
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +125,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 4aa3f34d8f167641877ecacebde5e5d7
     GuidInternal: 
-    m_lastTime: -8585587277580504776
+    m_lastTime: -8585587913658641735
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +139,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b15b473e065b034082aaa91f6b2e725b
     GuidInternal: 
-    m_lastTime: -8585587277575266440
+    m_lastTime: -8585587913658561747
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +153,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: b867bd8df5c45149af74dcaad4068b72
     GuidInternal: 
-    m_lastTime: -8585587277575256440
+    m_lastTime: -8585587913658551931
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,10 +167,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 1610d982495465468ad250ccb0d8377d
     GuidInternal: 
-    m_lastTime: -8585587277575256440
+    m_lastTime: -8585587913658551931
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
