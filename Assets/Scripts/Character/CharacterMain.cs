@@ -15,6 +15,7 @@ public class CharacterMain : MonoBehaviour
 
     public Sprite[] sprites;
     public bool isCircle = true;
+    public bool bEndLevel = false;
     public float movementSpeed;
     public float bounceHeight;
     public float rollSpeed;
@@ -28,6 +29,7 @@ public class CharacterMain : MonoBehaviour
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         renderer = gameObject.GetComponent<SpriteRenderer>();
 
+        bEndLevel = false;
     }
 
     // Update is called once per frame
@@ -37,54 +39,57 @@ public class CharacterMain : MonoBehaviour
         toSquare = Input.GetKeyDown("space");
         toCircle = Input.GetKeyUp("space");
 
-        if (Input.GetKey("space"))
+        if(bEndLevel == false)
         {
-            SwitchToSquare();
-        }
+            if(Input.GetKey("space"))
+            {
+                SwitchToSquare();
+            }
 
-        if (Input.GetKeyUp("space"))
-        {
-            BounceAlongNormal();
-            SwitchToCircle();
+            if(Input.GetKeyUp("space"))
+            {
+                BounceAlongNormal();
+                SwitchToCircle();
+            }
         }
     }
 
     void FixedUpdate()
     {
-        Debug.DrawLine(transform.position, transform.position + (Vector3.down + Vector3.right) * 2.2f, Color.blue);
-        Debug.Log(rb.velocity.x);
-
-        float _movementH = Input.GetAxis("Horizontal");
-
-        if (_movementH >= 0.2 || _movementH <= -0.2)
+        if(bEndLevel == false)
         {
-            if (isGrounded() && isCircle)
-            {
-                rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
-            }
-            else
-            {
-                zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
-                transform.rotation = Quaternion.Euler(0, 0, -zAxis);
+            float _movementH = Input.GetAxis("Horizontal");
 
-                if (isGrounded())
+            if(_movementH >= 0.2 || _movementH <= -0.2)
+            {
+                if(isGrounded() && isCircle)
                 {
-                    //Prevent momentum loss on single space bar press
-                    if (rb.velocity.x < -rollSpeed || rb.velocity.x > rollSpeed)
+                    rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
+                }
+                else
+                {
+                    zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
+                    transform.rotation = Quaternion.Euler(0, 0, -zAxis);
+
+                    if(isGrounded())
                     {
-                        rb.velocity = new Vector2(rb.velocity.x * 0.99f, rb.velocity.y);
-                    }
-                    else
-                    {
-                        rb.velocity = new Vector2(rollSpeed * _movementH, rb.velocity.y);
+                        //Prevent momentum loss on single space bar press
+                        if(rb.velocity.x < -rollSpeed || rb.velocity.x > rollSpeed)
+                        {
+                            rb.velocity = new Vector2(rb.velocity.x * 0.99f, rb.velocity.y);
+                        }
+                        else
+                        {
+                            rb.velocity = new Vector2(rollSpeed * _movementH, rb.velocity.y);
+                        }
                     }
                 }
             }
-        }
-        else
-        {
-            rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
-        }
+            else
+            {
+                rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
+            }
+		}
     }
     
 
@@ -99,7 +104,7 @@ public class CharacterMain : MonoBehaviour
         return _isGrounded;
     }
 
-    private void SwitchToSquare()
+    public void SwitchToSquare()
     {
         boxCollider.enabled=true;
         circleCollider.enabled = false;
