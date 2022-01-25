@@ -52,7 +52,7 @@ public class CharacterMain : MonoBehaviour
     void FixedUpdate()
     {
         Debug.DrawLine(transform.position, transform.position + (Vector3.down + Vector3.right) * 2.2f, Color.blue);
-        Debug.Log(rb.velocity.x);
+        //Debug.Log(rb.velocity.x);
 
         float _movementH = Input.GetAxis("Horizontal");
 
