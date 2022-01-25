@@ -11,17 +11,17 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="198610636">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3529285007" Language="SFX" Hash="2231638104">
+		<SoundBank Id="3529285007" Language="SFX" Hash="4016149556">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banque_Eric</ObjectPath>
 			<ShortName>Banque_Eric</ShortName>
 			<Path>Banque_Eric.bnk</Path>
 			<IncludedEvents>
-				<Event Id="377609045" Name="Sons_Test_banque_de_son" ObjectPath="\Events\Default Work Unit\Sons_Test_banque_de_son" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3179671733" Name="Slime_Transformation" ObjectPath="\Events\Default Work Unit\Slime_Transformation" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
