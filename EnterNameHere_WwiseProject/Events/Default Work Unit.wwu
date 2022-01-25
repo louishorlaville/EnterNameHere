@@ -5,13 +5,10 @@
 			<ChildrenList>
 				<Event Name="Sons_Test_banque_de_son" ID="{D6736DF5-2EA9-4919-801C-74B1B8AEC853}">
 					<ChildrenList>
-						<Action Name="" ID="{B3D438DE-EA1D-4BC7-A6FD-0CD3AF8F335F}" ShortID="479592416">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
+						<Action Name="" ID="{082915F3-614B-4DED-85BB-C9699AA1893B}" ShortID="847872792">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Test generate" ID="{C6F65408-42A9-4BFF-BD34-09DAA0D825AB}" WorkUnitID="{99B9C34D-DE98-4FA7-88FD-D07C148445A4}"/>
+									<ObjectRef Name="Player Form" ID="{8141C03C-E270-4431-8CC9-6FA88CB7FCC8}" WorkUnitID="{99B9C34D-DE98-4FA7-88FD-D07C148445A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

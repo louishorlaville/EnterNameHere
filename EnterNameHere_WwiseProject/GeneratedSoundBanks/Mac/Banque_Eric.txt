@@ -1,3 +1,13 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3179671733	Slime_Transformation			\Default Work Unit\Slime_Transformation	
+	377609045	Sons_Test_banque_de_son			\Default Work Unit\Sons_Test_banque_de_son	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2582558235	Player_Form			\Default Work Unit\Player_Form	
+
+Switch	ID	Name	Switch Group			Notes
+	240409309	Circle	Player_Form			
+	1818333208	Square	Player_Form			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	450926109	Cube to slime	D:\EnterNameHere\EnterNameHere_WwiseProject\.cache\Mac\SFX\Cube to slime_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Banque Eric\Player Form\Cube to slime		12298
 

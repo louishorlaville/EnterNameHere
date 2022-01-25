@@ -3,6 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{F6597664-A3D2-46BE-B60A-8AE6E38DEBDE}">
 			<PropertyList>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\ericp\OneDrive\Bureau\Enter Name Here- Sound folder\"/>
 				<Property Name="Event Action List\{D6736DF5-2EA9-4919-801C-74B1B8AEC853}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -60,9 +61,9 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="Fy+npV1c6UyRMa4iUENPslgV+YlF+lVNlXcxGiufd9VNw7mZmN6nT4j90HwUhEWk"/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="PMBBgXDiMUSMyW+ojLf8yAhU9sapQv9LvTQJ2qDYJasXL6elXVzpTJExriJQQ0+yWBX5iUX6VU2VdzEaK5931U3DuZmY3qdPiP3QfBSERaQ="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="GOGsXJZ1TU2wVwJtbauRmA=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="uGe9jfXEUUmvdNyq1AaLchqlb+hftslLhWNic2n5xNE="/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>

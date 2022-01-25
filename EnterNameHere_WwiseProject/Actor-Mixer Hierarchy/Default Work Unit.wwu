@@ -3,33 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{89F91558-FA45-4D55-9577-311A2B9F77D5}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Test" ID="{A5A72F17-5C5D-4CE9-9131-AE2250434FB2}" ShortID="226210697">
-					<ChildrenList>
-						<Sound Name="amb centre commercial travaux" ID="{3CE7DAF6-007F-42AD-99EF-88A6F2993ADF}" ShortID="711968108">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C9C228BB-B924-4AF1-AAFA-20F8DCC44A27}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64BFEB13-9848-4E6C-B778-60011CAE1117}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="amb centre commercial travaux" ID="{5EBD04C0-305C-4957-80F9-2E13823BF6FB}">
-									<Language>SFX</Language>
-									<AudioFile>amb centre commercial travaux.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="954965250"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="amb centre commercial travaux" ID="{5EBD04C0-305C-4957-80F9-2E13823BF6FB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</Folder>
 				<WorkUnit Name="Banque Eric" ID="{99B9C34D-DE98-4FA7-88FD-D07C148445A4}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>

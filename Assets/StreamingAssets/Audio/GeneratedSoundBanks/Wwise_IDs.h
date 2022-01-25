@@ -13,37 +13,21 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID SLIME_TRANSFORMATION = 3179671733U;
+        static const AkUniqueID SONS_TEST_BANQUE_DE_SON = 377609045U;
     } // namespace EVENTS
-
-    namespace STATES
-    {
-        namespace SLIME_FORM
-        {
-            static const AkUniqueID GROUP = 1999760368U;
-
-            namespace STATE
-            {
-                static const AkUniqueID CUBE = 4052031814U;
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID SLIME = 3803999823U;
-            } // namespace STATE
-        } // namespace SLIME_FORM
-
-    } // namespace STATES
 
     namespace SWITCHES
     {
-        namespace SLIME_FORM
+        namespace PLAYER_FORM
         {
-            static const AkUniqueID GROUP = 1999760368U;
+            static const AkUniqueID GROUP = 2582558235U;
 
             namespace SWITCH
             {
-                static const AkUniqueID CUBE = 4052031814U;
-                static const AkUniqueID SLIME = 3803999823U;
+                static const AkUniqueID CIRCLE = 240409309U;
+                static const AkUniqueID SQUARE = 1818333208U;
             } // namespace SWITCH
-        } // namespace SLIME_FORM
+        } // namespace PLAYER_FORM
 
     } // namespace SWITCHES
 
