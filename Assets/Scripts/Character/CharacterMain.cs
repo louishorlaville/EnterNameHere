@@ -8,6 +8,7 @@ public class CharacterMain : MonoBehaviour
     CircleCollider2D circleCollider;
     BoxCollider2D boxCollider;
     SpriteRenderer renderer;
+    PlayerSoundManager soundManager;
 
     bool toSquare;
     bool toCircle;
@@ -27,6 +28,7 @@ public class CharacterMain : MonoBehaviour
         circleCollider = gameObject.GetComponent<CircleCollider2D>();
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         renderer = gameObject.GetComponent<SpriteRenderer>();
+        soundManager = gameObject.GetComponent<PlayerSoundManager>();
 
     }
 
@@ -104,7 +106,9 @@ public class CharacterMain : MonoBehaviour
         boxCollider.enabled=true;
         circleCollider.enabled = false;
         isCircle = false;
+        soundManager.isCircle = isCircle;
         renderer.sprite = sprites[1];
+
     }
 
     private void SwitchToCircle()
@@ -112,7 +116,8 @@ public class CharacterMain : MonoBehaviour
         boxCollider.enabled = false;
         circleCollider.enabled = true;
         isCircle = true;
-        renderer.sprite = sprites[0];  
+        renderer.sprite = sprites[0];
+        soundManager.isCircle = isCircle;
     }
 
     //Casts a circleCast to detect which side is on the ground and launch player in surface normal direction
