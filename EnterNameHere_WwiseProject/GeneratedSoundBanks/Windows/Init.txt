@@ -1,3 +1,19 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2582558235	Player_Form			\Default Work Unit\Player_Form	
+	4033083518	Magnet_Polarity			\Default Work Unit\Magnet_Polarity	
+	4261341665	In_Game_Menu			\Default Work Unit\In_Game_Menu	
+
+State	ID	Name	State Group			Notes
+	240409309	Circle	Player_Form			
+	748895195	None	Player_Form			
+	4052031814	Cube	Player_Form			
+	748895195	None	Magnet_Polarity			
+	1192865152	Positive	Magnet_Polarity			
+	4219547688	Negative	Magnet_Polarity			
+	748895195	None	In_Game_Menu			
+	860659345	Out_Of_Menu	In_Game_Menu			
+	1631528850	In_Menu	In_Game_Menu			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
