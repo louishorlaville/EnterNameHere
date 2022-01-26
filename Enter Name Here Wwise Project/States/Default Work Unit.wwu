@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Slime_Form" ID="{B1E40B59-9ED7-4B63-9705-2A8EEF128929}">
+					<ChildrenList>
+						<State Name="None" ID="{10A9F233-D1F3-453B-8D92-A5F8D7208430}"/>
+						<State Name="Slime" ID="{0614B285-1131-4B97-A0D6-85F3790FBFC7}"/>
+						<State Name="Cube" ID="{D7B2DB67-4669-4891-A833-C77885FFF79B}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Magnet_Polarity" ID="{7ACEBB70-7505-44F7-BF27-80132C0B4740}">
+					<ChildrenList>
+						<State Name="None" ID="{53C38677-0942-4690-A27F-E26E2D0B8244}"/>
+						<State Name="Positive" ID="{9E160AC2-7970-449A-AAB1-93C25DA0013B}"/>
+						<State Name="Negative" ID="{1B7BF135-CEB1-4C22-9127-5F71DA6C5B91}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
