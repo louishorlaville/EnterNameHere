@@ -25,6 +25,7 @@ public class CharacterMain : MonoBehaviour
     public Sprite[] sprites;
     public bool isCircle = true;
     public bool isMagnet = false;
+    public bool bEndLevel = false;
     public float movementSpeed;
     public float bounceHeight;
     public float rollSpeed;
@@ -50,6 +51,8 @@ public class CharacterMain : MonoBehaviour
 
         slimeTrailEffect = GameObject.Find("SlimeTrailEffect").GetComponent<ParticleSystem>();
         slimeLandEffect = GameObject.Find("SlimeLandEffect").GetComponent<ParticleSystem>();
+
+        bEndLevel = false;
     }
 
     // Update is called once per frame
@@ -59,16 +62,18 @@ public class CharacterMain : MonoBehaviour
         toSquare = Input.GetKeyDown("space");
         toCircle = Input.GetKeyUp("space");
 
-        if (Input.GetKey("space"))
+        if(bEndLevel == false)
         {
-            SwitchToSquare();
-        }
+            if(Input.GetKey("space"))
+            {
+                SwitchToSquare();
+            }
 
-        if (Input.GetKeyUp("space"))
-        {
-            //BounceAlongNormal();
-            SwitchToCircle();
-
+            if(Input.GetKeyUp("space"))
+            {
+                //BounceAlongNormal();
+                SwitchToCircle();
+            }
         }
 
         HandleSlimeTrail();
@@ -81,39 +86,42 @@ public class CharacterMain : MonoBehaviour
 
         float _movementH = Input.GetAxis("Horizontal");
 
-        if ((_movementH >= 0.2 || _movementH <= -0.2) && !isMagnet)
+        if(bEndLevel == false)
         {
-            if (isGrounded() && isCircle)
+            if((_movementH >= 0.2 || _movementH <= -0.2) && !isMagnet)
             {
-                rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
-            }
-            else
-            {
-                zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
-                transform.rotation = Quaternion.Euler(0, 0, -zAxis);
-
-                if (isGrounded())
+                if(isGrounded() && isCircle)
                 {
-                    //Prevent momentum loss on single space bar press
-                    if (rb.velocity.x < -rollSpeed || rb.velocity.x > rollSpeed)
+                    rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
+                }
+                else
+                {
+                    zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
+                    transform.rotation = Quaternion.Euler(0, 0, -zAxis);
+
+                    if(isGrounded())
                     {
-                        rb.velocity = new Vector2(rb.velocity.x * 0.99f, rb.velocity.y);
-                    }
-                    else
-                    {
-                        rb.velocity = new Vector2(rollSpeed * _movementH, rb.velocity.y);
+                        //Prevent momentum loss on single space bar press
+                        if(rb.velocity.x < -rollSpeed || rb.velocity.x > rollSpeed)
+                        {
+                            rb.velocity = new Vector2(rb.velocity.x * 0.99f, rb.velocity.y);
+                        }
+                        else
+                        {
+                            rb.velocity = new Vector2(rollSpeed * _movementH, rb.velocity.y);
+                        }
                     }
                 }
             }
-        }
-        else
-        {
-            rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
-        }
+            else
+            {
+                rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
+            }
 
-        // Save velocity before fixed update for correct pre-collision velocity
-        // Used for effects placement
-        velocityBeforeFixedUpdate = rb.velocity;
+            // Save velocity before fixed update for correct pre-collision velocity
+            // Used for effects placement
+            velocityBeforeFixedUpdate = rb.velocity;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D _collision)
@@ -213,7 +221,7 @@ public class CharacterMain : MonoBehaviour
         return _isGrounded;
     }
 
-    private void SwitchToSquare()
+    public void SwitchToSquare()
     {
         boxCollider.enabled=true;
         circleCollider.enabled = false;
