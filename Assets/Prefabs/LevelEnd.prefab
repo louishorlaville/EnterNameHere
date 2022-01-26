@@ -181,6 +181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holeCollider: {fileID: 214565868780739058}
+  spinnerL: {fileID: 214565868944593140}
+  spinnerR: {fileID: 214565867898745058}
 --- !u!1 &214565867898745058
 GameObject:
   m_ObjectHideFlags: 0
