@@ -128,8 +128,10 @@ public class CharacterMain : MonoBehaviour
     {
         if (currentBounces < maxNbBounces && isCircle && canBounce)
         {
+            Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
             currentBounces++;
-            if (_collision.gameObject.layer == 6)
+
+            if (_collision.contacts[0].normal.normalized == -_from.normalized)
             {
                 rb.velocity = _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
             }
@@ -140,7 +142,6 @@ public class CharacterMain : MonoBehaviour
         }
         else
         {
-            bounciness = collisionBounceHeight;
             currentBounces = 0;
             canBounce = false;
         }
