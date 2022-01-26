@@ -3,423 +3,9 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Sound" ID="{87F6F5C3-302B-4F10-A079-BE3A05B4DF2F}" ShortID="755752090">
+				<Folder Name="Player" ID="{2CA71E78-A598-402B-96E8-F770E3897FEC}" ShortID="429959331">
 					<ChildrenList>
-						<Sound Name="Enter Name Here Cinematic" ID="{9AE06722-C898-4235-8BC7-5803EC4B7397}" ShortID="858250642">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Enter Name Here Cinematic" ID="{3B539758-6F7F-45CF-9D56-174AC2E358D6}">
-									<Language>SFX</Language>
-									<AudioFile>Enter Name Here Cinematic.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="360401687"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Enter Name Here Cinematic" ID="{3B539758-6F7F-45CF-9D56-174AC2E358D6}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Cube Impact fall" ID="{3E25B099-687C-40B7-9949-6493CEC08446}" ShortID="842381557">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Cube Impact fall" ID="{399E54C1-0E96-4F39-A3C7-1B0C15BAFDDE}">
-									<Language>SFX</Language>
-									<AudioFile>Cube Impact fall.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1003139761"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Cube Impact fall" ID="{399E54C1-0E96-4F39-A3C7-1B0C15BAFDDE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Cube Magnet to surface" ID="{653B7F23-416D-46A4-9645-541CBB58FC28}" ShortID="635926272">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Cube Magnet to surface" ID="{96A5D913-DDBF-49F6-A9CF-C6D317A57BBF}">
-									<Language>SFX</Language>
-									<AudioFile>Cube Magnet to surface.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="642257278"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Cube Magnet to surface" ID="{96A5D913-DDBF-49F6-A9CF-C6D317A57BBF}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Cube to slime" ID="{F853BBE6-FBDB-4848-8F1E-4D8924EA3537}" ShortID="714630703">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Cube to slime" ID="{3079C432-3B01-49A0-8D20-FA68D435E3C7}">
-									<Language>SFX</Language>
-									<AudioFile>Cube to slime.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="972262073"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Cube to slime" ID="{3079C432-3B01-49A0-8D20-FA68D435E3C7}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Cube Woosh fall" ID="{7F3D3874-5E21-4F2B-80B1-C8ED2EF5DF37}" ShortID="795092106">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Cube Woosh fall" ID="{223226C2-6446-45C6-9AE7-7B184888FBBB}">
-									<Language>SFX</Language>
-									<AudioFile>Cube Woosh fall.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="965247569"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Cube Woosh fall" ID="{223226C2-6446-45C6-9AE7-7B184888FBBB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Death By Laser Beam" ID="{E6240560-7564-455F-BE6C-370D7FA146CB}" ShortID="183179550">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Death By Laser Beam" ID="{74F2BC11-237F-4F42-93DC-F20868C6AEBC}">
-									<Language>SFX</Language>
-									<AudioFile>Death By Laser Beam.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1067118725"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Death By Laser Beam" ID="{74F2BC11-237F-4F42-93DC-F20868C6AEBC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Ice Slide" ID="{E662B569-C8D1-4D9C-BEB0-E2F88C58BB8D}" ShortID="651621717">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Ice Slide" ID="{6A8422D4-F41B-41DB-A35C-70AC0D0B1C9A}">
-									<Language>SFX</Language>
-									<AudioFile>Ice Slide.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="658569221"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Ice Slide" ID="{6A8422D4-F41B-41DB-A35C-70AC0D0B1C9A}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Interupteur" ID="{B7DCA629-7ADA-49C7-B502-42D269160C86}" ShortID="861126047">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Interupteur" ID="{97CB9761-63C9-403C-99B5-4E5492D10B15}">
-									<Language>SFX</Language>
-									<AudioFile>Interupteur.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="25341359"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Interupteur" ID="{97CB9761-63C9-403C-99B5-4E5492D10B15}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Laser Beam" ID="{12DE67FF-0365-49E5-8FF5-60480A575C8E}" ShortID="75963325">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Laser Beam" ID="{2CA014F4-CDE0-46FC-B48B-BE20904D42B3}">
-									<Language>SFX</Language>
-									<AudioFile>Laser Beam.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="349211830"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Laser Beam" ID="{2CA014F4-CDE0-46FC-B48B-BE20904D42B3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Magnet  negative" ID="{C144D08A-3B01-448D-8646-098C216BB6C8}" ShortID="218520541">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Magnet  negative" ID="{E5FFD7DA-03B3-494E-B837-AE44577CA468}">
-									<Language>SFX</Language>
-									<AudioFile>Magnet  negative.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1023647580"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Magnet  negative" ID="{E5FFD7DA-03B3-494E-B837-AE44577CA468}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Magnet  positive" ID="{3015A8AB-8889-4BB9-B4FA-D433925E662C}" ShortID="1009629070">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Magnet  positive" ID="{DEDF4DBA-0290-40AC-A3C4-FF633C496B03}">
-									<Language>SFX</Language>
-									<AudioFile>Magnet  positive.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="828571607"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Magnet  positive" ID="{DEDF4DBA-0290-40AC-A3C4-FF633C496B03}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Magnet Attract" ID="{71FE6284-20FD-4457-B519-B14CA1322762}" ShortID="604799026">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Magnet Attract" ID="{8583D23E-458B-4D4B-9EC2-4193D6B1B5A1}">
-									<Language>SFX</Language>
-									<AudioFile>Magnet Attract.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="761757867"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Magnet Attract" ID="{8583D23E-458B-4D4B-9EC2-4193D6B1B5A1}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Magnet Repulse" ID="{5DB87BBA-5F24-47C4-BC31-2CD4682F757B}" ShortID="930980878">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Magnet Repulse" ID="{808B0B5B-1165-4A31-89C9-21B20F3C5BFB}">
-									<Language>SFX</Language>
-									<AudioFile>Magnet Repulse.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="398150341"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Magnet Repulse" ID="{808B0B5B-1165-4A31-89C9-21B20F3C5BFB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="SLime Rebound-dIRT" ID="{F4765F5E-7CC4-4F18-8671-7DF77F7BE6E1}" ShortID="319765637">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SLime Rebound-dIRT" ID="{C9AEC00B-0CCE-4F1F-8984-9764B792C5A3}">
-									<Language>SFX</Language>
-									<AudioFile>SLime Rebound-dIRT.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="141748639"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="SLime Rebound-dIRT" ID="{C9AEC00B-0CCE-4F1F-8984-9764B792C5A3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="SLime Rebound-Metal" ID="{96F89CBE-F844-4E01-825C-5849DA0C84C0}" ShortID="850012743">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SLime Rebound-Metal" ID="{37E7362E-3774-49AA-9789-76E9E5D39E70}">
-									<Language>SFX</Language>
-									<AudioFile>SLime Rebound-Metal.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="13683344"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="SLime Rebound-Metal" ID="{37E7362E-3774-49AA-9789-76E9E5D39E70}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Slime spike death" ID="{E6D4DDA1-4FBA-40C9-9193-B7E577D98F86}" ShortID="47521947">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Slime spike death" ID="{A00B0689-6C56-4647-9E46-4E62C671BD8C}">
-									<Language>SFX</Language>
-									<AudioFile>Slime spike death.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="359038967"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Slime spike death" ID="{A00B0689-6C56-4647-9E46-4E62C671BD8C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Slime to cube" ID="{CFFDC4A6-AE97-4B03-8662-547844A006B2}" ShortID="22816363">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Slime to cube" ID="{FB884277-5620-40B4-A923-86034CEAA9C7}">
-									<Language>SFX</Language>
-									<AudioFile>Slime to cube.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="902469190"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Slime to cube" ID="{FB884277-5620-40B4-A923-86034CEAA9C7}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Wooden Box Destruction" ID="{EA24A688-4696-4984-8E12-7233EA9F93CF}" ShortID="1020452997">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wooden Box Destruction" ID="{2074C5AE-9FE9-4D60-B7B2-59B7E307C947}">
-									<Language>SFX</Language>
-									<AudioFile>Wooden Box Destruction.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="945211549"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Wooden Box Destruction" ID="{2074C5AE-9FE9-4D60-B7B2-59B7E307C947}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<RandomSequenceContainer Name="Slime jump" ID="{3926EA81-B49B-4B8B-B8DA-A108D6C092F7}" ShortID="584838698">
+						<RandomSequenceContainer Name="Slime_Jump" ID="{D597958F-D537-4887-81BE-9280F7461F0C}" ShortID="582336443">
 							<PropertyList>
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 							</PropertyList>
@@ -432,11 +18,11 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<BlendContainer Name="Slime Jump" ID="{7D6F903F-2F19-435C-A2E5-6F85BEE66BF6}" ShortID="479389054">
+								<BlendContainer Name="SlimeJump_Whoopie" ID="{36E578F5-35D4-4F3F-A7BD-269B1A54E983}" ShortID="61552755">
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>15</Value>
+												<Value>24</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -449,7 +35,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Slime jump" ID="{089CB25E-3134-480D-BC9B-88622F0180CB}" ShortID="752212353">
+										<Sound Name="Slime Jump Wouhou" ID="{0281808B-E106-45DF-92D1-78AD22FB213B}" ShortID="534579102">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
@@ -459,30 +45,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Slime jump" ID="{F6232741-8645-4562-B82F-F2F354149DC8}">
-													<Language>SFX</Language>
-													<AudioFile>Slime jump.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="501737349"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Slime jump" ID="{F6232741-8645-4562-B82F-F2F354149DC8}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Slime Jump Wouhou" ID="{8E017389-A598-43F3-9AD7-BE1A690B1142}" ShortID="908380787">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Slime Jump Wouhou" ID="{D30BEE28-4DBD-4E0F-9FDC-6658B03E6DCA}">
+												<AudioFileSource Name="Slime Jump Wouhou" ID="{904DA2A2-D4D4-4A39-9BBC-25DD351D3F85}">
 													<Language>SFX</Language>
 													<AudioFile>Slime Jump Wouhou.wav</AudioFile>
 													<MediaIDList>
@@ -492,17 +55,40 @@
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="Slime Jump Wouhou" ID="{D30BEE28-4DBD-4E0F-9FDC-6658B03E6DCA}" Platform="Linked"/>
+												<ActiveSource Name="Slime Jump Wouhou" ID="{904DA2A2-D4D4-4A39-9BBC-25DD351D3F85}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slime jump" ID="{3A85600B-CA97-4401-A29D-7398248EB6A5}" ShortID="793340445">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Slime jump" ID="{6E7D8724-5FD2-469D-B207-D2F54EDC5DC3}">
+													<Language>SFX</Language>
+													<AudioFile>Slime jump.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="501737349"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Slime jump" ID="{6E7D8724-5FD2-469D-B207-D2F54EDC5DC3}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 								</BlendContainer>
-								<Sound Name="Slime jump_01" ID="{85B85308-966B-465C-8B05-624D73B9FC9C}" ShortID="656182849">
+								<Sound Name="Slime jump_01" ID="{7EC3851F-097B-46D6-B697-F6D7EBA71B70}" ShortID="202662236">
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>85</Value>
+												<Value>84</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -515,7 +101,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Slime jump" ID="{C87B891B-BCC7-48CE-A241-B1453C3DB771}">
+										<AudioFileSource Name="Slime jump" ID="{88441F73-797B-4ED7-B45A-75908AF7C21E}">
 											<Language>SFX</Language>
 											<AudioFile>Slime jump.wav</AudioFile>
 											<MediaIDList>
@@ -525,12 +111,660 @@
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Slime jump" ID="{C87B891B-BCC7-48CE-A241-B1453C3DB771}" Platform="Linked"/>
+										<ActiveSource Name="Slime jump" ID="{88441F73-797B-4ED7-B45A-75908AF7C21E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<SwitchContainer Name="Slime_Morphing" ID="{6DC0B0E9-EE51-4B2A-9B7E-E800C7F0B2A8}" ShortID="1006460163">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="None" ID="{10A9F233-D1F3-453B-8D92-A5F8D7208430}" WorkUnitID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Slime_Form" ID="{B1E40B59-9ED7-4B63-9705-2A8EEF128929}" WorkUnitID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Cube to slime" ID="{548857B3-09B1-4ECB-B62E-26A3A7FD164F}" ShortID="706360683">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cube to slime" ID="{D786D5B2-027F-4C81-8D4D-3447AFC42543}">
+											<Language>SFX</Language>
+											<AudioFile>Cube to slime.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="972262073"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Cube to slime" ID="{D786D5B2-027F-4C81-8D4D-3447AFC42543}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Slime to cube" ID="{BFCD1D3A-02FD-4EC5-AD30-E0DC42B49298}" ShortID="1047704076">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Slime to cube" ID="{6EDE59AF-D3DF-45E2-94FE-50BAC108F9C7}">
+											<Language>SFX</Language>
+											<AudioFile>Slime to cube.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="902469190"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Slime to cube" ID="{6EDE59AF-D3DF-45E2-94FE-50BAC108F9C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Slime to cube" ID="{BFCD1D3A-02FD-4EC5-AD30-E0DC42B49298}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Cube to slime" ID="{548857B3-09B1-4ECB-B62E-26A3A7FD164F}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Cube" ID="{D7B2DB67-4669-4891-A833-C77885FFF79B}"/>
+										<ItemList>
+											<ItemRef Name="Slime to cube" ID="{BFCD1D3A-02FD-4EC5-AD30-E0DC42B49298}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Slime" ID="{0614B285-1131-4B97-A0D6-85F3790FBFC7}"/>
+										<ItemList>
+											<ItemRef Name="Cube to slime" ID="{548857B3-09B1-4ECB-B62E-26A3A7FD164F}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="Death By Laser Beam" ID="{02CAEFF4-70C5-4CCF-9D19-483D213F9BC8}" ShortID="1034671369">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Death By Laser Beam" ID="{304653CF-1A46-45CD-8949-4CF2CEB8EDF2}">
+									<Language>SFX</Language>
+									<AudioFile>Death By Laser Beam.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1067118725"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Death By Laser Beam" ID="{304653CF-1A46-45CD-8949-4CF2CEB8EDF2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Cube Impact fall" ID="{1FDE3651-24AA-45A1-A7E1-46E69C8B330A}" ShortID="436368260">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cube Impact fall" ID="{7DB0BC70-5B31-49C0-AB2A-E45FC5DD00A9}">
+									<Language>SFX</Language>
+									<AudioFile>Cube Impact fall.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1003139761"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Cube Impact fall" ID="{7DB0BC70-5B31-49C0-AB2A-E45FC5DD00A9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Cube Magnet to surface" ID="{0BA81D53-225C-4751-8D44-F4B9B0D3D5B4}" ShortID="869563931">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cube Magnet to surface" ID="{E2A32B46-5579-4C59-8443-878A2EC0394F}">
+									<Language>SFX</Language>
+									<AudioFile>Cube Magnet to surface.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="642257278"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Cube Magnet to surface" ID="{E2A32B46-5579-4C59-8443-878A2EC0394F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Cube Woosh fall" ID="{BD86774E-E498-4089-A10A-CC2FF96F224E}" ShortID="862293804">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cube Woosh fall" ID="{5207270C-A339-4492-B72A-75435487E0CC}">
+									<Language>SFX</Language>
+									<AudioFile>Cube Woosh fall.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="965247569"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Cube Woosh fall" ID="{5207270C-A339-4492-B72A-75435487E0CC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ice Slide" ID="{5B9E5B0C-CFC5-4B30-B022-269214271FA0}" ShortID="1009407150">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ice Slide" ID="{8572C498-A9E3-4A22-9F2F-E383169D4515}">
+									<Language>SFX</Language>
+									<AudioFile>Ice Slide.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="658569221"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ice Slide" ID="{8572C498-A9E3-4A22-9F2F-E383169D4515}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="Slime_Rebound" ID="{1394C1C5-69DB-4236-8CCF-8A698FEF7C29}" ShortID="686399486">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SLime Rebound-dIRT" ID="{60F39A83-9461-4168-80B1-D4C6924D7EBA}" ShortID="595943514">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SLime Rebound-dIRT" ID="{7CEE3D98-5968-45C0-9EFA-CB40E61081D6}">
+											<Language>SFX</Language>
+											<AudioFile>SLime Rebound-dIRT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="141748639"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SLime Rebound-dIRT" ID="{7CEE3D98-5968-45C0-9EFA-CB40E61081D6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SLime Rebound-Metal" ID="{EC1473AA-084B-4C76-998D-FD5AF0BCEF53}" ShortID="512923321">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SLime Rebound-Metal" ID="{F65B397A-2DC8-4830-AF07-C593DFBCE073}">
+											<Language>SFX</Language>
+											<AudioFile>SLime Rebound-Metal.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="13683344"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SLime Rebound-Metal" ID="{F65B397A-2DC8-4830-AF07-C593DFBCE073}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="SLime Rebound-dIRT" ID="{60F39A83-9461-4168-80B1-D4C6924D7EBA}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="SLime Rebound-Metal" ID="{EC1473AA-084B-4C76-998D-FD5AF0BCEF53}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="Slime spike death" ID="{A47D3061-D2F6-41A8-8B55-D0B8BEAD8104}" ShortID="455443999">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Slime spike death" ID="{BEEE6BF0-85C8-4AC4-8AB2-2FDE23AF9DB7}">
+									<Language>SFX</Language>
+									<AudioFile>Slime spike death.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="359038967"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Slime spike death" ID="{BEEE6BF0-85C8-4AC4-8AB2-2FDE23AF9DB7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Slime_Move" ID="{5129BC6B-4661-4865-913C-9D68C8940E09}" ShortID="155589472">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{3D53E3BA-1D2A-4746-BC75-F2262B1E1485}" ShortID="313397188">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Slime_Speed" ID="{1F463BE8-94C2-4E75-949D-BFF537117016}" WorkUnitID="{21C5C385-4528-4F6D-BCED-B17DA4235F15}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2144601D-5724-4FBB-91D5-C5859DA5EE17}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>16.05634</XPos>
+														<YPos>491</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>49.85915</XPos>
+														<YPos>847</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>847</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{9A7D54E9-E6AC-48AC-9E80-32CD0B64B319}" ShortID="288806799">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Slime_Speed" ID="{1F463BE8-94C2-4E75-949D-BFF537117016}" WorkUnitID="{21C5C385-4528-4F6D-BCED-B17DA4235F15}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{62C6A504-60AC-4171-9333-70DC0727BA74}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Slime_Move" ID="{D16E859D-438A-493C-860D-4E92BE06C96D}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.464183381088825"/>
+										<Property Name="LoopEnd" Type="Real64" Value="4.22277936962751"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Slime_Move.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="458765081"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Slime_Move" ID="{D16E859D-438A-493C-860D-4E92BE06C96D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="World" ID="{B3625B4A-AAF2-43F1-8985-393AB9E13D1B}" ShortID="263141654">
+					<ChildrenList>
+						<Sound Name="Interupteur" ID="{7C38A0CA-EA38-4AE5-860D-C5F84788132F}" ShortID="63725203">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Interupteur" ID="{AF5E4857-C54E-48F0-9FB5-C18F10089ABC}">
+									<Language>SFX</Language>
+									<AudioFile>Interupteur.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="25341359"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Interupteur" ID="{AF5E4857-C54E-48F0-9FB5-C18F10089ABC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Laser Beam" ID="{746B1335-D690-4ED8-BDC9-F31272DCC94A}" ShortID="75478269">
+							<PropertyList>
+								<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Laser Beam" ID="{5BF030F7-57D2-40AC-A8E0-A8D09334E5CC}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="2.67568690305635"/>
+										<Property Name="LoopEnd" Type="Real64" Value="4.01713640162369"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Laser Beam.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="349211830"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Laser Beam" ID="{5BF030F7-57D2-40AC-A8E0-A8D09334E5CC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Magnet  negative" ID="{884D9430-70C0-4041-B472-7BB11D540400}" ShortID="974654041">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Magnet  negative" ID="{C7A42DA1-769A-437D-B2DB-2C8EAF934060}">
+									<Language>SFX</Language>
+									<AudioFile>Magnet  negative.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1023647580"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Magnet  negative" ID="{C7A42DA1-769A-437D-B2DB-2C8EAF934060}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Magnet  positive" ID="{EBE90E1C-B645-436D-B3F8-9CCD114860BB}" ShortID="568878775">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Magnet  positive" ID="{D585B8FB-A268-4E45-95C2-8FA962B53E5F}">
+									<Language>SFX</Language>
+									<AudioFile>Magnet  positive.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="828571607"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Magnet  positive" ID="{D585B8FB-A268-4E45-95C2-8FA962B53E5F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Wooden Box Destruction" ID="{3C769F92-4108-4856-8121-A00A0082F7DA}" ShortID="265889678">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wooden Box Destruction" ID="{DC7BD17C-AB8B-4A11-BB7E-66FB70DD0B6D}">
+									<Language>SFX</Language>
+									<AudioFile>Wooden Box Destruction.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="945211549"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Wooden Box Destruction" ID="{DC7BD17C-AB8B-4A11-BB7E-66FB70DD0B6D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="Magnet_Atract_Repulse" ID="{D7FACD90-2072-4B43-B3F0-FE8CFC2CC7AA}" ShortID="360398859">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="None" ID="{53C38677-0942-4690-A27F-E26E2D0B8244}" WorkUnitID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Magnet_Polarity" ID="{7ACEBB70-7505-44F7-BF27-80132C0B4740}" WorkUnitID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Magnet Attract" ID="{EA1E81B9-BAFA-4927-B0AA-9F8DFD24063C}" ShortID="984067462">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Magnet Attract" ID="{B9B56F9B-E368-4425-95F2-1648D12A802A}">
+											<Language>SFX</Language>
+											<AudioFile>Magnet Attract.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="761757867"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Magnet Attract" ID="{B9B56F9B-E368-4425-95F2-1648D12A802A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Magnet Repulse" ID="{BF2E6125-0077-43D7-96F3-06BA83C8DA5E}" ShortID="40150734">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Magnet Repulse" ID="{5A3BAA17-B27E-4FBD-A970-2DE192F91AB0}">
+											<Language>SFX</Language>
+											<AudioFile>Magnet Repulse.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="398150341"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Magnet Repulse" ID="{5A3BAA17-B27E-4FBD-A970-2DE192F91AB0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Magnet Repulse" ID="{BF2E6125-0077-43D7-96F3-06BA83C8DA5E}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Magnet Attract" ID="{EA1E81B9-BAFA-4927-B0AA-9F8DFD24063C}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Negative" ID="{1B7BF135-CEB1-4C22-9127-5F71DA6C5B91}"/>
+										<ItemList>
+											<ItemRef Name="Magnet Attract" ID="{EA1E81B9-BAFA-4927-B0AA-9F8DFD24063C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Positive" ID="{9E160AC2-7970-449A-AAB1-93C25DA0013B}"/>
+										<ItemList>
+											<ItemRef Name="Magnet Repulse" ID="{BF2E6125-0077-43D7-96F3-06BA83C8DA5E}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{1BE717A5-50E5-417C-983E-1517E0FAEF88}" ShortID="29497022">
+					<ChildrenList>
+						<Sound Name="Open_Menu" ID="{E97C4CDF-AA1A-4412-B4FA-8BCCDFF0753D}" ShortID="169678364">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Open_Menu" ID="{B465F758-FE60-4E9C-8265-66A7CAC748FB}">
+									<Language>SFX</Language>
+									<AudioFile>Open_Menu.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="221592157"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Open_Menu" ID="{B465F758-FE60-4E9C-8265-66A7CAC748FB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
