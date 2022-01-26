@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Banque_Eric" ID="{D74CDCEE-9CA3-4827-85AB-2BAFED6B1272}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Player_Jump" ID="{429346F5-155C-4AD6-966A-99DB70393E0F}" WorkUnitID="{5CACE118-7596-4D4D-B057-026D6DAB9198}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Sons_Test_banque_de_son" ID="{D6736DF5-2EA9-4919-801C-74B1B8AEC853}" WorkUnitID="{5CACE118-7596-4D4D-B057-026D6DAB9198}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

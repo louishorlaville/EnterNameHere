@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{65CA6317-F569-439D-A31D-32805DFE72DD}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{65CA6317-F569-439D-A31D-32805DFE72DD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="New" ID="{A8A30206-4FB5-4233-A27B-2D23619EB1F0}">
+					<ChildrenList>
+						<Action Name="" ID="{951ED244-5AD7-4A63-8C6F-E8D629F4C7FA}" ShortID="982063292">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enter Name Here Cinematic" ID="{9AE06722-C898-4235-8BC7-5803EC4B7397}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

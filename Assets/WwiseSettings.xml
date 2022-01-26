@@ -10,7 +10,7 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2021.1.4.7707/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../EnterNameHere_WwiseProject/EnterNameHere_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../Enter Name Here Wwise Project/Enter Name Here Wwise Project.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

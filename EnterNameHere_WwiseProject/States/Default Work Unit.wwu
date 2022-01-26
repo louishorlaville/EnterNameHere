@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3E475BB1-5B06-4003-82AA-A91F6B2E725B}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{3E475BB1-5B06-4003-82AA-A91F6B2E725B}" PersistMode="Standalone">
-			<ChildrenList>
-				<StateGroup Name="Player_Form" ID="{DE7F83C0-BC3B-4C35-8E08-A7AB7F3071AA}">
-					<ChildrenList>
-						<State Name="None" ID="{ADAA76D7-620B-432A-B8EB-73AD632BBC2B}"/>
-						<State Name="Circle" ID="{DC905A57-29FF-4023-A74F-2D425D8B6688}"/>
-						<State Name="Cube" ID="{6C673A75-1662-4198-BAFC-05AB74930CE1}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="In_Game_Menu" ID="{0C262D4A-B0D4-4E77-8BB8-6464C6723BC7}">
-					<ChildrenList>
-						<State Name="None" ID="{B635FD11-754A-4343-8ECF-AE91607149B8}"/>
-						<State Name="In_Menu" ID="{1CF80936-CBE4-40DD-9ECE-61BC6F9B0538}"/>
-						<State Name="Out_Of_Menu" ID="{FC39FB32-EA09-4060-BB9D-CFA4C6A47F82}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Magnet_Polarity" ID="{87E9D912-FF7A-45B9-B208-F479AD25013B}">
-					<ChildrenList>
-						<State Name="None" ID="{2A637471-3549-4A49-B558-8972AA2AB07A}"/>
-						<State Name="Positive" ID="{EF6FA94F-F9D5-4427-83B4-EDCF80C0D37B}"/>
-						<State Name="Negative" ID="{97786EDA-C3DB-4665-B607-844E80F05D7E}"/>
-					</ChildrenList>
-				</StateGroup>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{3E475BB1-5B06-4003-82AA-A91F6B2E725B}" PersistMode="Standalone"/>
 	</States>
 </WwiseDocument>
