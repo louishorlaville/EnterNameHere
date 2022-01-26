@@ -9,23 +9,30 @@ public class CharacterMain : MonoBehaviour
     BoxCollider2D boxCollider;
     SpriteRenderer renderer;
 
-
+    bool canStick;
     bool toSquare;
-    bool canBounce=true;
     bool toCircle;
+    bool firstMagnetContact = true;
+    bool canBounce = true;
     float zAxis;
     float bounciness;
     int maxNbBounces = 3;
     int currentBounces = 0;
-
+    bool magnetTouchContactPoint;
+    Vector2 magnetDirection;
+    Vector3 magnetContactPoint;
 
     public Sprite[] sprites;
     public bool isCircle = true;
+    public bool isMagnet = false;
     public float movementSpeed;
     public float bounceHeight;
     public float rollSpeed;
     public float rollRotationSpeed;
     public float collisionBounceHeight;
+    public float magnetPower;
+
+    const float gravityValue = 10;
 
     // Effects variables
     ParticleSystem slimeTrailEffect;
@@ -55,7 +62,6 @@ public class CharacterMain : MonoBehaviour
         if (Input.GetKey("space"))
         {
             SwitchToSquare();
-
         }
 
         if (Input.GetKeyUp("space"))
@@ -70,11 +76,12 @@ public class CharacterMain : MonoBehaviour
 
     void FixedUpdate()
     {
+        print(gravityValue);
         Debug.DrawLine(transform.position, transform.position + (Vector3.down + Vector3.right) * 2.2f, Color.blue);
 
         float _movementH = Input.GetAxis("Horizontal");
 
-        if (_movementH >= 0.2 || _movementH <= -0.2)
+        if ((_movementH >= 0.2 || _movementH <= -0.2) && !isMagnet)
         {
             if (isGrounded() && isCircle)
             {
@@ -109,14 +116,19 @@ public class CharacterMain : MonoBehaviour
         velocityBeforeFixedUpdate = rb.velocity;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D _collision)
     {
         if (currentBounces < maxNbBounces && isCircle && canBounce)
         {
             currentBounces++;
-            bounciness = collisionBounceHeight / currentBounces;
-            collision.contacts[0].normal.Normalize();
-            rb.velocity = collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+            if (_collision.gameObject.layer == 6)
+            {
+                rb.velocity = _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+            }
+            else
+            {
+                rb.velocity = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y) + _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+            }
         }
         else
         {
@@ -125,7 +137,69 @@ public class CharacterMain : MonoBehaviour
             canBounce = false;
         }
 
-        HandleSlimeLandEffect(collision);
+        //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
+        if (isMagnet)
+        {
+            magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower; 
+            magnetTouchContactPoint = true;
+        }
+
+        HandleSlimeLandEffect(_collision);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        //Debug.DrawLine((Vector2) transform.position, (Vector2) transform.position + collision.contacts[0].normal*-3, Color.red);
+
+    }
+
+    private void OnTriggerStay2D(Collider2D _collision)
+    {
+        if (_collision.tag.Equals("Negative"))
+        {
+
+            if (!isCircle)
+            {
+                if (firstMagnetContact)
+                {
+                    rb.gravityScale = 0;
+                    magnetContactPoint = _collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position);
+                    magnetDirection = new Vector3(transform.position.x + magnetContactPoint.x, transform.position.y + magnetContactPoint.y, 0);
+                    firstMagnetContact = false;
+                }
+                if(!magnetTouchContactPoint)
+                {
+                    magnetDirection = new Vector3(transform.position.x + magnetContactPoint.x, transform.position.y + magnetContactPoint.y, 0);
+                }
+
+                isMagnet = true;
+                AttachPlayer(magnetDirection);
+            }
+            else
+            {
+                isMagnet = false;
+                firstMagnetContact = true;
+                magnetTouchContactPoint = false;
+                rb.gravityScale = gravityValue;
+            }
+        }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag.Equals("Negative") && isMagnet)
+        {
+            isMagnet = false;
+            firstMagnetContact = true;
+            magnetTouchContactPoint = false;
+            rb.gravityScale = gravityValue;
+        }
+    }
+
+    private void AttachPlayer(Vector3 magnetDirection)
+    {
+        rb.AddForce(magnetDirection, ForceMode2D.Impulse);
     }
 
     //Check if player is touching a surface
@@ -157,20 +231,6 @@ public class CharacterMain : MonoBehaviour
         currentBounces = 0;
         canBounce = true;
     }
-
-    //Casts a circleCast to detect which side is on the ground and launch player in surface normal direction
-    /*public void BounceAlongNormal()
-    {
-        RaycastHit2D circleCast = Physics2D.CircleCast(transform.position, 3f, new Vector2(0,0));
-        if (circleCast.collider != null)
-        {
-            Debug.DrawRay(new Vector3(circleCast.normal.x, circleCast.normal.y, 0), circleCast.collider.transform.TransformDirection(circleCast.normal) * 20, Color.red);
-
-            //convert normal direction to force
-            circleCast.normal.Normalize();
-            rb.AddForce(circleCast.normal * bounceHeight, ForceMode2D.Impulse);
-        }
-    }*/
 
     private void HandleSlimeTrail()
     {
