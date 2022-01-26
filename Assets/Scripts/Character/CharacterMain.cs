@@ -9,6 +9,7 @@ public class CharacterMain : MonoBehaviour
     BoxCollider2D boxCollider;
     SpriteRenderer renderer;
 
+
     bool toSquare;
     bool canBounce=true;
     bool toCircle;
@@ -16,6 +17,7 @@ public class CharacterMain : MonoBehaviour
     float bounciness;
     int maxNbBounces = 3;
     int currentBounces = 0;
+
 
     public Sprite[] sprites;
     public bool isCircle = true;
@@ -25,6 +27,12 @@ public class CharacterMain : MonoBehaviour
     public float rollRotationSpeed;
     public float collisionBounceHeight;
 
+    // Effects variables
+    ParticleSystem slimeTrailEffect;
+    ParticleSystem slimeLandEffect;
+    Vector3 effectOffset = new Vector3(-0.5f, -3.5f, 0);
+    Vector3 velocityBeforeFixedUpdate;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +40,9 @@ public class CharacterMain : MonoBehaviour
         circleCollider = gameObject.GetComponent<CircleCollider2D>();
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         renderer = gameObject.GetComponent<SpriteRenderer>();
+
+        slimeTrailEffect = GameObject.Find("SlimeTrailEffect").GetComponent<ParticleSystem>();
+        slimeLandEffect = GameObject.Find("SlimeLandEffect").GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -44,15 +55,17 @@ public class CharacterMain : MonoBehaviour
         if (Input.GetKey("space"))
         {
             SwitchToSquare();
-            
+
         }
 
         if (Input.GetKeyUp("space"))
         {
             //BounceAlongNormal();
             SwitchToCircle();
-            
+
         }
+
+        HandleSlimeTrail();
     }
 
     void FixedUpdate()
@@ -90,16 +103,20 @@ public class CharacterMain : MonoBehaviour
         {
             rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
         }
+
+        // Save velocity before fixed update for correct pre-collision velocity
+        // Used for effects placement
+        velocityBeforeFixedUpdate = rb.velocity;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
-    {   
-        if (currentBounces<maxNbBounces && isCircle && canBounce)
+    {
+        if (currentBounces < maxNbBounces && isCircle && canBounce)
         {
             currentBounces++;
             bounciness = collisionBounceHeight / currentBounces;
             collision.contacts[0].normal.Normalize();
-            rb.velocity = collision.contacts[0].normal* (collisionBounceHeight / Mathf.Pow(2, currentBounces-1));
+            rb.velocity = collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
         }
         else
         {
@@ -107,6 +124,8 @@ public class CharacterMain : MonoBehaviour
             currentBounces = 0;
             canBounce = false;
         }
+
+        HandleSlimeLandEffect(collision);
     }
 
     //Check if player is touching a surface
@@ -152,4 +171,67 @@ public class CharacterMain : MonoBehaviour
             rb.AddForce(circleCast.normal * bounceHeight, ForceMode2D.Impulse);
         }
     }*/
+
+    private void HandleSlimeTrail()
+    {
+        if (rb.velocity.x >= 5 && isCircle)
+        {
+            slimeTrailEffect.transform.eulerAngles = Vector3.zero;
+            slimeTrailEffect.transform.localScale = Vector3.one;
+            slimeTrailEffect.transform.position = transform.position + effectOffset;
+            slimeTrailEffect.Play();
+        }
+        else if (rb.velocity.x <= -5 && isCircle)
+        {
+            slimeTrailEffect.transform.eulerAngles = new Vector3(0, 0, 180);
+            slimeTrailEffect.transform.localScale = new Vector3(1, -1, 1);
+            slimeTrailEffect.transform.position = transform.position + new Vector3(-effectOffset.x, effectOffset.y, 0);
+            slimeTrailEffect.Play();
+        }
+        else
+        {
+            slimeTrailEffect.Stop();
+        }
+    }
+
+    private void HandleSlimeLandEffect(Collision2D collision)
+    {
+        if (velocityBeforeFixedUpdate.magnitude >= 5)
+        {
+            if (collision.contacts[0].normal.normalized.x == 1 || collision.contacts[0].normal.normalized.x == -1)
+            {
+                if (velocityBeforeFixedUpdate.x >= 25 || velocityBeforeFixedUpdate.x <= -25)
+                {
+                    switch (collision.contacts[0].normal.x)
+                    {
+                        case 1:
+                            slimeLandEffect.transform.eulerAngles = new Vector3(0, 0, -90);
+                            break;
+                        case -1:
+                            slimeLandEffect.transform.eulerAngles = new Vector3(0, 0, 90);
+                            break;
+                    }
+                    slimeLandEffect.transform.position = new Vector3(transform.position.x + effectOffset.y * collision.contacts[0].normal.x, transform.position.y, 0);
+                    slimeLandEffect.Play();
+                }
+            }
+            if (collision.contacts[0].normal.normalized.y == 1 || collision.contacts[0].normal.normalized.y == -1)
+            {
+                if (velocityBeforeFixedUpdate.y >= 25 || velocityBeforeFixedUpdate.y <= -25)
+                {
+                    switch (collision.contacts[0].normal.y)
+                    {
+                        case 1:
+                            slimeLandEffect.transform.eulerAngles = new Vector3(0, 0, 0);
+                            break;
+                        case -1:
+                            slimeLandEffect.transform.eulerAngles = new Vector3(0, 0, 180);
+                            break;
+                    }
+                    slimeLandEffect.transform.position = new Vector3(transform.position.x, transform.position.y + effectOffset.y * collision.contacts[0].normal.y, 0);
+                    slimeLandEffect.Play();
+                }
+            }
+        }
+    }
 }
