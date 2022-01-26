@@ -72,11 +72,14 @@ MonoBehaviour:
   - {fileID: 3766885766661273901, guid: c141291ba91af02408e26d8377a1e7b9, type: 3}
   - {fileID: 1302723820812287101, guid: c141291ba91af02408e26d8377a1e7b9, type: 3}
   isCircle: 1
+  isMagnet: 0
+  bEndLevel: 0
   movementSpeed: 90
   bounceHeight: 2000
   rollSpeed: 5
   rollRotationSpeed: 85
   collisionBounceHeight: 80
+  magnetPower: 1000
 --- !u!61 &7491413294415040233
 BoxCollider2D:
   m_ObjectHideFlags: 0
