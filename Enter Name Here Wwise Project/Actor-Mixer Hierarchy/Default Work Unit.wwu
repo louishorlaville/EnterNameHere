@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Sound" ID="{87F6F5C3-302B-4F10-A079-BE3A05B4DF2F}" ShortID="755752090">
+					<ChildrenList>
+						<Sound Name="Enter Name Here Cinematic" ID="{9AE06722-C898-4235-8BC7-5803EC4B7397}" ShortID="858250642">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Enter Name Here Cinematic" ID="{3B539758-6F7F-45CF-9D56-174AC2E358D6}">
+									<Language>SFX</Language>
+									<AudioFile>Enter Name Here Cinematic.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="360401687"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Enter Name Here Cinematic" ID="{3B539758-6F7F-45CF-9D56-174AC2E358D6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

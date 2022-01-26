@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	444308101	New			\Default Work Unit\New	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	360401687	Enter Name Here Cinematic	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Enter Name Here Cinematic_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Enter Name Here Cinematic		14643264
+
