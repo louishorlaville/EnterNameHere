@@ -1,6 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	444308101	New			\Default Work Unit\New	
+	3833651337	Jump			\Default Work Unit\Jump	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	243699287	Slime Jump Wouhou	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime Jump Wouhou_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Slime jump\Slime Jump\Slime Jump Wouhou		102408
 	360401687	Enter Name Here Cinematic	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Enter Name Here Cinematic_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Enter Name Here Cinematic		14643264
+	501737349	Slime jump	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Slime jump\Slime Jump\Slime jump		38840
 

@@ -16,11 +16,23 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="3298928200">
+		<SoundBank Id="2436553819" Language="SFX" Hash="945756134">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Jump" DurationType="OneShot" DurationMin="0.201958" DurationMax="0.533042">
+					<IncludedMemoryFiles>
+						<File Id="243699287" Language="SFX">
+							<ShortName>Slime Jump Wouhou.wav</ShortName>
+							<Path>SFX\Slime Jump Wouhou_10C4C929.wem</Path>
+						</File>
+						<File Id="501737349" Language="SFX">
+							<ShortName>Slime jump.wav</ShortName>
+							<Path>SFX\Slime jump_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="444308101" Name="New" ObjectPath="\Events\Default Work Unit\New" DurationType="OneShot" DurationMin="76.26667" DurationMax="76.26667">
 					<IncludedMemoryFiles>
 						<File Id="360401687" Language="SFX">
