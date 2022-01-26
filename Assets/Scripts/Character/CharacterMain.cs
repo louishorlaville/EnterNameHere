@@ -114,9 +114,17 @@ public class CharacterMain : MonoBehaviour
         if (currentBounces < maxNbBounces && isCircle && canBounce)
         {
             currentBounces++;
-            bounciness = collisionBounceHeight / currentBounces;
-            collision.contacts[0].normal.Normalize();
-            rb.velocity = collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+            print(collision.gameObject.layer);
+            print(1 << 6);
+            if (collision.gameObject.layer == 6)
+            {
+                rb.velocity = collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                print("tesdt");
+            }
+            else
+            {
+                rb.velocity = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y) + collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+            }
         }
         else
         {
@@ -157,20 +165,6 @@ public class CharacterMain : MonoBehaviour
         currentBounces = 0;
         canBounce = true;
     }
-
-    //Casts a circleCast to detect which side is on the ground and launch player in surface normal direction
-    /*public void BounceAlongNormal()
-    {
-        RaycastHit2D circleCast = Physics2D.CircleCast(transform.position, 3f, new Vector2(0,0));
-        if (circleCast.collider != null)
-        {
-            Debug.DrawRay(new Vector3(circleCast.normal.x, circleCast.normal.y, 0), circleCast.collider.transform.TransformDirection(circleCast.normal) * 20, Color.red);
-
-            //convert normal direction to force
-            circleCast.normal.Normalize();
-            rb.AddForce(circleCast.normal * bounceHeight, ForceMode2D.Impulse);
-        }
-    }*/
 
     private void HandleSlimeTrail()
     {
