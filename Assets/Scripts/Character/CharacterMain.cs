@@ -114,12 +114,9 @@ public class CharacterMain : MonoBehaviour
         if (currentBounces < maxNbBounces && isCircle && canBounce)
         {
             currentBounces++;
-            print(collision.gameObject.layer);
-            print(1 << 6);
             if (collision.gameObject.layer == 6)
             {
                 rb.velocity = collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
-                print("tesdt");
             }
             else
             {
