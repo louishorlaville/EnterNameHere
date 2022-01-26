@@ -76,6 +76,7 @@ MonoBehaviour:
   bounceHeight: 2000
   rollSpeed: 5
   rollRotationSpeed: 85
+  collisionBounceHeight: 80
 --- !u!61 &7491413294415040233
 BoxCollider2D:
   m_ObjectHideFlags: 0
