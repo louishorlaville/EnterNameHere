@@ -20,11 +20,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< HEAD
       guid: 9fbb192aa1ad294582f232c6d4334168
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 9fbb192aa1ad294582f232c6d4334168
     GuidInternal: 
     m_lastTime: -8585583747994758871
+=======
+      guid: 4660b0c3a5aa29428ee5ad86a4507ddc
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: 4660b0c3a5aa29428ee5ad86a4507ddc
+    GuidInternal: 
+    m_lastTime: -8585587913658541711
+>>>>>>> parent of fc5977c (Wwise Test)
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -299,11 +307,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< HEAD
       guid: 44287d38cb4b1948ac2745d6b3c93e73
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 44287d38cb4b1948ac2745d6b3c93e73
     GuidInternal: 
     m_lastTime: -8585583747814652851
+=======
+      guid: 13ebbf6448986c4eb77860011cae1117
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: 13ebbf6448986c4eb77860011cae1117
+    GuidInternal: 
+    m_lastTime: -8585587913658631411
+>>>>>>> parent of fc5977c (Wwise Test)
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -319,6 +335,7 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+<<<<<<< HEAD
     - name: Motion Factory Bus
       guid: c6b9f92af16ee946b5f2e30c9e602c74
       id: 985987111
@@ -333,6 +350,8 @@ MonoBehaviour:
         ObjectType: 2
         guid: c6b9f92af16ee946b5f2e30c9e602c74
       Path: Master-Mixer Hierarchy\Default Work Unit\Motion Factory Bus
+=======
+>>>>>>> parent of fc5977c (Wwise Test)
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -341,11 +360,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< HEAD
       guid: 63aaf8ef28717a42bbdab49f917781f3
     ParentPath: SoundBanks\Default Work Unit
     guid: 63aaf8ef28717a42bbdab49f917781f3
     GuidInternal: 
     m_lastTime: -8585583744739391203
+=======
+      guid: d14a49665f8ebc4c97c38729fcd2c329
+    ParentPath: SoundBanks\Default Work Unit
+    guid: d14a49665f8ebc4c97c38729fcd2c329
+    GuidInternal: 
+    m_lastTime: -8585585365687235787
+>>>>>>> parent of fc5977c (Wwise Test)
     List:
     - name: Banquelvlterre
       guid: 24b8e8145fa6c3499f8dff3d9d37ee36
@@ -359,8 +386,13 @@ MonoBehaviour:
         guid: 63aaf8ef28717a42bbdab49f917781f3
       - ElementName: Banquelvlterre
         ObjectType: 7
+<<<<<<< HEAD
         guid: 24b8e8145fa6c3499f8dff3d9d37ee36
       Path: SoundBanks\Default Work Unit\Banquelvlterre
+=======
+        guid: eedc4cd7a39c274885ab2bafed6b1272
+      Path: SoundBanks\Default Work Unit\Banque_Eric
+>>>>>>> parent of fc5977c (Wwise Test)
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -369,6 +401,7 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< HEAD
       guid: 1763ca6569f59d43a31d32805dfe72dd
     ParentPath: Events\Default Work Unit
     guid: 1763ca6569f59d43a31d32805dfe72dd
@@ -378,12 +411,24 @@ MonoBehaviour:
     - name: New
       guid: 0602a3a8b54f3342a27b2d23619eb1f0
       id: 444308101
+=======
+      guid: 18e1ac5c96754d4db057026d6dab9198
+    ParentPath: Events\Default Work Unit
+    guid: 18e1ac5c96754d4db057026d6dab9198
+    GuidInternal: 
+    m_lastTime: -8585585344703910932
+    List:
+    - name: Sons_Test_banque_de_son
+      guid: f56d73d6a92e1949801c74b1b8aec853
+      id: 377609045
+>>>>>>> parent of fc5977c (Wwise Test)
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
+<<<<<<< HEAD
         guid: 1763ca6569f59d43a31d32805dfe72dd
       - ElementName: New
         ObjectType: 3
@@ -392,6 +437,16 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 76.26667
       minDuration: 76.26667
+=======
+        guid: 18e1ac5c96754d4db057026d6dab9198
+      - ElementName: Sons_Test_banque_de_son
+        ObjectType: 3
+        guid: f56d73d6a92e1949801c74b1b8aec853
+      Path: Events\Default Work Unit\Sons_Test_banque_de_son
+      maxAttenuation: 0
+      maxDuration: 1.776917
+      minDuration: 1.776917
+>>>>>>> parent of fc5977c (Wwise Test)
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -400,6 +455,7 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< HEAD
       guid: 85c3c52128456d4fbcedb17da4235f15
     ParentPath: Game Parameters\Default Work Unit
     guid: 85c3c52128456d4fbcedb17da4235f15
@@ -407,12 +463,23 @@ MonoBehaviour:
     m_lastTime: -8585583747994529495
     List: []
   - PhysicalPath: Game Parameters\Factory Motion.wwu
+=======
+      guid: 4aa3f34d8f167641877ecacebde5e5d7
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 4aa3f34d8f167641877ecacebde5e5d7
+    GuidInternal: 
+    m_lastTime: -8585587913658641735
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+>>>>>>> parent of fc5977c (Wwise Test)
     PathAndIcons:
     - ElementName: Game Parameters
       ObjectType: 5
       guid: 00000000000000000000000000000000
     - ElementName: Factory Motion
       ObjectType: 12
+<<<<<<< HEAD
       guid: 225213d7dbd1d042adc0930743567776
     ParentPath: Game Parameters\Factory Motion
     guid: 225213d7dbd1d042adc0930743567776
@@ -613,6 +680,13 @@ MonoBehaviour:
     guid: 98215f5e37bf2046bbb6d88d2ea80823
     GuidInternal: 
     m_lastTime: -8585583747994689065
+=======
+      guid: b15b473e065b034082aaa91f6b2e725b
+    ParentPath: States\Default Work Unit
+    guid: b15b473e065b034082aaa91f6b2e725b
+    GuidInternal: 
+    m_lastTime: -8585585365687225740
+>>>>>>> parent of fc5977c (Wwise Test)
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -622,12 +696,71 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< HEAD
       guid: bfa69c629801f344b66550cd2289e8ba
     ParentPath: Switches\Default Work Unit
     guid: bfa69c629801f344b66550cd2289e8ba
     GuidInternal: 
     m_lastTime: -8585583747994708633
     List: []
+=======
+      guid: b867bd8df5c45149af74dcaad4068b72
+    ParentPath: Switches\Default Work Unit
+    guid: b867bd8df5c45149af74dcaad4068b72
+    GuidInternal: 
+    m_lastTime: -8585585347078035300
+    List:
+    - name: Player_Form
+      guid: 1aa56fe85fb6c94b8563627369f9c4d1
+      id: 2582558235
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b867bd8df5c45149af74dcaad4068b72
+      - ElementName: Player_Form
+        ObjectType: 11
+        guid: 1aa56fe85fb6c94b8563627369f9c4d1
+      Path: Switches\Default Work Unit\Player_Form
+      values:
+      - name: Circle
+        guid: a8e1f0746e0aee46bd49d849c0299e62
+        id: 240409309
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b867bd8df5c45149af74dcaad4068b72
+        - ElementName: Player_Form
+          ObjectType: 11
+          guid: 1aa56fe85fb6c94b8563627369f9c4d1
+        - ElementName: Circle
+          ObjectType: 10
+          guid: a8e1f0746e0aee46bd49d849c0299e62
+      - name: Square
+        guid: 5beae1eb7914c349881e0b8fea4d440f
+        id: 1818333208
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b867bd8df5c45149af74dcaad4068b72
+        - ElementName: Player_Form
+          ObjectType: 11
+          guid: 1aa56fe85fb6c94b8563627369f9c4d1
+        - ElementName: Square
+          ObjectType: 10
+          guid: 5beae1eb7914c349881e0b8fea4d440f
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+>>>>>>> parent of fc5977c (Wwise Test)
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -636,6 +769,7 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< HEAD
       guid: 4ae124cb09d08343af70ce82de415245
     ParentPath: Triggers\Default Work Unit
     guid: 4ae124cb09d08343af70ce82de415245
@@ -644,6 +778,16 @@ MonoBehaviour:
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 0200000003000000
+=======
+      guid: 1610d982495465468ad250ccb0d8377d
+    ParentPath: Triggers\Default Work Unit
+    guid: 1610d982495465468ad250ccb0d8377d
+    GuidInternal: 
+    m_lastTime: -8585587913658551931
+    List: []
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000e0000000f00000010000000
+>>>>>>> parent of fc5977c (Wwise Test)
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
