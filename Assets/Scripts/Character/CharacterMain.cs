@@ -75,15 +75,13 @@ public class CharacterMain : MonoBehaviour
                 SwitchToCircle();
             }
         }
+        Debug.DrawRay((Vector2)transform.position, (Vector2)transform.position+ magnetDirection, Color.red);
 
         HandleSlimeTrail();
     }
 
     void FixedUpdate()
     {
-        //print(gravityValue);
-        Debug.DrawLine(transform.position, transform.position + (Vector3.down + Vector3.right) * 2.2f, Color.blue);
-
         float _movementH = Input.GetAxis("Horizontal");
 
         if(bEndLevel == false)
@@ -151,6 +149,7 @@ public class CharacterMain : MonoBehaviour
         {
             magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower; 
             magnetTouchContactPoint = true;
+            print("I COME HJERE FOR THIS OBJECT " + _collision.gameObject.name);
         }
 
         HandleSlimeLandEffect(_collision);
@@ -161,25 +160,34 @@ public class CharacterMain : MonoBehaviour
         //Debug.DrawLine((Vector2) transform.position, (Vector2) transform.position + collision.contacts[0].normal*-3, Color.red);
 
     }
-
-    private void OnTriggerStay2D(Collider2D _collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (_collision.tag.Equals("Negative"))
+        if (!isCircle)
+        {
+            magnetContactPoint = (Vector2) collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag.Equals("Negative"))
         {
 
             if (!isCircle)
             {
                 if (firstMagnetContact)
                 {
-                    rb.gravityScale = 0;
-                    magnetContactPoint = _collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position);
-                    magnetDirection = new Vector3(transform.position.x + magnetContactPoint.x, transform.position.y + magnetContactPoint.y, 0);
                     firstMagnetContact = false;
+                    rb.gravityScale = 0;
+                    magnetContactPoint = (Vector2)collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position);
                 }
                 if(!magnetTouchContactPoint)
                 {
-                    magnetDirection = new Vector3(transform.position.x + magnetContactPoint.x, transform.position.y + magnetContactPoint.y, 0);
+                    magnetDirection = new Vector2(magnetContactPoint.x - transform.position.x, magnetContactPoint.y - transform.position.y);
                 }
+                print((Vector2)collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position));
+                Debug.DrawRay(transform.position, collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position), Color.red);
+
 
                 isMagnet = true;
                 AttachPlayer(magnetDirection);
@@ -239,6 +247,11 @@ public class CharacterMain : MonoBehaviour
         renderer.sprite = sprites[0];
         currentBounces = 0;
         canBounce = true;
+
+        isMagnet = false;
+        firstMagnetContact = true;
+        magnetTouchContactPoint = false;
+        rb.gravityScale = gravityValue;
     }
 
     private void HandleSlimeTrail()
