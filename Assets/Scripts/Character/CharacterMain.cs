@@ -9,11 +9,12 @@ public class CharacterMain : MonoBehaviour
     BoxCollider2D boxCollider;
     SpriteRenderer renderer;
 
+    MenusScript menusScriptRef;
+
     bool canStick;
     bool toSquare;
     bool toCircle;
     bool firstMagnetContact = true;
-    bool canBounce = true;
     float zAxis;
     float bounciness;
     int maxNbBounces = 3;
@@ -22,9 +23,13 @@ public class CharacterMain : MonoBehaviour
     Vector2 magnetDirection;
     Vector3 magnetContactPoint;
 
+    public GameObject pauseMenu;
     public Sprite[] sprites;
     public bool isCircle = true;
     public bool isMagnet = false;
+    public bool bPauseMenu = false;
+    public bool bEndLevel = false;
+    public bool canBounce = true;
     public float movementSpeed;
     public float bounceHeight;
     public float rollSpeed;
@@ -48,8 +53,12 @@ public class CharacterMain : MonoBehaviour
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         renderer = gameObject.GetComponent<SpriteRenderer>();
 
+        menusScriptRef = pauseMenu.GetComponent<MenusScript>();
+
         slimeTrailEffect = GameObject.Find("SlimeTrailEffect").GetComponent<ParticleSystem>();
         slimeLandEffect = GameObject.Find("SlimeLandEffect").GetComponent<ParticleSystem>();
+
+        bEndLevel = false;
     }
 
     // Update is called once per frame
@@ -59,16 +68,35 @@ public class CharacterMain : MonoBehaviour
         toSquare = Input.GetKeyDown("space");
         toCircle = Input.GetKeyUp("space");
 
-        if (Input.GetKey("space"))
+        if(bPauseMenu == false)
         {
-            SwitchToSquare();
+            if(bEndLevel == false)
+            {
+                if(Input.GetKey("space"))
+                {
+                    SwitchToSquare();
+                }
+
+                if(Input.GetKeyUp("space"))
+                {
+                    //BounceAlongNormal();
+                    SwitchToCircle();
+                }
+            }
         }
 
-        if (Input.GetKeyUp("space"))
+        if(Input.GetKeyDown("escape"))
         {
-            //BounceAlongNormal();
-            SwitchToCircle();
-
+			if(bPauseMenu == false)
+			{
+                bPauseMenu = true;
+                menusScriptRef.OpenPauseMenu();
+			}
+			else
+			{
+                bPauseMenu = false;
+                menusScriptRef.ResumeGame();
+            }
         }
 
         HandleSlimeTrail();
@@ -76,54 +104,59 @@ public class CharacterMain : MonoBehaviour
 
     void FixedUpdate()
     {
-        print(gravityValue);
-        Debug.DrawLine(transform.position, transform.position + (Vector3.down + Vector3.right) * 2.2f, Color.blue);
-
         float _movementH = Input.GetAxis("Horizontal");
 
-        if ((_movementH >= 0.2 || _movementH <= -0.2) && !isMagnet)
+        if(bPauseMenu == false)
         {
-            if (isGrounded() && isCircle)
+            if(bEndLevel == false)
             {
-                rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
-            }
-            else
-            {
-                zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
-                transform.rotation = Quaternion.Euler(0, 0, -zAxis);
-
-                if (isGrounded())
+                if((_movementH >= 0.2 || _movementH <= -0.2) && !isMagnet)
                 {
-                    //Prevent momentum loss on single space bar press
-                    if (rb.velocity.x < -rollSpeed || rb.velocity.x > rollSpeed)
+                    if(isGrounded() && isCircle)
                     {
-                        rb.velocity = new Vector2(rb.velocity.x * 0.99f, rb.velocity.y);
+                        rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
                     }
                     else
                     {
-                        rb.velocity = new Vector2(rollSpeed * _movementH, rb.velocity.y);
+                        zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
+                        transform.rotation = Quaternion.Euler(0, 0, -zAxis);
+
+                        if(isGrounded())
+                        {
+                            //Prevent momentum loss on single space bar press
+                            if(rb.velocity.x < -rollSpeed || rb.velocity.x > rollSpeed)
+                            {
+                                rb.velocity = new Vector2(rb.velocity.x * 0.99f, rb.velocity.y);
+                            }
+                            else
+                            {
+                                rb.velocity = new Vector2(rollSpeed * _movementH, rb.velocity.y);
+                            }
+                        }
                     }
                 }
+                else
+                {
+                    rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
+                }
+
+                // Save velocity before fixed update for correct pre-collision velocity
+                // Used for effects placement
+                velocityBeforeFixedUpdate = rb.velocity;
             }
         }
-        else
-        {
-            rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
-        }
-
-        // Save velocity before fixed update for correct pre-collision velocity
-        // Used for effects placement
-        velocityBeforeFixedUpdate = rb.velocity;
     }
 
     private void OnCollisionEnter2D(Collision2D _collision)
     {
         if (currentBounces < maxNbBounces && isCircle && canBounce)
         {
+            Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
+            Vector2 normal = _collision.contacts[0].normal;
             currentBounces++;
-            if (_collision.gameObject.layer == 6)
+            if (_collision.collider.gameObject.layer==6)
             {
-                rb.velocity = _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
             }
             else
             {
@@ -132,7 +165,6 @@ public class CharacterMain : MonoBehaviour
         }
         else
         {
-            bounciness = collisionBounceHeight;
             currentBounces = 0;
             canBounce = false;
         }
@@ -152,25 +184,34 @@ public class CharacterMain : MonoBehaviour
         //Debug.DrawLine((Vector2) transform.position, (Vector2) transform.position + collision.contacts[0].normal*-3, Color.red);
 
     }
-
-    private void OnTriggerStay2D(Collider2D _collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (_collision.tag.Equals("Negative"))
+        if (!isCircle)
+        {
+            magnetContactPoint = (Vector2) collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag.Equals("Negative"))
         {
 
             if (!isCircle)
             {
                 if (firstMagnetContact)
                 {
-                    rb.gravityScale = 0;
-                    magnetContactPoint = _collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position);
-                    magnetDirection = new Vector3(transform.position.x + magnetContactPoint.x, transform.position.y + magnetContactPoint.y, 0);
                     firstMagnetContact = false;
+                    rb.gravityScale = 0;
+                    magnetContactPoint = (Vector2)collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position);
                 }
                 if(!magnetTouchContactPoint)
                 {
-                    magnetDirection = new Vector3(transform.position.x + magnetContactPoint.x, transform.position.y + magnetContactPoint.y, 0);
+                    magnetDirection = new Vector2(magnetContactPoint.x - transform.position.x, magnetContactPoint.y - transform.position.y);
                 }
+                print((Vector2)collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position));
+                Debug.DrawRay(transform.position, collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position), Color.red);
+
 
                 isMagnet = true;
                 AttachPlayer(magnetDirection);
@@ -213,7 +254,7 @@ public class CharacterMain : MonoBehaviour
         return _isGrounded;
     }
 
-    private void SwitchToSquare()
+    public void SwitchToSquare()
     {
         boxCollider.enabled=true;
         circleCollider.enabled = false;
@@ -230,6 +271,11 @@ public class CharacterMain : MonoBehaviour
         renderer.sprite = sprites[0];
         currentBounces = 0;
         canBounce = true;
+
+        isMagnet = false;
+        firstMagnetContact = true;
+        magnetTouchContactPoint = false;
+        rb.gravityScale = gravityValue;
     }
 
     private void HandleSlimeTrail()
@@ -293,5 +339,15 @@ public class CharacterMain : MonoBehaviour
                 }
             }
         }
+    }
+
+    public float getAngle(Vector2 normal, Vector2 incident)
+    {
+        float angle;
+        incident = -incident;
+        angle = Mathf.Acos((normal.x * incident.x + normal.y * incident.y) / Mathf.Sqrt((Mathf.Pow(normal.x, 2) + Mathf.Pow(normal.y, 2)) * (Mathf.Pow(incident.x, 2) + Mathf.Pow(incident.y, 2))));
+        angle = angle * 180 / Mathf.PI;
+
+        return angle;
     }
 }
