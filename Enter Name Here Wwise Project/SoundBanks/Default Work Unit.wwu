@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EFF8AA63-7128-427A-BBDA-B49F917781F3}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{EFF8AA63-7128-427A-BBDA-B49F917781F3}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Banquelvlterre" ID="{14E8B824-A65F-49C3-9F8D-FF3D9D37EE36}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Interputeur_Magnets_Positive" ID="{57608C62-A075-400C-BE54-E351686405A3}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cube_Impact_fall" ID="{EAC6DC13-71C5-418E-B578-72363C722019}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Interupteur_Tapis" ID="{94ECDBDE-36D4-428F-9184-579EF7A80436}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Death_Spike" ID="{365A91BF-C82E-42A7-B355-8B235BAD9B59}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cube_Magnet_to_surface" ID="{64CBFD2A-2F97-43BE-9DA8-BF14472E0F8E}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Laser_Beam" ID="{5B94523B-F785-4457-8FC2-9588F1FD6927}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Magnet_Behavior" ID="{73741315-4A01-4588-BE7A-C75B941D4863}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Death_Player_Laser" ID="{688C6918-82B8-4655-A5A8-BD7ED05853D2}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Pause" ID="{2949F650-6530-46AA-A78B-B7FE6BE7A062}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Slime_Mouvement" ID="{1C2C6FDD-628B-472E-9CF7-DFDFFA459091}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Slime_Jump" ID="{DAE08A0A-8762-484F-BCEF-3EACF3A134B9}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Interupteur_Magnet_Negative" ID="{3FAA258E-F772-48A1-8D2C-7BD8076FF50A}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cube_Stuck_To_Magnet" ID="{903C72A1-AE64-49C7-984D-AFCF77FF986E}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Map_Ending" ID="{4ECA9203-9BDF-4ABD-8C12-08296DCF7642}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Slime_Morphing" ID="{51D68816-EACF-4C52-B3F1-329E96DBC8AC}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cube_Dash_Down" ID="{88365B28-4250-4E1C-9DB8-F065A61DFD82}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Item_Destruction" ID="{3BF8CA5A-BD3C-4F8E-8B72-06F445A55D15}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
