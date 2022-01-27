@@ -6,7 +6,7 @@
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Switches\Default Work Unit.wwu" DateLow="1643233176" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\States\Default Work Unit.wwu" DateLow="1643235945" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1643237862" DateHigh="0"/>
-	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\SoundBanks\Default Work Unit.wwu" DateLow="1643237862" DateHigh="0"/>
+	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\SoundBanks\Default Work Unit.wwu" DateLow="1643238482" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Queries\Factory Queries.wwu" DateLow="1643233176" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Queries\Default Work Unit.wwu" DateLow="1643233176" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Presets\Factory Spatial Audio.wwu" DateLow="1643233176" DateHigh="0"/>
@@ -20,9 +20,9 @@
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1643233175" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Game Parameters\Factory Motion.wwu" DateLow="1643233175" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Game Parameters\Default Work Unit.wwu" DateLow="1643237862" DateHigh="0"/>
-	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Events\Default Work Unit.wwu" DateLow="1643238224" DateHigh="0"/>
-	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Enter Name Here Wwise Project.wproj" DateLow="1643233175" DateHigh="0"/>
-	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Enter Name Here Wwise Project.ericp.wsettings" DateLow="1643234471" DateHigh="0"/>
+	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Events\Default Work Unit.wwu" DateLow="1643242981" DateHigh="0"/>
+	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Enter Name Here Wwise Project.wproj" DateLow="1643238482" DateHigh="0"/>
+	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Enter Name Here Wwise Project.ericp.wsettings" DateLow="1643239004" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Effects\Factory Reflect.wwu" DateLow="1643233175" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Effects\Factory McDSP Effects.wwu" DateLow="1643233175" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Effects\Factory Mastering Suite.wwu" DateLow="1643233175" DateHigh="0"/>
@@ -45,5 +45,5 @@
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1642814729" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1642815312" DateHigh="0"/>
 	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Actor-Mixer Hierarchy\Factory Motion.wwu" DateLow="1643232104" DateHigh="0"/>
-	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1643237862" DateHigh="0"/>
+	<ValidationCacheItem File="D:\EnterNameHere\Enter Name Here Wwise Project\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1643242981" DateHigh="0"/>
 </ValidationCache>
