@@ -9,6 +9,8 @@ public class CharacterMain : MonoBehaviour
     BoxCollider2D boxCollider;
     SpriteRenderer renderer;
 
+    MenusScript menusScriptRef;
+
     bool canStick;
     bool toSquare;
     bool toCircle;
@@ -22,9 +24,11 @@ public class CharacterMain : MonoBehaviour
     Vector2 magnetDirection;
     Vector3 magnetContactPoint;
 
+    public GameObject pauseMenu;
     public Sprite[] sprites;
     public bool isCircle = true;
     public bool isMagnet = false;
+    public bool bPauseMenu = false;
     public bool bEndLevel = false;
     public float movementSpeed;
     public float bounceHeight;
@@ -49,6 +53,8 @@ public class CharacterMain : MonoBehaviour
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         renderer = gameObject.GetComponent<SpriteRenderer>();
 
+        menusScriptRef = pauseMenu.GetComponent<MenusScript>();
+
         slimeTrailEffect = GameObject.Find("SlimeTrailEffect").GetComponent<ParticleSystem>();
         slimeLandEffect = GameObject.Find("SlimeLandEffect").GetComponent<ParticleSystem>();
 
@@ -62,17 +68,34 @@ public class CharacterMain : MonoBehaviour
         toSquare = Input.GetKeyDown("space");
         toCircle = Input.GetKeyUp("space");
 
-        if(bEndLevel == false)
+        if(bPauseMenu == false)
         {
-            if(Input.GetKey("space"))
+            if(bEndLevel == false)
             {
-                SwitchToSquare();
-            }
+                if(Input.GetKey("space"))
+                {
+                    SwitchToSquare();
+                }
 
-            if(Input.GetKeyUp("space"))
-            {
-                //BounceAlongNormal();
-                SwitchToCircle();
+                if(Input.GetKeyUp("space"))
+                {
+                    //BounceAlongNormal();
+                    SwitchToCircle();
+                }
+            }
+        }
+
+        if(Input.GetKeyDown("escape"))
+        {
+			if(bPauseMenu == false)
+			{
+                bPauseMenu = true;
+                menusScriptRef.OpenPauseMenu();
+			}
+			else
+			{
+                bPauseMenu = false;
+                menusScriptRef.ResumeGame();
             }
         }
 
@@ -86,41 +109,44 @@ public class CharacterMain : MonoBehaviour
 
         float _movementH = Input.GetAxis("Horizontal");
 
-        if(bEndLevel == false)
+        if(bPauseMenu == false)
         {
-            if((_movementH >= 0.2 || _movementH <= -0.2) && !isMagnet)
+            if(bEndLevel == false)
             {
-                if(isGrounded() && isCircle)
+                if((_movementH >= 0.2 || _movementH <= -0.2) && !isMagnet)
                 {
-                    rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
-                }
-                else
-                {
-                    zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
-                    transform.rotation = Quaternion.Euler(0, 0, -zAxis);
-
-                    if(isGrounded())
+                    if(isGrounded() && isCircle)
                     {
-                        //Prevent momentum loss on single space bar press
-                        if(rb.velocity.x < -rollSpeed || rb.velocity.x > rollSpeed)
+                        rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
+                    }
+                    else
+                    {
+                        zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
+                        transform.rotation = Quaternion.Euler(0, 0, -zAxis);
+
+                        if(isGrounded())
                         {
-                            rb.velocity = new Vector2(rb.velocity.x * 0.99f, rb.velocity.y);
-                        }
-                        else
-                        {
-                            rb.velocity = new Vector2(rollSpeed * _movementH, rb.velocity.y);
+                            //Prevent momentum loss on single space bar press
+                            if(rb.velocity.x < -rollSpeed || rb.velocity.x > rollSpeed)
+                            {
+                                rb.velocity = new Vector2(rb.velocity.x * 0.99f, rb.velocity.y);
+                            }
+                            else
+                            {
+                                rb.velocity = new Vector2(rollSpeed * _movementH, rb.velocity.y);
+                            }
                         }
                     }
                 }
-            }
-            else
-            {
-                rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
-            }
+                else
+                {
+                    rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
+                }
 
-            // Save velocity before fixed update for correct pre-collision velocity
-            // Used for effects placement
-            velocityBeforeFixedUpdate = rb.velocity;
+                // Save velocity before fixed update for correct pre-collision velocity
+                // Used for effects placement
+                velocityBeforeFixedUpdate = rb.velocity;
+            }
         }
     }
 
