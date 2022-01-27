@@ -4,26 +4,40 @@ using UnityEngine;
 
 public class MushroomScript : MonoBehaviour
 {
-    float mushHeight;
     public float mushroomForce;
+    bool readyToBounce = false;
+    Vector2 BounceDirection;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        mushHeight = gameObject.GetComponent<Transform>().position.y + 4;
+        Debug.Log(gameObject.transform.up);
+        BounceDirection = new Vector2(gameObject.transform.up.x, gameObject.transform.up.y);
+        //BounceDirection.Normalize();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Player" && mushHeight < collision.gameObject.GetComponent<Transform>().position.y)
+        if(collision.gameObject.tag == "Player" && readyToBounce == true)
         {
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, mushroomForce));
+            Debug.Log("hmm");
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(BounceDirection * mushroomForce);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            readyToBounce = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            readyToBounce = false;
         }
     }
 }

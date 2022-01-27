@@ -9,6 +9,7 @@ public class ButtonScript : MonoBehaviour
     Transform button;
     Vector3 PressedPosition;
     Vector3 UnpressedPosition;
+    bool buttonIsPressed= false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +27,10 @@ public class ButtonScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-            if(collision.tag == "Player" && collision.GetComponent<CharacterMain>().isCircle == false)
+            if(collision.tag == "Player" && collision.GetComponent<CharacterMain>().isCircle == false && buttonIsPressed == false)
         {
             StartCoroutine("PressButton");
+            buttonIsPressed = true;
         }
         
     }
