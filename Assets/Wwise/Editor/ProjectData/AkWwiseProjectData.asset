@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 9fbb192aa1ad294582f232c6d4334168
     GuidInternal: 
-    m_lastTime: -8585583737093175918
+    m_lastTime: -8585583635339853434
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8585583737093166167
+    m_lastTime: -8585583635339853434
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 44287d38cb4b1948ac2745d6b3c93e73
     GuidInternal: 
-    m_lastTime: -8585583737099062610
+    m_lastTime: -8585583635366652528
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 63aaf8ef28717a42bbdab49f917781f3
     GuidInternal: 
-    m_lastTime: -8585583684034078405
+    m_lastTime: -8585583635339903305
     List:
     - name: Banquelvlterre
       guid: 24b8e8145fa6c3499f8dff3d9d37ee36
@@ -373,7 +373,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1763ca6569f59d43a31d32805dfe72dd
     GuidInternal: 
-    m_lastTime: -8585583639038306830
+    m_lastTime: -8585583635368452174
     List:
     - name: Cube_Dash_Down
       guid: 285b368850421c4e9db8f065a61dfd82
@@ -390,8 +390,8 @@ MonoBehaviour:
         guid: 285b368850421c4e9db8f065a61dfd82
       Path: Events\Default Work Unit\Cube_Dash_Down
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.987271
+      minDuration: 0.987271
     - name: Cube_Ice_Slide
       guid: d7f096d8528ea14eac83eba76d7c7e65
       id: 979192992
@@ -424,8 +424,8 @@ MonoBehaviour:
         guid: 13dcc6eac5718e41b57872363c722019
       Path: Events\Default Work Unit\Cube_Impact_fall
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.381875
+      minDuration: 0.381875
     - name: Cube_Magnet_to_surface
       guid: 2afdcb64972fbe439da8bf14472e0f8e
       id: 391978585
@@ -441,8 +441,8 @@ MonoBehaviour:
         guid: 2afdcb64972fbe439da8bf14472e0f8e
       Path: Events\Default Work Unit\Cube_Magnet_to_surface
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5495
+      minDuration: 0.5495
     - name: Cube_Stuck_To_Magnet
       guid: a1723c9064aec749984dafcf77ff986e
       id: 591287882
@@ -458,8 +458,8 @@ MonoBehaviour:
         guid: a1723c9064aec749984dafcf77ff986e
       Path: Events\Default Work Unit\Cube_Stuck_To_Magnet
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5495
+      minDuration: 0.5495
     - name: Death_Player_Laser
       guid: 18698c68b8825546a5a8bd7ed05853d2
       id: 1090492715
@@ -475,8 +475,8 @@ MonoBehaviour:
         guid: 18698c68b8825546a5a8bd7ed05853d2
       Path: Events\Default Work Unit\Death_Player_Laser
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.539062
+      minDuration: 2.539062
     - name: Death_Spike
       guid: bf915a362ec8a742b3558b235bad9b59
       id: 614286398
@@ -492,8 +492,8 @@ MonoBehaviour:
         guid: bf915a362ec8a742b3558b235bad9b59
       Path: Events\Default Work Unit\Death_Spike
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.762833
+      minDuration: 0.762833
     - name: Interputeur_Magnets_Positive
       guid: 628c605775a00c40be54e351686405a3
       id: 3515294194
@@ -526,8 +526,8 @@ MonoBehaviour:
         guid: 8e25aa3f72f7a1488d2c7bd8076ff50a
       Path: Events\Default Work Unit\Interupteur_Magnet_Negative
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 28.402374
+      minDuration: 28.402374
     - name: Interupteur_Tapis
       guid: dedbec94d4368f429184579ef7a80436
       id: 2709760796
@@ -543,8 +543,8 @@ MonoBehaviour:
         guid: dedbec94d4368f429184579ef7a80436
       Path: Events\Default Work Unit\Interupteur_Tapis
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.625
+      minDuration: 0.625
     - name: Item_Destruction
       guid: 5acaf83b3cbd8e4f8b7206f445a55d15
       id: 3307081041
@@ -560,8 +560,8 @@ MonoBehaviour:
         guid: 5acaf83b3cbd8e4f8b7206f445a55d15
       Path: Events\Default Work Unit\Item_Destruction
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.805854
+      minDuration: 0.805854
     - name: Laser_Beam
       guid: 3b52945b85f757448fc29588f1fd6927
       id: 733612088
@@ -577,8 +577,8 @@ MonoBehaviour:
         guid: 3b52945b85f757448fc29588f1fd6927
       Path: Events\Default Work Unit\Laser_Beam
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 5.034042
+      minDuration: 5.034042
     - name: Magnet_Behavior
       guid: 15137473014a8845be7ac75b941d4863
       id: 2155389612
@@ -594,8 +594,8 @@ MonoBehaviour:
         guid: 15137473014a8845be7ac75b941d4863
       Path: Events\Default Work Unit\Magnet_Behavior
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.125
+      minDuration: 1.125
     - name: Map_Ending
       guid: 0392ca4edf9bbd4a8c1208296dcf7642
       id: 3793843481
@@ -611,8 +611,8 @@ MonoBehaviour:
         guid: 0392ca4edf9bbd4a8c1208296dcf7642
       Path: Events\Default Work Unit\Map_Ending
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Slime_Jump
       guid: 0a8ae0da62874f48bcef3eacf3a134b9
       id: 2006797914
@@ -628,8 +628,8 @@ MonoBehaviour:
         guid: 0a8ae0da62874f48bcef3eacf3a134b9
       Path: Events\Default Work Unit\Slime_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.533042
+      minDuration: 0.201958
     - name: Slime_Morphing
       guid: 1688d651cfea524cb3f1329e96dbc8ac
       id: 4281424168
@@ -645,8 +645,8 @@ MonoBehaviour:
         guid: 1688d651cfea524cb3f1329e96dbc8ac
       Path: Events\Default Work Unit\Slime_Morphing
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.776917
+      minDuration: 0.414542
     - name: Slime_Mouvement
       guid: dd6f2c1c8b622e479cf7dfdffa459091
       id: 1418889888
@@ -713,8 +713,8 @@ MonoBehaviour:
         guid: 50f649293065aa46a78bb7fe6be7a062
       Path: Events\Default Work Unit\UI_Pause
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.864
+      minDuration: 0.864
     - name: UI_Select
       guid: 73cc94ad7135a543ab7fa9834d234300
       id: 2774129122
@@ -761,7 +761,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 85c3c52128456d4fbcedb17da4235f15
     GuidInternal: 
-    m_lastTime: -8585583690230558355
+    m_lastTime: -8585583635368452174
     List:
     - name: Slime_Speed
       guid: e83b461fc294754e949dbff537117016
@@ -788,7 +788,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Motion
     guid: 225213d7dbd1d042adc0930743567776
     GuidInternal: 
-    m_lastTime: -8585583737101417128
+    m_lastTime: -8585583635368442026
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -829,7 +829,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory SoundSeed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8585583737101395441
+    m_lastTime: -8585583635368442026
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -983,7 +983,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 98215f5e37bf2046bbb6d88d2ea80823
     GuidInternal: 
-    m_lastTime: -8585583709403350139
+    m_lastTime: -8585583635339883354
     List:
     - name: Magnet_Polarity
       guid: 70bbce7a0575f744bf2780132c0b4740
@@ -1129,7 +1129,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: bfa69c629801f344b66550cd2289e8ba
     GuidInternal: 
-    m_lastTime: -8585583737093186106
+    m_lastTime: -8585583635339883354
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1143,11 +1143,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 4ae124cb09d08343af70ce82de415245
     GuidInternal: 
-    m_lastTime: -8585583737093186106
+    m_lastTime: -8585583635339873386
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000030000000600000043000000440000005e0000005f0000001c0100001d0100001e01000021010000
-  AutoSyncSelection: 1
+  ExpandedWaapiItemIds: 
+  AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
   CurrentPluginConfig: 
