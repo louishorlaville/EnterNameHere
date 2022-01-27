@@ -129,11 +129,11 @@ public class CharacterMain : MonoBehaviour
         if (currentBounces < maxNbBounces && isCircle && canBounce)
         {
             Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
+            Vector2 normal = _collision.contacts[0].normal;
             currentBounces++;
-
-            if (_collision.contacts[0].normal.normalized == -_from.normalized)
+            if (_collision.collider.gameObject.layer==6)
             {
-                rb.velocity = _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
             }
             else
             {
@@ -302,5 +302,15 @@ public class CharacterMain : MonoBehaviour
                 }
             }
         }
+    }
+
+    public float getAngle(Vector2 normal, Vector2 incident)
+    {
+        float angle;
+        incident = -incident;
+        angle = Mathf.Acos((normal.x * incident.x + normal.y * incident.y) / Mathf.Sqrt((Mathf.Pow(normal.x, 2) + Mathf.Pow(normal.y, 2)) * (Mathf.Pow(incident.x, 2) + Mathf.Pow(incident.y, 2))));
+        angle = angle * 180 / Mathf.PI;
+
+        return angle;
     }
 }
