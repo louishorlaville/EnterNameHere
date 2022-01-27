@@ -14,6 +14,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3411360579	Interupteur_Magnet_Negative			\Default Work Unit\Interupteur_Magnet_Negative	
 	3515294194	Interputeur_Magnets_Positive			\Default Work Unit\Interputeur_Magnets_Positive	
 	3739303937	Cube_Impact_fall			\Default Work Unit\Cube_Impact_fall	
+	3793843481	Map_Ending			\Default Work Unit\Map_Ending	
 	4281424168	Slime_Morphing			\Default Work Unit\Slime_Morphing	
 
 State Group	ID	Name			Wwise Object Path	Notes

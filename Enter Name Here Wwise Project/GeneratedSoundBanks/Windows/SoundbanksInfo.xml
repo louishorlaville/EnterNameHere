@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="3209438100">
+		<SoundBank Id="2436553819" Language="SFX" Hash="3735320441">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
@@ -142,6 +142,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3793843481" Name="Map_Ending" ObjectPath="\Events\Default Work Unit\Map_Ending" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2006797914" Name="Slime_Jump" ObjectPath="\Events\Default Work Unit\Slime_Jump" DurationType="OneShot" DurationMin="0.201958" DurationMax="0.533042">
 					<IncludedMemoryFiles>
 						<File Id="243699287" Language="SFX">
