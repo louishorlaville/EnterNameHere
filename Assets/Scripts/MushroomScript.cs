@@ -10,7 +10,6 @@ public class MushroomScript : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(gameObject.transform.up);
         BounceDirection = new Vector2(gameObject.transform.up.x, gameObject.transform.up.y);
         //BounceDirection.Normalize();
     }
@@ -20,7 +19,6 @@ public class MushroomScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" && readyToBounce == true)
         {
-            Debug.Log("hmm");
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(BounceDirection * mushroomForce);
         }
     }
