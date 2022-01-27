@@ -13,7 +13,6 @@ public class CharacterMain : MonoBehaviour
     bool toSquare;
     bool toCircle;
     bool firstMagnetContact = true;
-    bool canBounce = true;
     float zAxis;
     float bounciness;
     int maxNbBounces = 3;
@@ -26,6 +25,7 @@ public class CharacterMain : MonoBehaviour
     public bool isCircle = true;
     public bool isMagnet = false;
     public bool bEndLevel = false;
+    public bool canBounce = true;
     public float movementSpeed;
     public float bounceHeight;
     public float rollSpeed;
@@ -83,7 +83,6 @@ public class CharacterMain : MonoBehaviour
     void FixedUpdate()
     {
         float _movementH = Input.GetAxis("Horizontal");
-
         if(bEndLevel == false)
         {
             if((_movementH >= 0.2 || _movementH <= -0.2) && !isMagnet)
@@ -149,7 +148,6 @@ public class CharacterMain : MonoBehaviour
         {
             magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower; 
             magnetTouchContactPoint = true;
-            print("I COME HJERE FOR THIS OBJECT " + _collision.gameObject.name);
         }
 
         HandleSlimeLandEffect(_collision);
