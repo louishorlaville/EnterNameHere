@@ -78,7 +78,7 @@ MonoBehaviour:
   bounceHeight: 2000
   rollSpeed: 5
   rollRotationSpeed: 85
-  collisionBounceHeight: 80
+  collisionBounceHeight: 130
   magnetPower: 1000
 --- !u!61 &7491413294415040233
 BoxCollider2D:

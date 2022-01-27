@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3032796929097178818}
   - component: {fileID: 3032796929097178819}
   - component: {fileID: 3032796929097178844}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Section
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 3032796929504187697}
   - component: {fileID: 3032796929504187698}
   - component: {fileID: 3032796929504187699}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Section (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 3032796929675576108}
   - component: {fileID: 3032796929675576109}
   - component: {fileID: 3032796929675576110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Section (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 3032796929808826805}
   - component: {fileID: 3032796929808826806}
   - component: {fileID: 3032796929808826807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Section (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 3032796930445184291}
   - component: {fileID: 3032796930445184316}
   - component: {fileID: 3032796930445184289}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BreakableWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 3032796930663200665}
   - component: {fileID: 3032796930663200666}
   - component: {fileID: 3032796930663200667}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Section (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 3032796930798402279}
   - component: {fileID: 3032796930798402272}
   - component: {fileID: 3032796930798402273}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Section (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

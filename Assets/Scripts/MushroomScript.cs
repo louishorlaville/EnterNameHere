@@ -20,6 +20,8 @@ public class MushroomScript : MonoBehaviour
         if(collision.gameObject.tag == "Player" && readyToBounce == true)
         {
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(BounceDirection * mushroomForce);
+            collision.gameObject.GetComponent<CharacterMain>().canBounce = true;
+
         }
     }
 
