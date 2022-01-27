@@ -81,7 +81,7 @@ public class CharacterMain : MonoBehaviour
 
     void FixedUpdate()
     {
-        print(gravityValue);
+        //print(gravityValue);
         Debug.DrawLine(transform.position, transform.position + (Vector3.down + Vector3.right) * 2.2f, Color.blue);
 
         float _movementH = Input.GetAxis("Horizontal");
