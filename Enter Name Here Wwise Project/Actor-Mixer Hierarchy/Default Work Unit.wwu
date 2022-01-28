@@ -1068,6 +1068,98 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="Tapis_Roulant" ID="{59F7CAE6-91D1-4200-934B-841319D8DC41}" ShortID="805455873">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Tapis_Roulant" ID="{510DD614-1F5A-4F0C-825F-B084BE6A2DD0}">
+							<Language>SFX</Language>
+							<AudioFile>Tapis_Roulant.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="179167550"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Tapis_Roulant" ID="{510DD614-1F5A-4F0C-825F-B084BE6A2DD0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Pivot Platform" ID="{15FF737B-C79F-40FC-93B8-75110A241254}" ShortID="173292588">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Pivot Platform" ID="{DDE989DA-EBC4-48A4-9FA3-0E5EEFABBBB5}">
+							<Language>SFX</Language>
+							<AudioFile>Pivot Platform.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="755296600"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Pivot Platform" ID="{DDE989DA-EBC4-48A4-9FA3-0E5EEFABBBB5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Rope_Swing" ID="{9B208D56-E68A-43FD-A38D-D43D89BCD15A}" ShortID="86784234">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Rope_Swing" ID="{07C64A96-9052-4AAF-B3E3-5CC6CF3F68DB}">
+							<Language>SFX</Language>
+							<AudioFile>Rope_Swing.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="784512412"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Rope_Swing" ID="{07C64A96-9052-4AAF-B3E3-5CC6CF3F68DB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Rotating_Block" ID="{6002309B-C3C7-49A1-9F10-46C6975A2917}" ShortID="534566678">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Rotating_Block" ID="{A3AA29DB-47EC-4028-BDA3-205257C3A8C9}">
+							<Language>SFX</Language>
+							<AudioFile>Rotating_Block.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="22131772"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Rotating_Block" ID="{A3AA29DB-47EC-4028-BDA3-205257C3A8C9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
