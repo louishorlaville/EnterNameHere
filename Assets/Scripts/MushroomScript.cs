@@ -8,6 +8,8 @@ public class MushroomScript : MonoBehaviour
     bool readyToBounce = false;
     Vector2 BounceDirection;
 
+    public Animator anim;
+
     private void Start()
     {
         BounceDirection = new Vector2(gameObject.transform.up.x, gameObject.transform.up.y);
@@ -30,6 +32,7 @@ public class MushroomScript : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             readyToBounce = true;
+            anim.SetTrigger("MushBounce");
         }
     }
 
