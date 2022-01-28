@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{DBEFC6DB-A995-4C75-A3BC-1C79E437816E}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Dropbox\Mac\Desktop\GameJam\Music\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Dropbox\Mac\Desktop\GameJam\Sound\"/>
 				<Property Name="Event Action List\{365A91BF-C82E-42A7-B355-8B235BAD9B59}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{94ECDBDE-36D4-428F-9184-579EF7A80436}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
