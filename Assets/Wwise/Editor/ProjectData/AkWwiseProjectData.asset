@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 63aaf8ef28717a42bbdab49f917781f3
     GuidInternal: 
-    m_lastTime: -8585582051238850376
+    m_lastTime: -8585581968196546732
     List:
     - name: Banquelvlterre
       guid: 24b8e8145fa6c3499f8dff3d9d37ee36
@@ -373,7 +373,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1763ca6569f59d43a31d32805dfe72dd
     GuidInternal: 
-    m_lastTime: -8585582006701260272
+    m_lastTime: -8585581968196317335
     List:
     - name: Cube_Dash_Down
       guid: 285b368850421c4e9db8f065a61dfd82
@@ -477,6 +477,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.5495
       minDuration: 0.5495
+    - name: Cube_to_slime
+      guid: 1607b36452df684f8329de5a0a2c286c
+      id: 3425940391
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Cube_to_slime
+        ObjectType: 3
+        guid: 1607b36452df684f8329de5a0a2c286c
+      Path: Events\Default Work Unit\Cube_to_slime
+      maxAttenuation: 0
+      maxDuration: 1.776917
+      minDuration: 1.776917
     - name: Death_Player_Laser
       guid: 18698c68b8825546a5a8bd7ed05853d2
       id: 1090492715
@@ -664,23 +681,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.533042
       minDuration: 0.201958
-    - name: Slime_Morphing
-      guid: 1688d651cfea524cb3f1329e96dbc8ac
-      id: 4281424168
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1763ca6569f59d43a31d32805dfe72dd
-      - ElementName: Slime_Morphing
-        ObjectType: 3
-        guid: 1688d651cfea524cb3f1329e96dbc8ac
-      Path: Events\Default Work Unit\Slime_Morphing
-      maxAttenuation: 0
-      maxDuration: 1.776917
-      minDuration: 0.414542
     - name: Slime_Mouvement
       guid: dd6f2c1c8b622e479cf7dfdffa459091
       id: 1418889888
@@ -698,6 +698,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4.5
       minDuration: 4.5
+    - name: Slime_to_cube
+      guid: c61d32db2b26ec44800dec617c3c2e51
+      id: 3678733195
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Slime_to_cube
+        ObjectType: 3
+        guid: c61d32db2b26ec44800dec617c3c2e51
+      Path: Events\Default Work Unit\Slime_to_cube
+      maxAttenuation: 0
+      maxDuration: 39.5
+      minDuration: 0.414542
     - name: UI_Enter_Menu
       guid: 1756e3d24ccd274eb03b17f0c0ba0af8
       id: 2190568750
@@ -812,7 +829,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 85c3c52128456d4fbcedb17da4235f15
     GuidInternal: 
-    m_lastTime: -8585582103453735944
+    m_lastTime: -8585581987640609214
     List:
     - name: SlimeSpeed
       guid: e83b461fc294754e949dbff537117016
@@ -1247,7 +1264,7 @@ MonoBehaviour:
     m_lastTime: -8585583608514646712
     List: []
   ExpandedFileSystemItemIds: 0200000003000000
-  ExpandedWaapiItemIds: 02000000030000000700000008000000
+  ExpandedWaapiItemIds: 0200000003000000060000000700000008000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

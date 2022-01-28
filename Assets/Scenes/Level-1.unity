@@ -12319,6 +12319,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d45dbaafc129ce643b9d8303ff91d967, type: 2}
     - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: CubetoSlime.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b2c205871426cb4bba21f6403527a29, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: SlimetoCube.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 84eeaeb082093ce41a8caccdeb87f2e7, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
       propertyPath: CubeMovement.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: c59986e1a164d424f9666d5f309bc3d1, type: 2}

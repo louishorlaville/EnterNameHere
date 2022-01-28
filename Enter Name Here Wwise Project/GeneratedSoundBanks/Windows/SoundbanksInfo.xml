@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1729473507">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1315034536">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="2537931977">
+		<SoundBank Id="2436553819" Language="SFX" Hash="520160282">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
@@ -58,6 +58,14 @@
 						<File Id="642257278" Language="SFX">
 							<ShortName>Cube Magnet to surface.wav</ShortName>
 							<Path>SFX\Cube Magnet to surface_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3425940391" Name="Cube_to_slime" ObjectPath="\Events\Default Work Unit\Cube_to_slime" DurationType="OneShot" DurationMin="1.776917" DurationMax="1.776917">
+					<IncludedMemoryFiles>
+						<File Id="972262073" Language="SFX">
+							<ShortName>Cube to slime.wav</ShortName>
+							<Path>SFX\Cube to slime_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -191,36 +199,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4281424168" Name="Slime_Morphing" ObjectPath="\Events\Default Work Unit\Slime_Morphing" DurationType="OneShot" DurationMin="0.414542" DurationMax="1.776917">
-					<IncludedMemoryFiles>
-						<File Id="902469190" Language="SFX">
-							<ShortName>Slime to cube.wav</ShortName>
-							<Path>SFX\Slime to cube_10C4C929.wem</Path>
-						</File>
-						<File Id="972262073" Language="SFX">
-							<ShortName>Cube to slime.wav</ShortName>
-							<Path>SFX\Cube to slime_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{AF32E7F6-5B76-40B5-96BC-97F92D6BDC0B}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{4FFB706B-79D3-4C5C-BBE4-32968944A8AE}">
-							<Media>
-								<File Id="902469190"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{AF32E7F6-5B76-40B5-96BC-97F92D6BDC0B}">
-							<Media>
-								<File Id="972262073"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
-				</Event>
 				<Event Id="1418889888" Name="Slime_Mouvement" ObjectPath="\Events\Default Work Unit\Slime_Mouvement" DurationType="OneShot" DurationMin="4.5" DurationMax="4.5">
 					<IncludedMemoryFiles>
 						<File Id="458765081" Language="SFX">
 							<ShortName>Slime_Move.wav</ShortName>
 							<Path>SFX\Slime_Move_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3678733195" Name="Slime_to_cube" ObjectPath="\Events\Default Work Unit\Slime_to_cube" DurationType="OneShot" DurationMin="0.414542" DurationMax="39.5">
+					<IncludedMemoryFiles>
+						<File Id="902469190" Language="SFX">
+							<ShortName>Slime to cube.wav</ShortName>
+							<Path>SFX\Slime to cube_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -253,14 +244,6 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
-			<SwitchGroups>
-				<SwitchGroup Id="1999760368" Name="Slime_Form" ObjectPath="\Switches\Default Work Unit\Slime_Form" GUID="{004473F3-0B5D-4859-9CF3-F0807D80B4AA}">
-					<Switches>
-						<Switch Id="3803999823" Name="Slime" ObjectPath="\Switches\Default Work Unit\Slime_Form\Slime" GUID="{AF32E7F6-5B76-40B5-96BC-97F92D6BDC0B}"/>
-						<Switch Id="4052031814" Name="Cube" ObjectPath="\Switches\Default Work Unit\Slime_Form\Cube" GUID="{4FFB706B-79D3-4C5C-BBE4-32968944A8AE}"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

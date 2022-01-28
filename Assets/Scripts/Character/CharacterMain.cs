@@ -41,6 +41,8 @@ public class CharacterMain : MonoBehaviour
     public AK.Wwise.Event CubeMovement;
     public AK.Wwise.Event SlimeJump;
     public AK.Wwise.RTPC SpeedSlime;
+    public AK.Wwise.Event SlimetoCube;
+    public AK.Wwise.Event CubetoSlime;
 
     //Wwise
     private bool SlimeMovementIsPlaying = false;
@@ -94,12 +96,14 @@ public class CharacterMain : MonoBehaviour
                 if(Input.GetKey("space"))
                 {
                     SwitchToSquare();
+                    SlimetoCube.Post(gameObject);
                 }
 
                 if(Input.GetKeyUp("space"))
                 {
                     //BounceAlongNormal();
                     SwitchToCircle();
+                    CubetoSlime.Post(gameObject);
                 }
             }
         }

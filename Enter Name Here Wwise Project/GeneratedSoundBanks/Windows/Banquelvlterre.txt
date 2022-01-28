@@ -15,17 +15,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	2792155208	UI_Pause			\Default Work Unit\UI_Pause	
 	3307081041	Item_Destruction			\Default Work Unit\Item_Destruction	
 	3411360579	Interupteur_Magnet_Negative			\Default Work Unit\Interupteur_Magnet_Negative	
+	3425940391	Cube_to_slime			\Default Work Unit\Cube_to_slime	
 	3515294194	Interputeur_Magnets_Positive			\Default Work Unit\Interputeur_Magnets_Positive	
+	3678733195	Slime_to_cube			\Default Work Unit\Slime_to_cube	
 	3739303937	Cube_Impact_fall			\Default Work Unit\Cube_Impact_fall	
 	3793843481	Map_Ending			\Default Work Unit\Map_Ending	
-	4281424168	Slime_Morphing			\Default Work Unit\Slime_Morphing	
-
-Switch Group	ID	Name			Wwise Object Path	Notes
-	1999760368	Slime_Form			\Default Work Unit\Slime_Form	
-
-Switch	ID	Name	Switch Group			Notes
-	3803999823	Slime	Slime_Form			
-	4052031814	Cube	Slime_Form			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	4033083518	Magnet_Polarity			\Default Work Unit\Magnet_Polarity	
@@ -37,6 +31,9 @@ State	ID	Name	State Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1467731768	SlimeSpeed			\Default Work Unit\SlimeSpeed	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	714768591	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime To Cube\VOid\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	25341359	Interupteur	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Interupteur_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Interupteur		120064
@@ -58,10 +55,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	828571607	Magnet  positive	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Magnet  positive_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Magnet  positive		5529648
 	875125978	Level-Intro_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level-Intro_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level-Intro_115bpm4-4_L4M-P0\Level-Intro_115bpm4-4_L4M-P0		2000788
 	886583982	Level1-Melody3_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody3_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody3_115bpm4-4_L4M-P0\Level1-Melody3_115bpm4-4_L4M-P0		2999432
-	902469190	Slime to cube	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime to cube_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime_Morphing\Slime to cube		79656
+	902469190	Slime to cube	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime to cube_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime To Cube\Slime to cube		79656
 	945211549	Wooden Box Destruction	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Wooden Box Destruction_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Wooden Box Destruction		154788
 	965247569	Cube Woosh fall	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Woosh fall_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube Woosh fall		189620
-	972262073	Cube to slime	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube to slime_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime_Morphing\Cube to slime		341232
+	972262073	Cube to slime	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube to slime_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube to slime		341232
 	1003139761	Cube Impact fall	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Impact fall_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube Impact fall		73384
 	1023647580	Magnet  negative	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Magnet  negative_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Magnet  negative		5453320
 	1067118725	Death By Laser Beam	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Death By Laser Beam_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Death By Laser Beam		487564

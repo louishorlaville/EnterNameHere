@@ -48,17 +48,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Slime_Morphing" ID="{51D68816-EACF-4C52-B3F1-329E96DBC8AC}">
-					<ChildrenList>
-						<Action Name="" ID="{254036A1-C669-49E0-A79B-CAC00E8ECA48}" ShortID="658359247">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Slime_Morphing" ID="{6DC0B0E9-EE51-4B2A-9B7E-E800C7F0B2A8}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Cube_Impact_fall" ID="{EAC6DC13-71C5-418E-B578-72363C722019}">
 					<ChildrenList>
 						<Action Name="" ID="{FA237BF4-0687-4DC4-B7F4-58719F317344}" ShortID="707720440">
@@ -322,6 +311,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Victory_115bpm4-4_L2M-P0" ID="{9850A920-3CF5-4A13-A55C-593ADA02B977}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Slime_to_cube" ID="{DB321DC6-262B-44EC-800D-EC617C3C2E51}">
+					<ChildrenList>
+						<Action Name="" ID="{B57862D6-2A48-4CCB-8299-1A40B2EC327E}" ShortID="159800264">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Slime To Cube" ID="{77263FB2-EB76-4316-8470-FB1B639713C3}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cube_to_slime" ID="{64B30716-DF52-4F68-8329-DE5A0A2C286C}">
+					<ChildrenList>
+						<Action Name="" ID="{18DF34FC-5EE4-49AC-8F12-4099D698C7E2}" ShortID="136850843">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cube to slime" ID="{548857B3-09B1-4ECB-B62E-26A3A7FD164F}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
