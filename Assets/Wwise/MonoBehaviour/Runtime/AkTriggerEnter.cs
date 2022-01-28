@@ -12,6 +12,7 @@ public class AkTriggerEnter : AkTriggerBase
 	{
 		if (triggerDelegate != null && (triggerObject == null || triggerObject == in_other.gameObject))
 			triggerDelegate(in_other.gameObject);
+		
 	}
 }
 

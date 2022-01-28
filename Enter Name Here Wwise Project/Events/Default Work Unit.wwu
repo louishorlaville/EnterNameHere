@@ -309,6 +309,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Victory_Music" ID="{D7E0AFF0-8C4E-4DED-8CE3-DB086AE2EDCC}">
+					<ChildrenList>
+						<Action Name="" ID="{2561AE07-E012-49DE-9D28-EC60B02FF993}" ShortID="34434654">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{F328DE67-FD50-46FC-82F9-CDDC07CE0E07}" ShortID="874892079">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory_115bpm4-4_L2M-P0" ID="{9850A920-3CF5-4A13-A55C-593ADA02B977}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

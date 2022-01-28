@@ -22,7 +22,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>24</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -88,7 +88,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>84</Value>
+												<Value>90</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

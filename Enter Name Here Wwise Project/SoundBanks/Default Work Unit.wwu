@@ -22,6 +22,7 @@
 						<ObjectRef Name="Cube_Stuck_To_Magnet" ID="{903C72A1-AE64-49C7-984D-AFCF77FF986E}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Map_Ending" ID="{4ECA9203-9BDF-4ABD-8C12-08296DCF7642}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Slime_Morphing" ID="{51D68816-EACF-4C52-B3F1-329E96DBC8AC}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Victory_Music" ID="{D7E0AFF0-8C4E-4DED-8CE3-DB086AE2EDCC}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Cube_Dash_Down" ID="{88365B28-4250-4E1C-9DB8-F065A61DFD82}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Item_Destruction" ID="{3BF8CA5A-BD3C-4F8E-8B72-06F445A55D15}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
