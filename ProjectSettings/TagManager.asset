@@ -42,3 +42,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1839976171
+    locked: 0
+  - name: GameArea_Back
+    uniqueID: 1502482183
+    locked: 0
+  - name: GameArea
+    uniqueID: 1940080513
+    locked: 0
+  - name: GameArea_Front
+    uniqueID: 4040015943
+    locked: 0
+  - name: Foreground
+    uniqueID: 433953449
+    locked: 0
