@@ -64,7 +64,7 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Slime_Speed" ID="{1F463BE8-94C2-4E75-949D-BFF537117016}"/>
+							<GameParameterRef Name="SlimeSpeed" ID="{1F463BE8-94C2-4E75-949D-BFF537117016}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>

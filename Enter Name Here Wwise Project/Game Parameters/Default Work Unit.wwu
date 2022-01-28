@@ -3,7 +3,7 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{21C5C385-4528-4F6D-BCED-B17DA4235F15}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="Slime_Speed" ID="{1F463BE8-94C2-4E75-949D-BFF537117016}"/>
+				<GameParameter Name="SlimeSpeed" ID="{1F463BE8-94C2-4E75-949D-BFF537117016}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

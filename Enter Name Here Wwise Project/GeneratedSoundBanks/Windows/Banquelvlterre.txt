@@ -4,8 +4,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	614286398	Death_Spike			\Default Work Unit\Death_Spike	
 	733612088	Laser_Beam			\Default Work Unit\Laser_Beam	
 	1090492715	Death_Player_Laser			\Default Work Unit\Death_Player_Laser	
+	1191994856	Musique_lvl_one			\Default Work Unit\Musique_lvl_one	
 	1418889888	Slime_Mouvement			\Default Work Unit\Slime_Mouvement	
 	2006797914	Slime_Jump			\Default Work Unit\Slime_Jump	
+	2048743322	Cube_Movement			\Default Work Unit\Cube_Movement	
 	2155389612	Magnet_Behavior			\Default Work Unit\Magnet_Behavior	
 	2324566312	Cube_Dash_Down			\Default Work Unit\Cube_Dash_Down	
 	2709760796	Interupteur_Tapis			\Default Work Unit\Interupteur_Tapis	
@@ -17,20 +19,23 @@ Event	ID	Name			Wwise Object Path	Notes
 	3793843481	Map_Ending			\Default Work Unit\Map_Ending	
 	4281424168	Slime_Morphing			\Default Work Unit\Slime_Morphing	
 
-State Group	ID	Name			Wwise Object Path	Notes
+Switch Group	ID	Name			Wwise Object Path	Notes
 	1999760368	Slime_Form			\Default Work Unit\Slime_Form	
+
+Switch	ID	Name	Switch Group			Notes
+	3803999823	Slime	Slime_Form			
+	4052031814	Cube	Slime_Form			
+
+State Group	ID	Name			Wwise Object Path	Notes
 	4033083518	Magnet_Polarity			\Default Work Unit\Magnet_Polarity	
 
 State	ID	Name	State Group			Notes
-	748895195	None	Slime_Form			
-	3803999823	Slime	Slime_Form			
-	4052031814	Cube	Slime_Form			
 	748895195	None	Magnet_Polarity			
 	1192865152	Positive	Magnet_Polarity			
 	4219547688	Negative	Magnet_Polarity			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	1332813795	Slime_Speed			\Default Work Unit\Slime_Speed	
+	1467731768	SlimeSpeed			\Default Work Unit\SlimeSpeed	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	25341359	Interupteur	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Interupteur_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Interupteur		120064
@@ -39,11 +44,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	349211830	Laser Beam	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Laser Beam_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Laser Beam		966600
 	359038967	Slime spike death	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime spike death_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime spike death		146528
 	398150341	Magnet Repulse	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Magnet Repulse_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Magnet_Atract_Repulse\Magnet Repulse		216064
-	458765081	Slime_Move	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime_Move_1C70AA65.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime_Move		864128
+	458765081	Slime_Move	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime_Move_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime_Move		864064
+	459933611	Level1-Melody1_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody1_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody1_115bpm4-4_L4M-P0\Level1-Melody1_115bpm4-4_L4M-P0		2999432
 	501737349	Slime jump	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime_Jump\SlimeJump_Whoopie\Slime jump		38840
+	624279310	Level1-NoMelody_115bpm4-4_L8M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-NoMelody_115bpm4-4_L8M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-NoMelody_115bpm4-4_L8M-P0\Level1-NoMelody_115bpm4-4_L8M-P0		4461720
+	637930242	Cube Movement	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Movement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube Movement		96292
 	642257278	Cube Magnet to surface	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Magnet to surface_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube Magnet to surface		105568
 	761757867	Magnet Attract	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Magnet Attract_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Magnet_Atract_Repulse\Magnet Attract		216064
+	784518471	Level1-Melody2_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody2_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody2_115bpm4-4_L4M-P0\Level1-Melody2_115bpm4-4_L4M-P0		2857140
+	814445167	Level1-Melody4_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody4_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody4_115bpm4-4_L4M-P0\Level1-Melody4_115bpm4-4_L4M-P0		2999432
 	828571607	Magnet  positive	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Magnet  positive_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Magnet  positive		5529648
+	875125978	Level-Intro_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level-Intro_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level-Intro_115bpm4-4_L4M-P0\Level-Intro_115bpm4-4_L4M-P0		2000788
+	886583982	Level1-Melody3_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody3_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody3_115bpm4-4_L4M-P0\Level1-Melody3_115bpm4-4_L4M-P0		2999432
 	902469190	Slime to cube	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime to cube_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime_Morphing\Slime to cube		79656
 	945211549	Wooden Box Destruction	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Wooden Box Destruction_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Wooden Box Destruction		154788
 	965247569	Cube Woosh fall	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Woosh fall_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube Woosh fall		189620

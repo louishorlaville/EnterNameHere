@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{629CA6BF-0198-44F3-B665-50CD2289E8BA}" SchemaVersion="103">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{629CA6BF-0198-44F3-B665-50CD2289E8BA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{629CA6BF-0198-44F3-B665-50CD2289E8BA}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Slime_Form" ID="{004473F3-0B5D-4859-9CF3-F0807D80B4AA}">
+					<ChildrenList>
+						<Switch Name="Slime" ID="{AF32E7F6-5B76-40B5-96BC-97F92D6BDC0B}"/>
+						<Switch Name="Cube" ID="{4FFB706B-79D3-4C5C-BBE4-32968944A8AE}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

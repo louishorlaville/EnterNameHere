@@ -123,13 +123,13 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="None" ID="{10A9F233-D1F3-453B-8D92-A5F8D7208430}" WorkUnitID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}"/>
+									<ObjectRef Name="Slime" ID="{AF32E7F6-5B76-40B5-96BC-97F92D6BDC0B}" WorkUnitID="{629CA6BF-0198-44F3-B665-50CD2289E8BA}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Slime_Form" ID="{B1E40B59-9ED7-4B63-9705-2A8EEF128929}" WorkUnitID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}"/>
+									<ObjectRef Name="Slime_Form" ID="{004473F3-0B5D-4859-9CF3-F0807D80B4AA}" WorkUnitID="{629CA6BF-0198-44F3-B665-50CD2289E8BA}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -192,13 +192,13 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Cube" ID="{D7B2DB67-4669-4891-A833-C77885FFF79B}"/>
+										<SwitchRef Name="Cube" ID="{4FFB706B-79D3-4C5C-BBE4-32968944A8AE}"/>
 										<ItemList>
 											<ItemRef Name="Slime to cube" ID="{BFCD1D3A-02FD-4EC5-AD30-E0DC42B49298}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Slime" ID="{0614B285-1131-4B97-A0D6-85F3790FBFC7}"/>
+										<SwitchRef Name="Slime" ID="{AF32E7F6-5B76-40B5-96BC-97F92D6BDC0B}"/>
 										<ItemList>
 											<ItemRef Name="Cube to slime" ID="{548857B3-09B1-4ECB-B62E-26A3A7FD164F}"/>
 										</ItemList>
@@ -415,13 +415,12 @@
 						</Sound>
 						<Sound Name="Slime_Move" ID="{5129BC6B-4661-4865-913C-9D68C8940E09}" ShortID="155589472">
 							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<RTPCList>
 										<RTPC Name="" ID="{3D53E3BA-1D2A-4746-BC75-F2262B1E1485}" ShortID="313397188">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="Slime_Speed" ID="{1F463BE8-94C2-4E75-949D-BFF537117016}" WorkUnitID="{21C5C385-4528-4F6D-BCED-B17DA4235F15}"/>
+													<ObjectRef Name="SlimeSpeed" ID="{1F463BE8-94C2-4E75-949D-BFF537117016}" WorkUnitID="{21C5C385-4528-4F6D-BCED-B17DA4235F15}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{2144601D-5724-4FBB-91D5-C5859DA5EE17}">
@@ -459,7 +458,7 @@
 										<RTPC Name="" ID="{9A7D54E9-E6AC-48AC-9E80-32CD0B64B319}" ShortID="288806799">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="Slime_Speed" ID="{1F463BE8-94C2-4E75-949D-BFF537117016}" WorkUnitID="{21C5C385-4528-4F6D-BCED-B17DA4235F15}"/>
+													<ObjectRef Name="SlimeSpeed" ID="{1F463BE8-94C2-4E75-949D-BFF537117016}" WorkUnitID="{21C5C385-4528-4F6D-BCED-B17DA4235F15}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{62C6A504-60AC-4171-9333-70DC0727BA74}">
@@ -513,6 +512,29 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Slime_Move" ID="{D16E859D-438A-493C-860D-4E92BE06C96D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Cube Movement" ID="{733A4CCC-0FD4-4C26-9F7F-4410BDAA2745}" ShortID="302888120">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cube Movement" ID="{AED84F5D-8C34-4136-A02A-A00A4917E3F5}">
+									<Language>SFX</Language>
+									<AudioFile>Cube Movement.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="637930242"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Cube Movement" ID="{AED84F5D-8C34-4136-A02A-A00A4917E3F5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

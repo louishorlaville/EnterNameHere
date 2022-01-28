@@ -36,6 +36,20 @@ public class CharacterMain : MonoBehaviour
     public float rollRotationSpeed;
     public float collisionBounceHeight;
     public float magnetPower;
+    
+    public AK.Wwise.Event SlimeMovement;
+    public AK.Wwise.Event CubeMovement;
+    public AK.Wwise.Event SlimeJump;
+    public AK.Wwise.RTPC SpeedSlime;
+
+    //Wwise
+    private bool SlimeMovementIsPlaying = false;
+    private bool CubeMovementIsPlaying = false;
+    private float lastSlimeMovementTime = 0;
+    private float lastCubeMovementTime = 0;
+    
+
+
 
     const float gravityValue = 10;
 
@@ -59,6 +73,11 @@ public class CharacterMain : MonoBehaviour
         slimeLandEffect = GameObject.Find("SlimeLandEffect").GetComponent<ParticleSystem>();
 
         bEndLevel = false;
+
+        lastCubeMovementTime = Time.time;
+        lastSlimeMovementTime = Time.time;
+
+        SpeedSlime.SetGlobalValue(0);
     }
 
     // Update is called once per frame
@@ -115,13 +134,34 @@ public class CharacterMain : MonoBehaviour
                     if(isGrounded() && isCircle)
                     {
                         rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
+                        if (!SlimeMovementIsPlaying)
+                        {
+                            SlimeMovement.Post(gameObject);
+                            lastSlimeMovementTime = Time.time;
+                            SlimeMovementIsPlaying = true;
+                        }
+                        else
+                        {
+                            if (_movementH > 0.2)
+                            {
+                                if (Time.time - lastSlimeMovementTime > 50 / _movementH * Time.deltaTime)
+                                {
+                                    SlimeMovementIsPlaying = false;
+                                }
+                            }
+
+                        }
+                            
+                        
                     }
                     else
                     {
                         zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
                         transform.rotation = Quaternion.Euler(0, 0, -zAxis);
+                       
 
-                        if(isGrounded())
+
+                                if (isGrounded())
                         {
                             //Prevent momentum loss on single space bar press
                             if(rb.velocity.x < -rollSpeed || rb.velocity.x > rollSpeed)
@@ -139,7 +179,7 @@ public class CharacterMain : MonoBehaviour
                 {
                     rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
                 }
-
+                SpeedSlime.SetGlobalValue(2*_movementH);
                 // Save velocity before fixed update for correct pre-collision velocity
                 // Used for effects placement
                 velocityBeforeFixedUpdate = rb.velocity;
@@ -151,6 +191,7 @@ public class CharacterMain : MonoBehaviour
     {
         if (currentBounces < maxNbBounces && isCircle && canBounce)
         {
+            SlimeJump.Post(gameObject);
             Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
             Vector2 normal = _collision.contacts[0].normal;
             currentBounces++;

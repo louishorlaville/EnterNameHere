@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="70675856">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2948220201">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="2212048932">
+		<SoundBank Id="2436553819" Language="SFX" Hash="502210768">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
@@ -42,6 +42,14 @@
 						<File Id="642257278" Language="SFX">
 							<ShortName>Cube Magnet to surface.wav</ShortName>
 							<Path>SFX\Cube Magnet to surface_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2048743322" Name="Cube_Movement" ObjectPath="\Events\Default Work Unit\Cube_Movement" DurationType="OneShot" DurationMin="0.501188" DurationMax="0.501188">
+					<IncludedMemoryFiles>
+						<File Id="637930242" Language="SFX">
+							<ShortName>Cube Movement.wav</ShortName>
+							<Path>SFX\Cube Movement_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -143,6 +151,34 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="3793843481" Name="Map_Ending" ObjectPath="\Events\Default Work Unit\Map_Ending" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1191994856" Name="Musique_lvl_one" ObjectPath="\Events\Default Work Unit\Musique_lvl_one" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="459933611" Language="SFX">
+							<ShortName>Level1-Melody1_115bpm4-4_L4M-P0.wav</ShortName>
+							<Path>SFX\Level1-Melody1_115bpm4-4_L4M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="624279310" Language="SFX">
+							<ShortName>Level1-NoMelody_115bpm4-4_L8M-P0.wav</ShortName>
+							<Path>SFX\Level1-NoMelody_115bpm4-4_L8M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="784518471" Language="SFX">
+							<ShortName>Level1-Melody2_115bpm4-4_L4M-P0.wav</ShortName>
+							<Path>SFX\Level1-Melody2_115bpm4-4_L4M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="814445167" Language="SFX">
+							<ShortName>Level1-Melody4_115bpm4-4_L4M-P0.wav</ShortName>
+							<Path>SFX\Level1-Melody4_115bpm4-4_L4M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="875125978" Language="SFX">
+							<ShortName>Level-Intro_115bpm4-4_L4M-P0.wav</ShortName>
+							<Path>SFX\Level-Intro_115bpm4-4_L4M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="886583982" Language="SFX">
+							<ShortName>Level1-Melody3_115bpm4-4_L4M-P0.wav</ShortName>
+							<Path>SFX\Level1-Melody3_115bpm4-4_L4M-P0_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2006797914" Name="Slime_Jump" ObjectPath="\Events\Default Work Unit\Slime_Jump" DurationType="OneShot" DurationMin="0.201958" DurationMax="0.533042">
 					<IncludedMemoryFiles>
 						<File Id="243699287" Language="SFX">
@@ -166,25 +202,25 @@
 							<Path>SFX\Cube to slime_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{10A9F233-D1F3-453B-8D92-A5F8D7208430}</DefaultSwitchValue>
+					<DefaultSwitchValue>{AF32E7F6-5B76-40B5-96BC-97F92D6BDC0B}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{D7B2DB67-4669-4891-A833-C77885FFF79B}">
+						<SwitchContainer SwitchValue="{4FFB706B-79D3-4C5C-BBE4-32968944A8AE}">
 							<Media>
 								<File Id="902469190"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0614B285-1131-4B97-A0D6-85F3790FBFC7}">
+						<SwitchContainer SwitchValue="{AF32E7F6-5B76-40B5-96BC-97F92D6BDC0B}">
 							<Media>
 								<File Id="972262073"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1418889888" Name="Slime_Mouvement" ObjectPath="\Events\Default Work Unit\Slime_Mouvement" DurationType="Infinite">
+				<Event Id="1418889888" Name="Slime_Mouvement" ObjectPath="\Events\Default Work Unit\Slime_Mouvement" DurationType="OneShot" DurationMin="4.5" DurationMax="4.5">
 					<IncludedMemoryFiles>
 						<File Id="458765081" Language="SFX">
 							<ShortName>Slime_Move.wav</ShortName>
-							<Path>SFX\Slime_Move_1C70AA65.wem</Path>
+							<Path>SFX\Slime_Move_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -198,16 +234,9 @@
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
-				<GameParameter Id="1332813795" Name="Slime_Speed" ObjectPath="\Game Parameters\Default Work Unit\Slime_Speed"/>
+				<GameParameter Id="1467731768" Name="SlimeSpeed" ObjectPath="\Game Parameters\Default Work Unit\SlimeSpeed"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="1999760368" Name="Slime_Form" ObjectPath="\States\Default Work Unit\Slime_Form" GUID="{B1E40B59-9ED7-4B63-9705-2A8EEF128929}">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Slime_Form\None" GUID="{10A9F233-D1F3-453B-8D92-A5F8D7208430}"/>
-						<State Id="3803999823" Name="Slime" ObjectPath="\States\Default Work Unit\Slime_Form\Slime" GUID="{0614B285-1131-4B97-A0D6-85F3790FBFC7}"/>
-						<State Id="4052031814" Name="Cube" ObjectPath="\States\Default Work Unit\Slime_Form\Cube" GUID="{D7B2DB67-4669-4891-A833-C77885FFF79B}"/>
-					</States>
-				</StateGroup>
 				<StateGroup Id="4033083518" Name="Magnet_Polarity" ObjectPath="\States\Default Work Unit\Magnet_Polarity" GUID="{7ACEBB70-7505-44F7-BF27-80132C0B4740}">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Magnet_Polarity\None" GUID="{53C38677-0942-4690-A27F-E26E2D0B8244}"/>
@@ -216,6 +245,14 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="1999760368" Name="Slime_Form" ObjectPath="\Switches\Default Work Unit\Slime_Form" GUID="{004473F3-0B5D-4859-9CF3-F0807D80B4AA}">
+					<Switches>
+						<Switch Id="3803999823" Name="Slime" ObjectPath="\Switches\Default Work Unit\Slime_Form\Slime" GUID="{AF32E7F6-5B76-40B5-96BC-97F92D6BDC0B}"/>
+						<Switch Id="4052031814" Name="Cube" ObjectPath="\Switches\Default Work Unit\Slime_Form\Cube" GUID="{4FFB706B-79D3-4C5C-BBE4-32968944A8AE}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
