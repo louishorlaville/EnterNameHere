@@ -1,15 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1999760368	Slime_Form			\Default Work Unit\Slime_Form	
-	3991942870	Music			\Default Work Unit\Music	
 	4033083518	Magnet_Polarity			\Default Work Unit\Magnet_Polarity	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Slime_Form			
 	3803999823	Slime	Slime_Form			
 	4052031814	Cube	Slime_Form			
-	748895195	None	Music			
-	2678230382	Level1	Music			
-	2716678721	Victory	Music			
 	748895195	None	Magnet_Polarity			
 	1192865152	Positive	Magnet_Polarity			
 	4219547688	Negative	Magnet_Polarity			

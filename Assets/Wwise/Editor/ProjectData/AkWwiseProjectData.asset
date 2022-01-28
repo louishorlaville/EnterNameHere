@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 9fbb192aa1ad294582f232c6d4334168
     GuidInternal: 
-    m_lastTime: -8585583691289273820
+    m_lastTime: -8585583608514636718
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8585583691289263822
+    m_lastTime: -8585583608514636718
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 44287d38cb4b1948ac2745d6b3c93e73
     GuidInternal: 
-    m_lastTime: -8585582096067377551
+    m_lastTime: -8585582051238860764
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 63aaf8ef28717a42bbdab49f917781f3
     GuidInternal: 
-    m_lastTime: -8585582076458606548
+    m_lastTime: -8585582051238850376
     List:
     - name: Banquelvlterre
       guid: 24b8e8145fa6c3499f8dff3d9d37ee36
@@ -373,7 +373,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1763ca6569f59d43a31d32805dfe72dd
     GuidInternal: 
-    m_lastTime: -8585582076458746554
+    m_lastTime: -8585582006701260272
     List:
     - name: Cube_Dash_Down
       guid: 285b368850421c4e9db8f065a61dfd82
@@ -812,7 +812,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 85c3c52128456d4fbcedb17da4235f15
     GuidInternal: 
-    m_lastTime: -8585582099282673938
+    m_lastTime: -8585582103453735944
     List:
     - name: SlimeSpeed
       guid: e83b461fc294754e949dbff537117016
@@ -839,7 +839,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Motion
     guid: 225213d7dbd1d042adc0930743567776
     GuidInternal: 
-    m_lastTime: -8585583691318395176
+    m_lastTime: -8585583608538473907
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -880,7 +880,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory SoundSeed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8585583691318375143
+    m_lastTime: -8585583608538463937
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -1034,7 +1034,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 98215f5e37bf2046bbb6d88d2ea80823
     GuidInternal: 
-    m_lastTime: -8585582076458876495
+    m_lastTime: -8585583608514656674
     List:
     - name: Magnet_Polarity
       guid: 70bbce7a0575f744bf2780132c0b4740
@@ -1099,72 +1099,6 @@ MonoBehaviour:
         - ElementName: Positive
           ObjectType: 8
           guid: c20a169e70799a44aab193c25da0013b
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: Music
-      guid: e80c66f3199d1545a419d0db041dc9ef
-      id: 3991942870
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 98215f5e37bf2046bbb6d88d2ea80823
-      - ElementName: Music
-        ObjectType: 9
-        guid: e80c66f3199d1545a419d0db041dc9ef
-      Path: States\Default Work Unit\Music
-      values:
-      - name: Level1
-        guid: c09627e8a79833478ffd0c383814d301
-        id: 2678230382
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 98215f5e37bf2046bbb6d88d2ea80823
-        - ElementName: Music
-          ObjectType: 9
-          guid: e80c66f3199d1545a419d0db041dc9ef
-        - ElementName: Level1
-          ObjectType: 8
-          guid: c09627e8a79833478ffd0c383814d301
-      - name: None
-        guid: c59e2e121e566849b26d670c88ca94cd
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 98215f5e37bf2046bbb6d88d2ea80823
-        - ElementName: Music
-          ObjectType: 9
-          guid: e80c66f3199d1545a419d0db041dc9ef
-        - ElementName: None
-          ObjectType: 8
-          guid: c59e2e121e566849b26d670c88ca94cd
-      - name: Victory
-        guid: c7405450623cdc46902396e9e6784ba7
-        id: 2716678721
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 98215f5e37bf2046bbb6d88d2ea80823
-        - ElementName: Music
-          ObjectType: 9
-          guid: e80c66f3199d1545a419d0db041dc9ef
-        - ElementName: Victory
-          ObjectType: 8
-          guid: c7405450623cdc46902396e9e6784ba7
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1246,7 +1180,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: bfa69c629801f344b66550cd2289e8ba
     GuidInternal: 
-    m_lastTime: -8585582099278573936
+    m_lastTime: -8585582103453506224
     List:
     - name: Slime_Form
       guid: f37344005d0b59489cf3f0807d80b4aa
@@ -1310,11 +1244,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 4ae124cb09d08343af70ce82de415245
     GuidInternal: 
-    m_lastTime: -8585583691289283819
+    m_lastTime: -8585583608514646712
     List: []
-  ExpandedFileSystemItemIds: 020000000300000004000000050000000a000000220000002300000028000000
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 0200000003000000
+  ExpandedWaapiItemIds: 02000000030000000700000008000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 
