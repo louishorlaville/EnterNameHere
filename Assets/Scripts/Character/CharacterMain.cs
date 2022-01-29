@@ -175,8 +175,6 @@ public class CharacterMain : MonoBehaviour
                     {
                         zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
                         transform.rotation = Quaternion.Euler(0, 0, -zAxis);
-                       
-
 
                         if (isGrounded())
                         {
@@ -215,6 +213,7 @@ public class CharacterMain : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D _collision)
     {
+        print(_collision.gameObject.name);
         if (isCircle && canBounce)
         {
             EmitSoundBounce();

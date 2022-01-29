@@ -1131,7 +1131,7 @@ GameObject:
   - component: {fileID: 98046908}
   - component: {fileID: 98046910}
   - component: {fileID: 98046909}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1904,7 +1904,7 @@ GameObject:
   - component: {fileID: 192297156}
   - component: {fileID: 192297158}
   - component: {fileID: 192297157}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4928,6 +4928,18 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2.89
       objectReference: {fileID: 0}
+    - target: {fileID: 1622404987, guid: e929c0095a2b3b943989194b7be48427, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622404987, guid: e929c0095a2b3b943989194b7be48427, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622404988, guid: e929c0095a2b3b943989194b7be48427, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 933300098324790470, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.64500004
@@ -4936,17 +4948,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.62775373
       objectReference: {fileID: 0}
+    - target: {fileID: 976999896370386730, guid: e929c0095a2b3b943989194b7be48427, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155296, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155296, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58
+      value: 61.1
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155296, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15
+      value: -11.9
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155296, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4954,19 +4970,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155296, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8191521
+      value: 0.8074394
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155296, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155296, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155296, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5735764
+      value: 0.5899506
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155296, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4978,7 +4994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155296, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 70
+      value: 72.307
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155297, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_Sprite
@@ -5009,8 +5025,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 588765702}
     - target: {fileID: 5490492766095155308, guid: e929c0095a2b3b943989194b7be48427, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490492766095155308, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: mushroomForce
-      value: 175000
+      value: 375000
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155309, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_Name
@@ -5036,10 +5056,16 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1940080513
       objectReference: {fileID: 0}
+    - target: {fileID: 8629828895474810610, guid: e929c0095a2b3b943989194b7be48427, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5490492766095155297, guid: e929c0095a2b3b943989194b7be48427, type: 3}
     - {fileID: 738698344, guid: e929c0095a2b3b943989194b7be48427, type: 3}
     - {fileID: 5490492766095155311, guid: e929c0095a2b3b943989194b7be48427, type: 3}
+    - {fileID: 8629828895474810610, guid: e929c0095a2b3b943989194b7be48427, type: 3}
+    - {fileID: 976999896370386730, guid: e929c0095a2b3b943989194b7be48427, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e929c0095a2b3b943989194b7be48427, type: 3}
 --- !u!4 &570298595 stripped
 Transform:
@@ -8166,7 +8192,7 @@ GameObject:
   - component: {fileID: 941010840}
   - component: {fileID: 941010842}
   - component: {fileID: 941010841}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14783,7 +14809,7 @@ GameObject:
   - component: {fileID: 1253686918}
   - component: {fileID: 1253686920}
   - component: {fileID: 1253686919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15440,7 +15466,7 @@ GameObject:
   - component: {fileID: 1340228625}
   - component: {fileID: 1340228627}
   - component: {fileID: 1340228626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17205,7 +17231,7 @@ GameObject:
   - component: {fileID: 1595576752}
   - component: {fileID: 1595576754}
   - component: {fileID: 1595576753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17573,93 +17599,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4392878683221424468, guid: 981339dcfb470c84c9b302d36166def3, type: 3}
   m_PrefabInstance: {fileID: 1617282238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1622404986 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5490492766095155309, guid: e929c0095a2b3b943989194b7be48427, type: 3}
-  m_PrefabInstance: {fileID: 569118650}
-  m_PrefabAsset: {fileID: 0}
---- !u!60 &1622404987
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622404986}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.8658029, y: -0.17471139}
-      - {x: 1.5910976, y: 0.10748509}
-      - {x: 1.1992841, y: 0.3542484}
-      - {x: 0.91401386, y: 0.45618245}
-      - {x: 0.51607186, y: 0.5542467}
-      - {x: 0.111002326, y: 0.5624159}
-      - {x: -0.3304664, y: 0.5346932}
-      - {x: -0.76892895, y: 0.47947228}
-      - {x: -0.97489434, y: 0.05201932}
-      - {x: -1.1928859, y: -0.74257207}
-      - {x: -0.958328, y: -0.78062993}
-      - {x: 2.006121, y: -1.191312}
-      - {x: 2.0929205, y: -0.8194714}
-      - {x: 2.0292654, y: -0.46883607}
---- !u!60 &1622404988
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622404986}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.98650634, y: 0.7323501}
-      - {x: 0.56017375, y: 0.8216869}
-      - {x: 0.35498062, y: 0.85390896}
-      - {x: 0.02850902, y: 0.84710217}
-      - {x: -0.47000733, y: 0.766633}
-      - {x: -0.49495336, y: 0.52901685}
-      - {x: -0.30743074, y: 0.5515121}
-      - {x: 0.08867994, y: 0.57336926}
-      - {x: 0.5118495, y: 0.5697071}
-      - {x: 0.9267137, y: 0.4667748}
-      - {x: 1.2074113, y: 0.3627218}
-      - {x: 1.5996052, y: 0.112116575}
-      - {x: 1.8719629, y: -0.17333603}
-      - {x: 2.0419557, y: -0.4690818}
-      - {x: 2.2677526, y: -0.3988622}
-      - {x: 2.0664444, y: -0.0026483238}
-      - {x: 1.7524372, y: 0.33562636}
-      - {x: 1.3300475, y: 0.62145925}
 --- !u!1 &1632482735
 GameObject:
   m_ObjectHideFlags: 0
@@ -17671,7 +17610,7 @@ GameObject:
   - component: {fileID: 1632482736}
   - component: {fileID: 1632482738}
   - component: {fileID: 1632482737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17780,7 +17719,7 @@ GameObject:
   - component: {fileID: 1638099732}
   - component: {fileID: 1638099734}
   - component: {fileID: 1638099733}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
