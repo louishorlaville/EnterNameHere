@@ -211,11 +211,6 @@ public class CharacterMain : MonoBehaviour
                 velocityBeforeFixedUpdate = rb.velocity;
             }
         }
-
-		if(rb.velocity.magnitude > 67)
-		{
-            Debug.LogWarning(rb.velocity.magnitude);
-		}
     }
 
     private void OnCollisionEnter2D(Collision2D _collision)
