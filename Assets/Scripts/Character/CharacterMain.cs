@@ -437,6 +437,6 @@ public class CharacterMain : MonoBehaviour
 
     public void EmitSoundCubeMovement()
     {
-        SlimeJump.Post(gameObject);
+        CubeMovement.Post(gameObject);
     }
 }
