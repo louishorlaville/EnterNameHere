@@ -23,7 +23,7 @@ public class MushroomScript : MonoBehaviour
         {
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(BounceDirection * mushroomForce);
             collision.gameObject.GetComponent<CharacterMain>().canBounce = true;
-            collision.gameObject.GetComponent<CharacterMain>().EmitSoundBounce()
+            collision.gameObject.GetComponent<CharacterMain>().EmitSoundBounce();
         }
     }
 

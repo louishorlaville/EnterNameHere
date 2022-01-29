@@ -192,34 +192,39 @@ public class CharacterMain : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D _collision)
     {
-        if (currentBounces < maxNbBounces && isCircle && canBounce)
+        if (isCircle && canBounce)
         {
             EmitSoundBounce();
-            print("here");
-            Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
-            Vector2 normal = _collision.contacts[0].normal;
-            currentBounces++;
-            if (_collision.collider.gameObject.layer==6)
+
+            if (currentBounces < maxNbBounces)
             {
-                rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                print("here");
+                Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
+                Vector2 normal = _collision.contacts[0].normal;
+                currentBounces++;
+                if (_collision.collider.gameObject.layer == 6)
+                {
+                    rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                }
+                else
+                {
+                    rb.velocity = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y) + _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                }
             }
             else
             {
-                rb.velocity = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y) + _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                currentBounces = 0;
+                canBounce = false;
+            }
+
+            //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
+            if (isMagnet)
+            {
+                magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower;
+                magnetTouchContactPoint = true;
             }
         }
-        else
-        {
-            currentBounces = 0;
-            canBounce = false;
-        }
-
-        //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
-        if (isMagnet)
-        {
-            magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower; 
-            magnetTouchContactPoint = true;
-        }
+        
 
         HandleSlimeLandEffect(_collision);
     }
