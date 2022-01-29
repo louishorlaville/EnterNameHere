@@ -169,6 +169,16 @@
 				</Event>
 				<Event Name="Slime_Mouvement" ID="{1C2C6FDD-628B-472E-9CF7-DFDFFA459091}">
 					<ChildrenList>
+						<Action Name="" ID="{B234F7A3-EBD6-4B0E-A025-5D0D2062F663}" ShortID="472841391">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cube_Movement" ID="{953024BD-4CA3-42FF-AE33-2AA2B92DB365}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{B562D241-C39F-4B0D-BC5F-2A308DCF2B55}" ShortID="627472656">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -292,7 +302,7 @@
 						<Action Name="" ID="{08689EE8-B691-49E2-B96D-E6CCD5132F3D}" ShortID="283933786">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Cube Movement" ID="{733A4CCC-0FD4-4C26-9F7F-4410BDAA2745}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+									<ObjectRef Name="Cube_Movement" ID="{953024BD-4CA3-42FF-AE33-2AA2B92DB365}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -34,6 +34,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	714768591	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime To Cube\VOid\Wwise Silence	
+	844867495	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube_Movement\VIDE\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	25341359	Interupteur	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Interupteur_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Interupteur		120064
@@ -46,7 +47,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	459933611	Level1-Melody1_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody1_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody1_115bpm4-4_L4M-P0\Level1-Melody1_115bpm4-4_L4M-P0		2999432
 	501737349	Slime jump	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime_Jump\SlimeJump_Whoopie\Slime jump		38840
 	624279310	Level1-NoMelody_115bpm4-4_L8M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-NoMelody_115bpm4-4_L8M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-NoMelody_115bpm4-4_L8M-P0\Level1-NoMelody_115bpm4-4_L8M-P0		4461720
-	637930242	Cube Movement	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Movement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube Movement		96292
+	637930242	Cube Movement	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Movement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube_Movement\Cube Movement		96292
 	642257278	Cube Magnet to surface	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Magnet to surface_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube Magnet to surface		105568
 	692773376	Victory_115bpm4-4_L2M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Victory_115bpm4-4_L2M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Victory_115bpm4-4_L2M-P0\Victory_115bpm4-4_L2M-P0		1715460
 	761757867	Magnet Attract	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Magnet Attract_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Magnet_Atract_Repulse\Magnet Attract		216064

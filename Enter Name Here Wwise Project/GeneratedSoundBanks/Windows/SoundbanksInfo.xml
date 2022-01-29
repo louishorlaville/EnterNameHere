@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="520160282">
+		<SoundBank Id="2436553819" Language="SFX" Hash="765226586">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
@@ -45,7 +45,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2048743322" Name="Cube_Movement" ObjectPath="\Events\Default Work Unit\Cube_Movement" DurationType="OneShot" DurationMin="0.501188" DurationMax="0.501188">
+				<Event Id="2048743322" Name="Cube_Movement" ObjectPath="\Events\Default Work Unit\Cube_Movement" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="637930242" Language="SFX">
 							<ShortName>Cube Movement.wav</ShortName>
@@ -207,7 +207,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3678733195" Name="Slime_to_cube" ObjectPath="\Events\Default Work Unit\Slime_to_cube" DurationType="OneShot" DurationMin="0.414542" DurationMax="39.5">
+				<Event Id="3678733195" Name="Slime_to_cube" ObjectPath="\Events\Default Work Unit\Slime_to_cube" DurationType="OneShot" DurationMin="0.414542" DurationMax="4.5">
 					<IncludedMemoryFiles>
 						<File Id="902469190" Language="SFX">
 							<ShortName>Slime to cube.wav</ShortName>
