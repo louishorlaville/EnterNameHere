@@ -93,7 +93,7 @@ public class CharacterMain : MonoBehaviour
         {
             if(bEndLevel == false)
             {
-                if(Input.GetKey("space"))
+                if(Input.GetKey("space") && isCircle)
                 {
                     SwitchToSquare();
                     SlimetoCube.Post(gameObject);
@@ -128,7 +128,6 @@ public class CharacterMain : MonoBehaviour
     void FixedUpdate()
     {
         float _movementH = Input.GetAxis("Horizontal");
-        print(isGrounded());
         if(bPauseMenu == false)
         {
             if(bEndLevel == false)
@@ -182,6 +181,7 @@ public class CharacterMain : MonoBehaviour
                 {
                     rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
                 }
+
                 SpeedSlime.SetGlobalValue(2*_movementH);
                 // Save velocity before fixed update for correct pre-collision velocity
                 // Used for effects placement
@@ -258,6 +258,7 @@ public class CharacterMain : MonoBehaviour
                 {
                     magnetDirection = new Vector2(magnetContactPoint.x - transform.position.x, magnetContactPoint.y - transform.position.y);
                 }
+
                 //Debug.DrawRay(transform.position, collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position), Color.red);
 
                 isMagnet = true;
