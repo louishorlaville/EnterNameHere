@@ -45,8 +45,7 @@ public class CharacterMain : MonoBehaviour
     public AK.Wwise.Event CubetoSlime;
 
     //Wwise
-    private bool SlimeMovementIsPlaying = false;
-    private bool CubeMovementIsPlaying = false;
+    private bool movementIsPlaying = false;
     private float lastSlimeMovementTime = 0;
     private float lastCubeMovementTime = 0;
     
@@ -142,11 +141,20 @@ public class CharacterMain : MonoBehaviour
                     {
                         rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
 
-                        if (SlimeMovementIsPlaying == false)
+                        if (movementIsPlaying == false)
                         {
-                            SlimeMovement.Post(gameObject);
-                            lastSlimeMovementTime = Time.time;
-                            SlimeMovementIsPlaying = true;
+							if(isCircle == true)
+							{
+                                SlimeMovement.Post(gameObject);
+                                lastSlimeMovementTime = Time.time;
+                            }
+							else
+							{
+                                CubeMovement.Post(gameObject);
+                                lastCubeMovementTime = Time.time;
+                            }
+
+                            movementIsPlaying = true;
                         }
                         else
                         {
@@ -156,14 +164,14 @@ public class CharacterMain : MonoBehaviour
 							{
                                 if(Time.time - lastSlimeMovementTime > 50 / _movementH * Time.deltaTime)
                                 {
-                                    SlimeMovementIsPlaying = false;
+                                    movementIsPlaying = false;
                                 }
                             }
 							else
 							{
                                 if(Time.time - lastSlimeMovementTime > 50 / -_movementH * Time.deltaTime)
                                 {
-                                    SlimeMovementIsPlaying = false;
+                                    movementIsPlaying = false;
                                 }
                             }
                         }
