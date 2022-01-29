@@ -1410,6 +1410,7 @@
 				</Sound>
 				<Sound Name="Ambiance Dark" ID="{6304FA34-8F55-45AE-88B0-90BAE567A31B}" ShortID="327605620">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-23</Value>

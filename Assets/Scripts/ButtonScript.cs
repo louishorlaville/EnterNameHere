@@ -33,6 +33,7 @@ public class ButtonScript : MonoBehaviour
         {
             StartCoroutine("PressButton");
             buttonIsPressed = true;
+            Button.Post(gameObject);
         }
         
     }
@@ -51,6 +52,6 @@ public class ButtonScript : MonoBehaviour
         }
         InteractObject.GetComponent<ButtonInteraction>().ButtonPressed();
         yield return null;
-        Button.Post(gameObject);
+        
     }
 }
