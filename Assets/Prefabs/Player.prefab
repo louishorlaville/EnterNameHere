@@ -68,18 +68,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f110f33f269cd74c94d99ca250683f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
   sprites:
   - {fileID: 3766885766661273901, guid: c141291ba91af02408e26d8377a1e7b9, type: 3}
   - {fileID: 1302723820812287101, guid: c141291ba91af02408e26d8377a1e7b9, type: 3}
   isCircle: 1
   isMagnet: 0
+  bPauseMenu: 0
   bEndLevel: 0
+  canBounce: 1
   movementSpeed: 90
   bounceHeight: 2000
   rollSpeed: 5
   rollRotationSpeed: 85
   collisionBounceHeight: 130
   magnetPower: 1000
+  SlimeMovement:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: eb3ccc111c60ccd478adb14303db1458, type: 2}
+  CubeMovement:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 369d53745b8bf3a46bfb2c8cc4a57c97, type: 2}
+  SlimeJump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 292d3d13429812d4b81a1580bad00638, type: 2}
+  SpeedSlime:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d45dbaafc129ce643b9d8303ff91d967, type: 2}
+  SlimetoCube:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 84eeaeb082093ce41a8caccdeb87f2e7, type: 2}
+  CubetoSlime:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8b2c205871426cb4bba21f6403527a29, type: 2}
 --- !u!61 &7491413294415040233
 BoxCollider2D:
   m_ObjectHideFlags: 0
