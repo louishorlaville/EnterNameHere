@@ -48,9 +48,6 @@ public class CharacterMain : MonoBehaviour
     private bool movementIsPlaying = false;
     private float lastSlimeMovementTime = 0;
     private float lastCubeMovementTime = 0;
-    
-
-
 
     const float gravityValue = 10;
 
@@ -92,15 +89,15 @@ public class CharacterMain : MonoBehaviour
         {
             if(bEndLevel == false)
             {
-				if(isCircle == true)
-				{
+                if(isCircle == true)
+                {
                     if(Input.GetKey("space"))
                     {
                         SwitchToSquare();
                     }
                 }
-				else
-				{
+                else
+                {
                     if(Input.GetKeyUp("space"))
                     {
                         //BounceAlongNormal();
@@ -130,7 +127,7 @@ public class CharacterMain : MonoBehaviour
     void FixedUpdate()
     {
         float _movementH = Input.GetAxis("Horizontal");
-
+        print(isGrounded());
         if(bPauseMenu == false)
         {
             if(bEndLevel == false)
@@ -141,15 +138,15 @@ public class CharacterMain : MonoBehaviour
                     {
                         rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
 
-                        if (movementIsPlaying == false)
+                        if(movementIsPlaying == false)
                         {
-							if(isCircle == true)
-							{
+                            if(isCircle == true)
+                            {
                                 SlimeMovement.Post(gameObject);
                                 lastSlimeMovementTime = Time.time;
                             }
-							else
-							{
+                            else
+                            {
                                 CubeMovement.Post(gameObject);
                                 lastCubeMovementTime = Time.time;
                             }
@@ -158,17 +155,15 @@ public class CharacterMain : MonoBehaviour
                         }
                         else
                         {
-							//Debug.LogWarning(_movementH);
-
-							if(_movementH > 0.2f)
-							{
+                            if(_movementH > 0.2f)
+                            {
                                 if(Time.time - lastSlimeMovementTime > 50 / _movementH * Time.deltaTime)
                                 {
                                     movementIsPlaying = false;
                                 }
                             }
-							else
-							{
+                            else
+                            {
                                 if(Time.time - lastSlimeMovementTime > 50 / -_movementH * Time.deltaTime)
                                 {
                                     movementIsPlaying = false;
@@ -180,7 +175,9 @@ public class CharacterMain : MonoBehaviour
                     {
                         zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
                         transform.rotation = Quaternion.Euler(0, 0, -zAxis);
-                        
+                       
+
+
                         if (isGrounded())
                         {
                             //Prevent momentum loss on single space bar press
@@ -204,8 +201,8 @@ public class CharacterMain : MonoBehaviour
                 {
                     SpeedSlime.SetGlobalValue(2f * _movementH);
                 }
-				else
-				{
+                else
+                {
                     SpeedSlime.SetGlobalValue(2f * -_movementH);
                 }
 
@@ -218,33 +215,39 @@ public class CharacterMain : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D _collision)
     {
-        if (currentBounces < maxNbBounces && isCircle && canBounce)
+        if (isCircle && canBounce)
         {
-            SlimeJump.Post(gameObject);
-            Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
-            Vector2 normal = _collision.contacts[0].normal;
-            currentBounces++;
-            if (_collision.collider.gameObject.layer==6)
+            EmitSoundBounce();
+
+            if (currentBounces < maxNbBounces)
             {
-                rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                print("here");
+                Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
+                Vector2 normal = _collision.contacts[0].normal;
+                currentBounces++;
+                if (_collision.collider.gameObject.layer == 6)
+                {
+                    rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                }
+                else
+                {
+                    rb.velocity = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y) + _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                }
             }
             else
             {
-                rb.velocity = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y) + _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                currentBounces = 0;
+                canBounce = false;
+            }
+
+            //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
+            if (isMagnet)
+            {
+                magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower;
+                magnetTouchContactPoint = true;
             }
         }
-        else
-        {
-            currentBounces = 0;
-            canBounce = false;
-        }
-
-        //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
-        if (isMagnet)
-        {
-            magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower; 
-            magnetTouchContactPoint = true;
-        }
+        
 
         HandleSlimeLandEffect(_collision);
     }
@@ -266,7 +269,6 @@ public class CharacterMain : MonoBehaviour
     {
         if (collision.tag.Equals("Negative"))
         {
-
             if (!isCircle)
             {
                 if (firstMagnetContact)
@@ -279,9 +281,7 @@ public class CharacterMain : MonoBehaviour
                 {
                     magnetDirection = new Vector2(magnetContactPoint.x - transform.position.x, magnetContactPoint.y - transform.position.y);
                 }
-                print((Vector2)collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position));
-                Debug.DrawRay(transform.position, collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position), Color.red);
-
+                //Debug.DrawRay(transform.position, collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position), Color.red);
 
                 isMagnet = true;
                 AttachPlayer(magnetDirection);
@@ -317,7 +317,6 @@ public class CharacterMain : MonoBehaviour
     public bool isGrounded()
     {
         bool _isGrounded;
-
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 4);
         _isGrounded = hit.collider != null;
 
@@ -423,5 +422,10 @@ public class CharacterMain : MonoBehaviour
         angle = angle * 180 / Mathf.PI;
 
         return angle;
+    }
+
+    public void EmitSoundBounce()
+    {
+        SlimeJump.Post(gameObject);
     }
 }
