@@ -91,6 +91,12 @@
 				<MusicSegment Name="Victory_115bpm4-4_L2M-P0" ID="{9850A920-3CF5-4A13-A55C-593ADA02B977}" ShortID="929599868">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="8934.35416666667"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Tempo" Type="Real64" Value="115"/>
 					</PropertyList>
 					<ReferenceList>
@@ -178,7 +184,7 @@
 						<Property Name="Tempo" Type="Real64" Value="115"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-13</Value>
+								<Value>-14</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -774,6 +780,11 @@
 				<MusicPlaylistContainer Name="Level_2" ID="{FFF55DFC-7628-4E91-89B7-7EB7151F95DD}" ShortID="291618222">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="115"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
