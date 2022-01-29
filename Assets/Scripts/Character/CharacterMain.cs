@@ -121,13 +121,13 @@ public class CharacterMain : MonoBehaviour
             }
         }
 
-        HandleSlimeTrail();
+        //HandleSlimeTrail();
     }
 
     void FixedUpdate()
     {
         float _movementH = Input.GetAxis("Horizontal");
-
+        print(isMagnet);
         if(bPauseMenu == false)
         {
             if(bEndLevel == false)
@@ -213,14 +213,12 @@ public class CharacterMain : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D _collision)
     {
-        print(_collision.gameObject.name);
         if (isCircle && canBounce)
         {
             EmitSoundBounce();
 
             if (currentBounces < maxNbBounces)
             {
-                print(_collision.gameObject.name);
                 Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
                 Vector2 normal = _collision.contacts[0].normal;
                 currentBounces++;
@@ -240,15 +238,17 @@ public class CharacterMain : MonoBehaviour
             }
 
             //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
-            if (isMagnet)
-            {
-                magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower;
-                magnetTouchContactPoint = true;
-            }
+           
         }
-        
+        if (isMagnet)
+        {
+            magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower;
+            magnetTouchContactPoint = true;
+            print("HEREEEEEEEEEEEEEEEEEEEEEEEEEEE");
+        }
 
-        HandleSlimeLandEffect(_collision);
+
+        //HandleSlimeLandEffect(_collision);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -269,7 +269,9 @@ public class CharacterMain : MonoBehaviour
         if (collision.tag.Equals("Negative"))
         {
             if (!isCircle)
-            {
+            {             
+                isMagnet = true;
+
                 if (firstMagnetContact)
                 {
                     firstMagnetContact = false;
@@ -282,10 +284,9 @@ public class CharacterMain : MonoBehaviour
                 }
                 //Debug.DrawRay(transform.position, collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position), Color.red);
 
-                isMagnet = true;
                 AttachPlayer(magnetDirection);
             }
-            else
+            else if(isMagnet)
             {
                 isMagnet = false;
                 firstMagnetContact = true;
