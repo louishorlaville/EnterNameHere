@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	599938019	Music_MainMenu			\Default Work Unit\Music_MainMenu	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	644826122	Main-Menu_100bpm4-4_L8M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Main-Menu_100bpm4-4_L8M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main-Menu_100bpm4-4_L8M-P0\Main-Menu_100bpm4-4_L8M-P0		6269264
+
