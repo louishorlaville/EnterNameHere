@@ -16,14 +16,18 @@ public class MushroomScript : MonoBehaviour
         //BounceDirection.Normalize();
     }
 
+    private void Update()
+    {
+        Debug.DrawRay(transform.position, BounceDirection * mushroomForce, Color.red);
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player" && readyToBounce == true)
         {
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(BounceDirection * mushroomForce);
-            collision.gameObject.GetComponent<CharacterMain>().canBounce = true;
-            collision.gameObject.GetComponent<CharacterMain>().EmitSoundBounce();
+            //collision.gameObject.GetComponent<CharacterMain>().EmitSoundBounce();
         }
     }
 
@@ -33,6 +37,8 @@ public class MushroomScript : MonoBehaviour
         {
             readyToBounce = true;
             anim.SetTrigger("MushBounce");
+            collision.gameObject.GetComponent<CharacterMain>().EmitSoundBounce();
+            collision.gameObject.GetComponent<CharacterMain>().canBounce = true;
         }
     }
 
