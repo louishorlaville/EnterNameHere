@@ -373,7 +373,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1763ca6569f59d43a31d32805dfe72dd
     GuidInternal: 
-    m_lastTime: -8585581273484801803
+    m_lastTime: -8585581246200424989
     List:
     - name: Ambiance_Level_Dark
       guid: 3027fe3116c10146b22e93218723a3de
@@ -390,8 +390,8 @@ MonoBehaviour:
         guid: 3027fe3116c10146b22e93218723a3de
       Path: Events\Default Work Unit\Ambiance_Level_Dark
       maxAttenuation: 0
-      maxDuration: 46.10102
-      minDuration: 46.10102
+      maxDuration: -1
+      minDuration: -1
     - name: Cube_Dash_Down
       guid: 285b368850421c4e9db8f065a61dfd82
       id: 2324566312
@@ -679,8 +679,8 @@ MonoBehaviour:
         guid: 681f68d719e2304fa4c318a181b22536
       Path: Events\Default Work Unit\Mushroom_sound
       maxAttenuation: 0
-      maxDuration: 1.75
-      minDuration: 1.75
+      maxDuration: -1
+      minDuration: -1
     - name: Music_lvl2
       guid: 552bded0723ed249907252d13dae312c
       id: 3380345081
@@ -1348,7 +1348,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585581912133755195
     List: []
-  ExpandedFileSystemItemIds: 0200000003000000
+  ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

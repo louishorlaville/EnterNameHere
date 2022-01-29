@@ -382,6 +382,17 @@
 				</Event>
 				<Event Name="Music_lvl2" ID="{D0DE2B55-3E72-49D2-9072-52D13DAE312C}">
 					<ChildrenList>
+						<Action Name="" ID="{31336DD8-9F45-45FA-B0A6-E44E04066845}" ShortID="214591658">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level_2" ID="{FFF55DFC-7628-4E91-89B7-7EB7151F95DD}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{A33D7D3B-6121-4304-AA75-7DA1E06B92E8}" ShortID="983663905">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -393,6 +404,17 @@
 				</Event>
 				<Event Name="Music_lvl3" ID="{A3AEADC8-1012-4083-99AA-2FC9DBB80992}">
 					<ChildrenList>
+						<Action Name="" ID="{C166D219-D90E-48C3-A759-31BB2C01F339}" ShortID="181836235">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level_3" ID="{E3A2901A-B1BF-4860-A511-74ADAC158411}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{CB10E835-EDB8-486F-986B-D794D4719EAC}" ShortID="316552584">
 							<ReferenceList>
 								<Reference Name="Target">
