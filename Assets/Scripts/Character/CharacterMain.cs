@@ -142,7 +142,7 @@ public class CharacterMain : MonoBehaviour
                     {
                         rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
 
-                        if (!SlimeMovementIsPlaying)
+                        if (SlimeMovementIsPlaying == false)
                         {
                             SlimeMovement.Post(gameObject);
                             lastSlimeMovementTime = Time.time;
@@ -150,10 +150,18 @@ public class CharacterMain : MonoBehaviour
                         }
                         else
                         {
-                            if (_movementH < -0.2f || _movementH > 0.2f)
-                            {
-                                Debug.LogWarning(_movementH);
-                                if (Time.time - lastSlimeMovementTime > 50 / _movementH * Time.deltaTime)
+							//Debug.LogWarning(_movementH);
+
+							if(_movementH > 0.2f)
+							{
+                                if(Time.time - lastSlimeMovementTime > 50 / _movementH * Time.deltaTime)
+                                {
+                                    SlimeMovementIsPlaying = false;
+                                }
+                            }
+							else
+							{
+                                if(Time.time - lastSlimeMovementTime > 50 / -_movementH * Time.deltaTime)
                                 {
                                     SlimeMovementIsPlaying = false;
                                 }
@@ -184,7 +192,15 @@ public class CharacterMain : MonoBehaviour
                     rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
                 }
 
-                SpeedSlime.SetGlobalValue(2*_movementH);
+                if(_movementH > 0.2f)
+                {
+                    SpeedSlime.SetGlobalValue(2f * _movementH);
+                }
+				else
+				{
+                    SpeedSlime.SetGlobalValue(2f * -_movementH);
+                }
+
                 // Save velocity before fixed update for correct pre-collision velocity
                 // Used for effects placement
                 velocityBeforeFixedUpdate = rb.velocity;
