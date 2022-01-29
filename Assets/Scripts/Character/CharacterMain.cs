@@ -93,20 +93,17 @@ public class CharacterMain : MonoBehaviour
         {
             if(bEndLevel == false)
             {
-				if(isCircle == true)
-				{
-                    if(Input.GetKey("space"))
-                    {
-                        SwitchToSquare();
-                    }
+                if(Input.GetKey("space"))
+                {
+                    SwitchToSquare();
+                    SlimetoCube.Post(gameObject);
                 }
-				else
-				{
-                    if(Input.GetKeyUp("space"))
-                    {
-                        //BounceAlongNormal();
-                        SwitchToCircle();
-                    }
+
+                if(Input.GetKeyUp("space"))
+                {
+                    //BounceAlongNormal();
+                    SwitchToCircle();
+                    CubetoSlime.Post(gameObject);
                 }
             }
         }
@@ -131,7 +128,7 @@ public class CharacterMain : MonoBehaviour
     void FixedUpdate()
     {
         float _movementH = Input.GetAxis("Horizontal");
-
+        print(isGrounded());
         if(bPauseMenu == false)
         {
             if(bEndLevel == false)
@@ -141,8 +138,7 @@ public class CharacterMain : MonoBehaviour
                     if(isGrounded() && isCircle)
                     {
                         rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
-
-                        if (SlimeMovementIsPlaying == false)
+                        if (!SlimeMovementIsPlaying)
                         {
                             SlimeMovement.Post(gameObject);
                             lastSlimeMovementTime = Time.time;
@@ -150,29 +146,24 @@ public class CharacterMain : MonoBehaviour
                         }
                         else
                         {
-							//Debug.LogWarning(_movementH);
-
-							if(_movementH > 0.2f)
-							{
-                                if(Time.time - lastSlimeMovementTime > 50 / _movementH * Time.deltaTime)
-                                {
-                                    SlimeMovementIsPlaying = false;
-                                }
-                            }
-							else
-							{
-                                if(Time.time - lastSlimeMovementTime > 50 / -_movementH * Time.deltaTime)
+                            if (_movementH > 0.2)
+                            {
+                                if (Time.time - lastSlimeMovementTime > 50 / _movementH * Time.deltaTime)
                                 {
                                     SlimeMovementIsPlaying = false;
                                 }
                             }
                         }
+                            
+                        
                     }
                     else
                     {
                         zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
                         transform.rotation = Quaternion.Euler(0, 0, -zAxis);
-                        
+                       
+
+
                         if (isGrounded())
                         {
                             //Prevent momentum loss on single space bar press
@@ -191,16 +182,7 @@ public class CharacterMain : MonoBehaviour
                 {
                     rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
                 }
-
-                if(_movementH > 0.2f)
-                {
-                    SpeedSlime.SetGlobalValue(2f * _movementH);
-                }
-				else
-				{
-                    SpeedSlime.SetGlobalValue(2f * -_movementH);
-                }
-
+                SpeedSlime.SetGlobalValue(2*_movementH);
                 // Save velocity before fixed update for correct pre-collision velocity
                 // Used for effects placement
                 velocityBeforeFixedUpdate = rb.velocity;
@@ -210,33 +192,39 @@ public class CharacterMain : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D _collision)
     {
-        if (currentBounces < maxNbBounces && isCircle && canBounce)
+        if (isCircle && canBounce)
         {
-            SlimeJump.Post(gameObject);
-            Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
-            Vector2 normal = _collision.contacts[0].normal;
-            currentBounces++;
-            if (_collision.collider.gameObject.layer==6)
+            EmitSoundBounce();
+
+            if (currentBounces < maxNbBounces)
             {
-                rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                print("here");
+                Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
+                Vector2 normal = _collision.contacts[0].normal;
+                currentBounces++;
+                if (_collision.collider.gameObject.layer == 6)
+                {
+                    rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                }
+                else
+                {
+                    rb.velocity = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y) + _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                }
             }
             else
             {
-                rb.velocity = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y) + _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                currentBounces = 0;
+                canBounce = false;
+            }
+
+            //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
+            if (isMagnet)
+            {
+                magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower;
+                magnetTouchContactPoint = true;
             }
         }
-        else
-        {
-            currentBounces = 0;
-            canBounce = false;
-        }
-
-        //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
-        if (isMagnet)
-        {
-            magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower; 
-            magnetTouchContactPoint = true;
-        }
+        
 
         HandleSlimeLandEffect(_collision);
     }
@@ -258,7 +246,6 @@ public class CharacterMain : MonoBehaviour
     {
         if (collision.tag.Equals("Negative"))
         {
-
             if (!isCircle)
             {
                 if (firstMagnetContact)
@@ -271,9 +258,7 @@ public class CharacterMain : MonoBehaviour
                 {
                     magnetDirection = new Vector2(magnetContactPoint.x - transform.position.x, magnetContactPoint.y - transform.position.y);
                 }
-                print((Vector2)collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position));
-                Debug.DrawRay(transform.position, collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position), Color.red);
-
+                //Debug.DrawRay(transform.position, collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position), Color.red);
 
                 isMagnet = true;
                 AttachPlayer(magnetDirection);
@@ -309,7 +294,6 @@ public class CharacterMain : MonoBehaviour
     public bool isGrounded()
     {
         bool _isGrounded;
-
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 4);
         _isGrounded = hit.collider != null;
 
@@ -323,8 +307,6 @@ public class CharacterMain : MonoBehaviour
         isCircle = false;
         renderer.sprite = sprites[1];
         canBounce = false;
-
-        SlimetoCube.Post(gameObject);
     }
 
     private void SwitchToCircle()
@@ -340,8 +322,6 @@ public class CharacterMain : MonoBehaviour
         firstMagnetContact = true;
         magnetTouchContactPoint = false;
         rb.gravityScale = gravityValue;
-
-        CubetoSlime.Post(gameObject);
     }
 
     private void HandleSlimeTrail()
@@ -415,5 +395,10 @@ public class CharacterMain : MonoBehaviour
         angle = angle * 180 / Mathf.PI;
 
         return angle;
+    }
+
+    public void EmitSoundBounce()
+    {
+        SlimeJump.Post(gameObject);
     }
 }
