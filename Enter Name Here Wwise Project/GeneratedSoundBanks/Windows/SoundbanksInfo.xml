@@ -16,11 +16,19 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="765226586">
+		<SoundBank Id="2436553819" Language="SFX" Hash="135897821">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
 			<IncludedEvents>
+				<Event Id="665468665" Name="Ambiance_Level_Dark" ObjectPath="\Events\Default Work Unit\Ambiance_Level_Dark" DurationType="OneShot" DurationMin="46.101021" DurationMax="46.101021">
+					<IncludedMemoryFiles>
+						<File Id="1059872870" Language="SFX">
+							<ShortName>Ambiance Dark.wav</ShortName>
+							<Path>SFX\Ambiance Dark_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2324566312" Name="Cube_Dash_Down" ObjectPath="\Events\Default Work Unit\Cube_Dash_Down" DurationType="OneShot" DurationMin="0.987271" DurationMax="0.987271">
 					<IncludedMemoryFiles>
 						<File Id="965247569" Language="SFX">
@@ -159,6 +167,14 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="3793843481" Name="Map_Ending" ObjectPath="\Events\Default Work Unit\Map_Ending" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3973633563" Name="Mushroom_sound" ObjectPath="\Events\Default Work Unit\Mushroom_sound" DurationType="OneShot" DurationMin="1.75" DurationMax="1.75">
+					<IncludedMemoryFiles>
+						<File Id="191068810" Language="SFX">
+							<ShortName>Mushroom sound.wav</ShortName>
+							<Path>SFX\Mushroom sound_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1191994856" Name="Musique_lvl_one" ObjectPath="\Events\Default Work Unit\Musique_lvl_one" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="459933611" Language="SFX">

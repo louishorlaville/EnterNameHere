@@ -922,6 +922,29 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<Sound Name="Mushroom sound" ID="{E6D23614-9CBC-448B-87A5-BC0F641981B8}" ShortID="368503552">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mushroom sound" ID="{94422180-41D2-4264-87EB-C4262427F145}">
+									<Language>SFX</Language>
+									<AudioFile>Mushroom sound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="191068810"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Mushroom sound" ID="{94422180-41D2-4264-87EB-C4262427F145}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{1BE717A5-50E5-417C-983E-1517E0FAEF88}" ShortID="29497022">
@@ -1342,6 +1365,29 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Rotating_Block" ID="{A3AA29DB-47EC-4028-BDA3-205257C3A8C9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Ambiance Dark" ID="{6304FA34-8F55-45AE-88B0-90BAE567A31B}" ShortID="327605620">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ambiance Dark" ID="{944E1ABA-BA08-4E2D-8DD5-6429283E1577}">
+							<Language>SFX</Language>
+							<AudioFile>Ambiance Dark.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1059872870"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Ambiance Dark" ID="{944E1ABA-BA08-4E2D-8DD5-6429283E1577}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

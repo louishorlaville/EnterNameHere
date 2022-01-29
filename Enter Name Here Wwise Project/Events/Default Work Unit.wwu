@@ -348,6 +348,38 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Ambiance_Level_Dark" ID="{31FE2730-C116-4601-B22E-93218723A3DE}">
+					<ChildrenList>
+						<Action Name="" ID="{05792F6F-E080-46D7-BD71-D1598F2131B5}" ShortID="676299256">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance Dark" ID="{6304FA34-8F55-45AE-88B0-90BAE567A31B}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{42B8DFA4-0731-4B1D-A2D3-9E5DB934D475}" ShortID="831348480">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance Dark" ID="{6304FA34-8F55-45AE-88B0-90BAE567A31B}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mushroom_sound" ID="{D7681F68-E219-4F30-A4C3-18A181B22536}">
+					<ChildrenList>
+						<Action Name="" ID="{FCD39DA9-2432-4B78-BD2F-46322E9718C8}" ShortID="637079643">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mushroom sound" ID="{E6D23614-9CBC-448B-87A5-BC0F641981B8}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
