@@ -5,7 +5,12 @@ using UnityEngine;
 public class ParallaxEffect : MonoBehaviour
 {
     public UnityEngine.Camera m_cam;
-    public float m_parallaxFactor;
+    public float m_parallaxFactorX;
+    public float m_parallaxFactorY;
+
+    public float m_startTime = 2;
+    public float m_counter = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +20,7 @@ public class ParallaxEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += m_cam.velocity * Time.deltaTime * -m_parallaxFactor;
+        if (m_counter < m_startTime) m_counter += Time.deltaTime;
+        else transform.position += new Vector3(m_cam.velocity.x * m_parallaxFactorX, m_cam.velocity.y * m_parallaxFactorY, 0) * Time.deltaTime;
     }
 }
