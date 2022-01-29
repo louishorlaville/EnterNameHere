@@ -176,6 +176,11 @@
 				<MusicPlaylistContainer Name="Level_1" ID="{604FEF62-5898-4137-8DD1-297A31EC588D}" ShortID="489693158">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="115"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

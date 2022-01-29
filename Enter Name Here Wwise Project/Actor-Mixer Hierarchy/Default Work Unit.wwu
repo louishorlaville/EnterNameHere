@@ -704,6 +704,13 @@
 				<Folder Name="World" ID="{B3625B4A-AAF2-43F1-8985-393AB9E13D1B}" ShortID="263141654">
 					<ChildrenList>
 						<Sound Name="Interupteur" ID="{7C38A0CA-EA38-4AE5-860D-C5F84788132F}" ShortID="63725203">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
