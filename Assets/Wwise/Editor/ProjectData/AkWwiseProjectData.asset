@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 63aaf8ef28717a42bbdab49f917781f3
     GuidInternal: 
-    m_lastTime: -8585581912133775172
+    m_lastTime: -8585581273485081370
     List:
     - name: Banquelvlterre
       guid: 24b8e8145fa6c3499f8dff3d9d37ee36
@@ -373,8 +373,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1763ca6569f59d43a31d32805dfe72dd
     GuidInternal: 
-    m_lastTime: -8585581843241645572
+    m_lastTime: -8585581273484801803
     List:
+    - name: Ambiance_Level_Dark
+      guid: 3027fe3116c10146b22e93218723a3de
+      id: 665468665
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Ambiance_Level_Dark
+        ObjectType: 3
+        guid: 3027fe3116c10146b22e93218723a3de
+      Path: Events\Default Work Unit\Ambiance_Level_Dark
+      maxAttenuation: 0
+      maxDuration: 46.10102
+      minDuration: 46.10102
     - name: Cube_Dash_Down
       guid: 285b368850421c4e9db8f065a61dfd82
       id: 2324566312
@@ -647,6 +664,74 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Mushroom_sound
+      guid: 681f68d719e2304fa4c318a181b22536
+      id: 3973633563
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Mushroom_sound
+        ObjectType: 3
+        guid: 681f68d719e2304fa4c318a181b22536
+      Path: Events\Default Work Unit\Mushroom_sound
+      maxAttenuation: 0
+      maxDuration: 1.75
+      minDuration: 1.75
+    - name: Music_lvl2
+      guid: 552bded0723ed249907252d13dae312c
+      id: 3380345081
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Music_lvl2
+        ObjectType: 3
+        guid: 552bded0723ed249907252d13dae312c
+      Path: Events\Default Work Unit\Music_lvl2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_lvl3
+      guid: c8adaea31210834099aa2fc9dbb80992
+      id: 3380345080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Music_lvl3
+        ObjectType: 3
+        guid: c8adaea31210834099aa2fc9dbb80992
+      Path: Events\Default Work Unit\Music_lvl3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_MainMenu
+      guid: e0e6dd0bd4772744b78b1760b8186e33
+      id: 599938019
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Music_MainMenu
+        ObjectType: 3
+        guid: e0e6dd0bd4772744b78b1760b8186e33
+      Path: Events\Default Work Unit\Music_MainMenu
+      maxAttenuation: 0
+      maxDuration: 32.652084
+      minDuration: 32.652084
     - name: Musique_lvl_one
       guid: a0945de5fbd5ca40a2ca82cc6b4c92f1
       id: 1191994856
@@ -1263,9 +1348,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585581912133755195
     List: []
-  ExpandedFileSystemItemIds: 
+  ExpandedFileSystemItemIds: 0200000003000000
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
