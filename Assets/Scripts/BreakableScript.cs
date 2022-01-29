@@ -21,12 +21,11 @@ public class BreakableScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" && collision.GetComponent<CharacterMain>().isCircle == false && collision.GetComponent<Rigidbody2D>().velocity.magnitude > minimumSpeedToBreak)
         {
-            var velocity = collision.GetComponent<Rigidbody2D>().velocity;
             foreach (Transform child in transform)
             {
                 child.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             }
-            Invoke("endCareer", 2);        
+            Invoke("endCareer", 5);        
         }
         
     }
