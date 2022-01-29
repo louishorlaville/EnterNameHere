@@ -23,7 +23,7 @@ public class MushroomScript : MonoBehaviour
         {
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(BounceDirection * mushroomForce);
             collision.gameObject.GetComponent<CharacterMain>().canBounce = true;
-
+            collision.gameObject.GetComponent<CharacterMain>().EmitSoundBounce()
         }
     }
 
@@ -38,9 +38,6 @@ public class MushroomScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            readyToBounce = false;
-        }
+        
     }
 }
