@@ -691,9 +691,19 @@
 						</Sound>
 						<Sound Name="Laser Beam" ID="{746B1335-D690-4ED8-BDC9-F31272DCC94A}" ShortID="75478269">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Laser Beam" ID="{25D19914-4483-42BB-8887-633D5A27FBDC}" WorkUnitID="{8AD3AA2E-96FF-4700-8F28-6BB779B50FBD}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
 								</Reference>
@@ -760,6 +770,9 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Laser Beam" ID="{25D19914-4483-42BB-8887-633D5A27FBDC}" WorkUnitID="{8AD3AA2E-96FF-4700-8F28-6BB779B50FBD}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
 								</Reference>
@@ -956,9 +969,19 @@
 						</Sound>
 						<Sound Name="Laser Beam_End" ID="{4EA7BE2E-D073-468F-A2B9-9EA400069248}" ShortID="565400334">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Laser Beam" ID="{25D19914-4483-42BB-8887-633D5A27FBDC}" WorkUnitID="{8AD3AA2E-96FF-4700-8F28-6BB779B50FBD}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
 								</Reference>

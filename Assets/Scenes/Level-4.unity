@@ -271,6 +271,10 @@ PrefabInstance:
       propertyPath: cooldownDuration
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8654018773982469865, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
+      propertyPath: LaserSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f58209ad3107cd4fb79883b1eb6d58c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
 --- !u!1 &156130518
@@ -550,7 +554,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 64cd3559e36eec54990a924ef418012d, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: d7c2f23fa5707fc479addc517a780006, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -925,6 +929,10 @@ PrefabInstance:
       propertyPath: cooldownDuration
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8654018773982469865, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
+      propertyPath: LaserSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f58209ad3107cd4fb79883b1eb6d58c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
 --- !u!1001 &489157265
@@ -1049,6 +1057,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 316c092b4fecf86439ddd59db00bb564, type: 3}
+--- !u!1 &538313586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3726062587644738626, guid: 83656d0c4d69e834a815e97fabb5cf21, type: 3}
+  m_PrefabInstance: {fileID: 14941314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &538313592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538313586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7737697728076450c9b81da251b69307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8bcf1efbeaa268e40a969154ba6a940a, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &538313593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538313586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de0ff7010f09470d9c559136c6d1f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &616646482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1197,6 +1261,10 @@ PrefabInstance:
       propertyPath: cooldownDuration
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8654018773982469865, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
+      propertyPath: LaserSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f58209ad3107cd4fb79883b1eb6d58c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
 --- !u!1001 &815622954
@@ -1278,6 +1346,10 @@ PrefabInstance:
       propertyPath: cooldownDuration
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8654018773982469865, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
+      propertyPath: LaserSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f58209ad3107cd4fb79883b1eb6d58c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
 --- !u!1001 &874555998
@@ -1489,6 +1561,10 @@ PrefabInstance:
       propertyPath: firingDuration
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8654018773982469865, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
+      propertyPath: LaserSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f58209ad3107cd4fb79883b1eb6d58c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
 --- !u!1001 &1272095443
@@ -1613,6 +1689,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
+--- !u!1 &1423605776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3726062587644738626, guid: 83656d0c4d69e834a815e97fabb5cf21, type: 3}
+  m_PrefabInstance: {fileID: 2084692206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1423605782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423605776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7737697728076450c9b81da251b69307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8bcf1efbeaa268e40a969154ba6a940a, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1423605783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423605776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de0ff7010f09470d9c559136c6d1f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &1439249999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1865,6 +1997,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83656d0c4d69e834a815e97fabb5cf21, type: 3}
+--- !u!1 &1629082221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3726062587644738626, guid: 83656d0c4d69e834a815e97fabb5cf21, type: 3}
+  m_PrefabInstance: {fileID: 489157265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1629082227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629082221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7737697728076450c9b81da251b69307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8bcf1efbeaa268e40a969154ba6a940a, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1629082228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629082221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de0ff7010f09470d9c559136c6d1f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &1631399814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1997,6 +2185,10 @@ PrefabInstance:
       propertyPath: cooldownDuration
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8654018773982469865, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
+      propertyPath: LaserSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f58209ad3107cd4fb79883b1eb6d58c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
 --- !u!1001 &1912014105
@@ -2313,6 +2505,10 @@ PrefabInstance:
       propertyPath: cooldownDuration
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8654018773982469865, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
+      propertyPath: LaserSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f58209ad3107cd4fb79883b1eb6d58c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
 --- !u!1001 &2066709066
