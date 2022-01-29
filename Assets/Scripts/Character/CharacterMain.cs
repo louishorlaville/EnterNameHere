@@ -45,13 +45,9 @@ public class CharacterMain : MonoBehaviour
     public AK.Wwise.Event CubetoSlime;
 
     //Wwise
-    private bool SlimeMovementIsPlaying = false;
-    private bool CubeMovementIsPlaying = false;
+    private bool movementIsPlaying = false;
     private float lastSlimeMovementTime = 0;
     private float lastCubeMovementTime = 0;
-    
-
-
 
     const float gravityValue = 10;
 
@@ -93,17 +89,20 @@ public class CharacterMain : MonoBehaviour
         {
             if(bEndLevel == false)
             {
-                if(Input.GetKey("space"))
+                if(isCircle == true)
                 {
-                    SwitchToSquare();
-                    SlimetoCube.Post(gameObject);
+                    if(Input.GetKey("space"))
+                    {
+                        SwitchToSquare();
+                    }
                 }
-
-                if(Input.GetKeyUp("space"))
+                else
                 {
-                    //BounceAlongNormal();
-                    SwitchToCircle();
-                    CubetoSlime.Post(gameObject);
+                    if(Input.GetKeyUp("space"))
+                    {
+                        //BounceAlongNormal();
+                        SwitchToCircle();
+                    }
                 }
             }
         }
@@ -138,24 +137,39 @@ public class CharacterMain : MonoBehaviour
                     if(isGrounded() && isCircle)
                     {
                         rb.AddForce(new Vector2(_movementH * movementSpeed, 0f), ForceMode2D.Impulse);
-                        if (!SlimeMovementIsPlaying)
+
+                        if(movementIsPlaying == false)
                         {
-                            SlimeMovement.Post(gameObject);
-                            lastSlimeMovementTime = Time.time;
-                            SlimeMovementIsPlaying = true;
+                            if(isCircle == true)
+                            {
+                                SlimeMovement.Post(gameObject);
+                                lastSlimeMovementTime = Time.time;
+                            }
+                            else
+                            {
+                                CubeMovement.Post(gameObject);
+                                lastCubeMovementTime = Time.time;
+                            }
+
+                            movementIsPlaying = true;
                         }
                         else
                         {
-                            if (_movementH > 0.2)
+                            if(_movementH > 0.2f)
                             {
-                                if (Time.time - lastSlimeMovementTime > 50 / _movementH * Time.deltaTime)
+                                if(Time.time - lastSlimeMovementTime > 50 / _movementH * Time.deltaTime)
                                 {
-                                    SlimeMovementIsPlaying = false;
+                                    movementIsPlaying = false;
+                                }
+                            }
+                            else
+                            {
+                                if(Time.time - lastSlimeMovementTime > 50 / -_movementH * Time.deltaTime)
+                                {
+                                    movementIsPlaying = false;
                                 }
                             }
                         }
-                            
-                        
                     }
                     else
                     {
@@ -182,7 +196,16 @@ public class CharacterMain : MonoBehaviour
                 {
                     rb.AddForce(new Vector2(0f, 0f), ForceMode2D.Impulse);
                 }
-                SpeedSlime.SetGlobalValue(2*_movementH);
+
+                if(_movementH > 0.2f)
+                {
+                    SpeedSlime.SetGlobalValue(2f * _movementH);
+                }
+                else
+                {
+                    SpeedSlime.SetGlobalValue(2f * -_movementH);
+                }
+
                 // Save velocity before fixed update for correct pre-collision velocity
                 // Used for effects placement
                 velocityBeforeFixedUpdate = rb.velocity;
@@ -307,6 +330,8 @@ public class CharacterMain : MonoBehaviour
         isCircle = false;
         renderer.sprite = sprites[1];
         canBounce = false;
+
+        SlimetoCube.Post(gameObject);
     }
 
     private void SwitchToCircle()
@@ -322,6 +347,8 @@ public class CharacterMain : MonoBehaviour
         firstMagnetContact = true;
         magnetTouchContactPoint = false;
         rb.gravityScale = gravityValue;
+
+        CubetoSlime.Post(gameObject);
     }
 
     private void HandleSlimeTrail()
