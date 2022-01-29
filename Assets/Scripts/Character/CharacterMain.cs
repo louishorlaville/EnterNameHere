@@ -127,7 +127,7 @@ public class CharacterMain : MonoBehaviour
     void FixedUpdate()
     {
         float _movementH = Input.GetAxis("Horizontal");
-        print(isGrounded());
+
         if(bPauseMenu == false)
         {
             if(bEndLevel == false)
@@ -221,7 +221,7 @@ public class CharacterMain : MonoBehaviour
 
             if (currentBounces < maxNbBounces)
             {
-                print("here");
+                print(_collision.gameObject.name);
                 Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
                 Vector2 normal = _collision.contacts[0].normal;
                 currentBounces++;
