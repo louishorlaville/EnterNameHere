@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{65CA6317-F569-439D-A31D-32805DFE72DD}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{65CA6317-F569-439D-A31D-32805DFE72DD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Slime_Jump" ID="{DAE08A0A-8762-484F-BCEF-3EACF3A134B9}">
+					<ChildrenList>
+						<Action Name="" ID="{363C87B7-6A64-48C8-9762-BD15B582BA12}" ShortID="178735577">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Slime_Jump" ID="{D597958F-D537-4887-81BE-9280F7461F0C}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Interputeur_Magnets_Positive" ID="{57608C62-A075-400C-BE54-E351686405A3}">
+					<ChildrenList>
+						<Action Name="" ID="{0F1EA8D8-AAB6-46A5-8805-4E1F6CFBD662}" ShortID="926189817">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interupteur" ID="{7C38A0CA-EA38-4AE5-860D-C5F84788132F}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DDE1CE1A-1E97-4E29-AA95-CF83F5171760}" ShortID="275336298">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magnet  negative" ID="{884D9430-70C0-4041-B472-7BB11D540400}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EB6A2B30-84C6-4E03-BBFD-66ECF8E56423}" ShortID="929796522">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.25"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magnet  positive" ID="{EBE90E1C-B645-436D-B3F8-9CCD114860BB}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cube_Impact_fall" ID="{EAC6DC13-71C5-418E-B578-72363C722019}">
+					<ChildrenList>
+						<Action Name="" ID="{FA237BF4-0687-4DC4-B7F4-58719F317344}" ShortID="707720440">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cube Impact fall" ID="{1FDE3651-24AA-45A1-A7E1-46E69C8B330A}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cube_Stuck_To_Magnet" ID="{903C72A1-AE64-49C7-984D-AFCF77FF986E}">
+					<ChildrenList>
+						<Action Name="" ID="{583870DD-682E-4001-87D8-11D128245D38}" ShortID="1056100169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cube Magnet to surface" ID="{0BA81D53-225C-4751-8D44-F4B9B0D3D5B4}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cube_Dash_Down" ID="{88365B28-4250-4E1C-9DB8-F065A61DFD82}">
+					<ChildrenList>
+						<Action Name="" ID="{F14AB833-4305-4B12-AFCD-1647D0AE8FFA}" ShortID="479710677">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cube Woosh fall" ID="{BD86774E-E498-4089-A10A-CC2FF96F224E}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Death_Player_Laser" ID="{688C6918-82B8-4655-A5A8-BD7ED05853D2}">
+					<ChildrenList>
+						<Action Name="" ID="{F2E4F0AE-F4A2-4480-94F4-9BC327980D81}" ShortID="1072650514">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Death By Laser Beam" ID="{02CAEFF4-70C5-4CCF-9D19-483D213F9BC8}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Interupteur_Tapis" ID="{94ECDBDE-36D4-428F-9184-579EF7A80436}">
+					<ChildrenList>
+						<Action Name="" ID="{596DA464-C64C-447C-BB20-67C707F96075}" ShortID="280916048">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interupteur" ID="{7C38A0CA-EA38-4AE5-860D-C5F84788132F}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Interupteur_Magnet_Negative" ID="{3FAA258E-F772-48A1-8D2C-7BD8076FF50A}">
+					<ChildrenList>
+						<Action Name="" ID="{16C6CB3D-F285-44BE-AFCA-DBB9B7BBA395}" ShortID="478916238">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interupteur" ID="{7C38A0CA-EA38-4AE5-860D-C5F84788132F}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F890ED14-CBFA-4C9B-BBB0-8B14D93E47F6}" ShortID="675858252">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magnet  positive" ID="{EBE90E1C-B645-436D-B3F8-9CCD114860BB}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4EB672DB-C3F6-4548-B17B-AF6A98A2B518}" ShortID="329213062">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magnet  negative" ID="{884D9430-70C0-4041-B472-7BB11D540400}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cube_Magnet_to_surface" ID="{64CBFD2A-2F97-43BE-9DA8-BF14472E0F8E}">
+					<ChildrenList>
+						<Action Name="" ID="{B0D4D134-28AF-42A2-A787-2A6C5751BA14}" ShortID="328212133">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cube Magnet to surface" ID="{0BA81D53-225C-4751-8D44-F4B9B0D3D5B4}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cube_Ice_Slide" ID="{D896F0D7-8E52-4EA1-AC83-EBA76D7C7E65}">
+					<ChildrenList>
+						<Action Name="" ID="{8C8C4753-10C7-47A1-B56D-8BAA67631188}" ShortID="57241249">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ice Slide" ID="{5B9E5B0C-CFC5-4B30-B022-269214271FA0}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Death_Spike" ID="{365A91BF-C82E-42A7-B355-8B235BAD9B59}">
+					<ChildrenList>
+						<Action Name="" ID="{5985BFD3-BC1B-4307-832F-AE1F27EA3516}" ShortID="552516963">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Slime spike death" ID="{A47D3061-D2F6-41A8-8B55-D0B8BEAD8104}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Slime_Mouvement" ID="{1C2C6FDD-628B-472E-9CF7-DFDFFA459091}">
+					<ChildrenList>
+						<Action Name="" ID="{B562D241-C39F-4B0D-BC5F-2A308DCF2B55}" ShortID="627472656">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Slime_Move" ID="{5129BC6B-4661-4865-913C-9D68C8940E09}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Pause" ID="{2949F650-6530-46AA-A78B-B7FE6BE7A062}">
+					<ChildrenList>
+						<Action Name="" ID="{1AD2CF94-C495-41CB-860D-6607F5240543}" ShortID="690197655">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Open_Menu" ID="{E97C4CDF-AA1A-4412-B4FA-8BCCDFF0753D}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Laser_Beam" ID="{5B94523B-F785-4457-8FC2-9588F1FD6927}">
+					<ChildrenList>
+						<Action Name="" ID="{62C5E44B-EB5B-43D3-9EA0-E454F3B5B8DE}" ShortID="261847659">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Laser Beam" ID="{746B1335-D690-4ED8-BDC9-F31272DCC94A}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Magnet_Behavior" ID="{73741315-4A01-4588-BE7A-C75B941D4863}">
+					<ChildrenList>
+						<Action Name="" ID="{6FB5E201-5BC6-4A91-83B3-13D61DFE7701}" ShortID="442414620">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magnet_Atract_Repulse" ID="{D7FACD90-2072-4B43-B3F0-FE8CFC2CC7AA}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Item_Destruction" ID="{3BF8CA5A-BD3C-4F8E-8B72-06F445A55D15}">
+					<ChildrenList>
+						<Action Name="" ID="{75AE5671-1435-436D-B695-FC771423B3E3}" ShortID="574525411">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wooden Box Destruction" ID="{3C769F92-4108-4856-8121-A00A0082F7DA}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Map_Ending" ID="{4ECA9203-9BDF-4ABD-8C12-08296DCF7642}">
+					<ChildrenList>
+						<Action Name="" ID="{9662B938-D6F0-42BD-B2D5-1DF787144C9D}" ShortID="935375286">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Enter_Menu" ID="{D2E35617-CD4C-4E27-B03B-17F0C0BA0AF8}">
+					<ChildrenList>
+						<Action Name="" ID="{B2DC88CA-E3E3-4BCB-BE19-EC9BF480EC61}" ShortID="352675621">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Enter-Menu" ID="{AEC29E94-6A01-4021-B665-41166618D92B}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Switch" ID="{560C5799-2A41-45B9-BAF1-201C0FED989B}">
+					<ChildrenList>
+						<Action Name="" ID="{7D0A7365-DA2E-4A47-BCD7-041330AA7DE9}" ShortID="787147721">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Switch" ID="{80BE1CDE-7F4F-498E-9E70-92457E79E618}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Select" ID="{AD94CC73-3571-43A5-AB7F-A9834D234300}">
+					<ChildrenList>
+						<Action Name="" ID="{BF1FD4C4-E981-4DD1-8723-9056874E19A3}" ShortID="620650190">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Select" ID="{75AA624F-68B7-492F-A7E6-5BAD9D0A4EA0}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Exit_Menu" ID="{15BC119A-907D-4B48-9FE8-7CA02620D485}">
+					<ChildrenList>
+						<Action Name="" ID="{AD27B6FA-7E80-4E14-A739-1DD14EBEDE3F}" ShortID="160626378">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Exit_Menu" ID="{CF0D205F-F7A6-400B-9EA4-FF76D920AF81}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Musique_lvl_one" ID="{E55D94A0-D5FB-40CA-A2CA-82CC6B4C92F1}">
+					<ChildrenList>
+						<Action Name="" ID="{32AF11F6-58E5-46B6-BD1D-CA3D69747158}" ShortID="654888420">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level_1" ID="{604FEF62-5898-4137-8DD1-297A31EC588D}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cube_Movement" ID="{368F4CA4-E420-4818-B584-E72DC5689C42}">
+					<ChildrenList>
+						<Action Name="" ID="{08689EE8-B691-49E2-B96D-E6CCD5132F3D}" ShortID="283933786">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cube Movement" ID="{733A4CCC-0FD4-4C26-9F7F-4410BDAA2745}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Victory_Music" ID="{D7E0AFF0-8C4E-4DED-8CE3-DB086AE2EDCC}">
+					<ChildrenList>
+						<Action Name="" ID="{D4A936BF-F6CD-443D-A688-ABB74C8788CC}" ShortID="808050421">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{F328DE67-FD50-46FC-82F9-CDDC07CE0E07}" ShortID="874892079">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory_115bpm4-4_L2M-P0" ID="{9850A920-3CF5-4A13-A55C-593ADA02B977}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Slime_to_cube" ID="{DB321DC6-262B-44EC-800D-EC617C3C2E51}">
+					<ChildrenList>
+						<Action Name="" ID="{B57862D6-2A48-4CCB-8299-1A40B2EC327E}" ShortID="159800264">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Slime To Cube" ID="{77263FB2-EB76-4316-8470-FB1B639713C3}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cube_to_slime" ID="{64B30716-DF52-4F68-8329-DE5A0A2C286C}">
+					<ChildrenList>
+						<Action Name="" ID="{18DF34FC-5EE4-49AC-8F12-4099D698C7E2}" ShortID="136850843">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cube to slime" ID="{548857B3-09B1-4ECB-B62E-26A3A7FD164F}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

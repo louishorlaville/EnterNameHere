@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac25e3ce7dc034e3fb16dfc29c8e1aa9, type: 3}
+  m_Name: 64B30716-DF52-4F68-8329-DE5A0A2C286C
+  m_EditorClassIdentifier: 
+  objectName: Cube_to_slime
+  id: 3425940391
+  guid: 64B30716-DF52-4F68-8329-DE5A0A2C286C
