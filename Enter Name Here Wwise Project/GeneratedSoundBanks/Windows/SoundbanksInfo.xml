@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="2156242479">
+		<SoundBank Id="2436553819" Language="SFX" Hash="4207809228">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
@@ -45,7 +45,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="391978585" Name="Cube_Magnet_to_surface" ObjectPath="\Events\Default Work Unit\Cube_Magnet_to_surface" DurationType="OneShot" DurationMin="0.549500" DurationMax="0.549500">
+				<Event Id="391978585" Name="Cube_Magnet_to_surface" ObjectPath="\Events\Default Work Unit\Cube_Magnet_to_surface" DurationType="OneShot" DurationMin="0.5495" DurationMax="0.5495">
 					<IncludedMemoryFiles>
 						<File Id="642257278" Language="SFX">
 							<ShortName>Cube Magnet to surface.wav</ShortName>
@@ -61,7 +61,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="591287882" Name="Cube_Stuck_To_Magnet" ObjectPath="\Events\Default Work Unit\Cube_Stuck_To_Magnet" DurationType="OneShot" DurationMin="0.549500" DurationMax="0.549500">
+				<Event Id="591287882" Name="Cube_Stuck_To_Magnet" ObjectPath="\Events\Default Work Unit\Cube_Stuck_To_Magnet" DurationType="OneShot" DurationMin="0.5495" DurationMax="0.5495">
 					<IncludedMemoryFiles>
 						<File Id="642257278" Language="SFX">
 							<ShortName>Cube Magnet to surface.wav</ShortName>
@@ -93,7 +93,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3515294194" Name="Interputeur_Magnets_Positive" ObjectPath="\Events\Default Work Unit\Interputeur_Magnets_Positive" DurationType="OneShot" DurationMin="0.625000" DurationMax="0.625000">
+				<Event Id="3515294194" Name="Interputeur_Magnets_Positive" ObjectPath="\Events\Default Work Unit\Interputeur_Magnets_Positive" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
 					<IncludedMemoryFiles>
 						<File Id="25341359" Language="SFX">
 							<ShortName>Interupteur.wav</ShortName>
@@ -101,19 +101,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3411360579" Name="Interupteur_Magnet_Negative" ObjectPath="\Events\Default Work Unit\Interupteur_Magnet_Negative" DurationType="OneShot" DurationMin="28.402374" DurationMax="28.402374">
+				<Event Id="3411360579" Name="Interupteur_Magnet_Negative" ObjectPath="\Events\Default Work Unit\Interupteur_Magnet_Negative" MaxAttenuation="100." DurationType="OneShot" DurationMin="28.402374" DurationMax="28.402374">
 					<IncludedMemoryFiles>
-						<File Id="25341359" Language="SFX">
-							<ShortName>Interupteur.wav</ShortName>
-							<Path>SFX\Interupteur_10C4C929.wem</Path>
-						</File>
 						<File Id="1023647580" Language="SFX">
 							<ShortName>Magnet  negative.wav</ShortName>
 							<Path>SFX\Magnet  negative_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2709760796" Name="Interupteur_Tapis" ObjectPath="\Events\Default Work Unit\Interupteur_Tapis" DurationType="OneShot" DurationMin="0.625000" DurationMax="0.625000">
+				<Event Id="2709760796" Name="Interupteur_Tapis" ObjectPath="\Events\Default Work Unit\Interupteur_Tapis" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
 					<IncludedMemoryFiles>
 						<File Id="25341359" Language="SFX">
 							<ShortName>Interupteur.wav</ShortName>
@@ -129,15 +125,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="733612088" Name="Laser_Beam" ObjectPath="\Events\Default Work Unit\Laser_Beam" DurationType="OneShot" DurationMin="5.034042" DurationMax="5.034042">
+				<Event Id="733612088" Name="Laser_Beam" ObjectPath="\Events\Default Work Unit\Laser_Beam" DurationType="OneShot" DurationMin="2.154716" DurationMax="2.154716">
 					<IncludedMemoryFiles>
+						<File Id="183178331" Language="SFX">
+							<ShortName>Laser Beam.wav</ShortName>
+							<Path>SFX\Laser Beam_0738A6CA.wem</Path>
+						</File>
 						<File Id="349211830" Language="SFX">
 							<ShortName>Laser Beam.wav</ShortName>
-							<Path>SFX\Laser Beam_10C4C929.wem</Path>
+							<Path>SFX\Laser Beam_CD2FF58E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2155389612" Name="Magnet_Behavior" ObjectPath="\Events\Default Work Unit\Magnet_Behavior" DurationType="OneShot" DurationMin="1.125000" DurationMax="1.125000">
+				<Event Id="2155389612" Name="Magnet_Behavior" ObjectPath="\Events\Default Work Unit\Magnet_Behavior" DurationType="OneShot" DurationMin="1.125" DurationMax="1.125">
 					<IncludedMemoryFiles>
 						<File Id="398150341" Language="SFX">
 							<ShortName>Magnet Repulse.wav</ShortName>
@@ -162,8 +162,8 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3793843481" Name="Map_Ending" ObjectPath="\Events\Default Work Unit\Map_Ending" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3973633563" Name="Mushroom_sound" ObjectPath="\Events\Default Work Unit\Mushroom_sound" DurationType="OneShot" DurationMin="1.750000" DurationMax="1.750000">
+				<Event Id="3793843481" Name="Map_Ending" ObjectPath="\Events\Default Work Unit\Map_Ending" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3973633563" Name="Mushroom_sound" ObjectPath="\Events\Default Work Unit\Mushroom_sound" DurationType="OneShot" DurationMin="1.75" DurationMax="1.75">
 					<IncludedMemoryFiles>
 						<File Id="191068810" Language="SFX">
 							<ShortName>Mushroom sound.wav</ShortName>
@@ -267,7 +267,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1418889888" Name="Slime_Mouvement" ObjectPath="\Events\Default Work Unit\Slime_Mouvement" DurationType="OneShot" DurationMin="4.500000" DurationMax="4.500000">
+				<Event Id="1418889888" Name="Slime_Mouvement" ObjectPath="\Events\Default Work Unit\Slime_Mouvement" DurationType="OneShot" DurationMin="4.5" DurationMax="4.5">
 					<IncludedMemoryFiles>
 						<File Id="458765081" Language="SFX">
 							<ShortName>Slime_Move.wav</ShortName>
@@ -275,7 +275,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3678733195" Name="Slime_to_cube" ObjectPath="\Events\Default Work Unit\Slime_to_cube" DurationType="OneShot" DurationMin="0.414542" DurationMax="4.500000">
+				<Event Id="3678733195" Name="Slime_to_cube" ObjectPath="\Events\Default Work Unit\Slime_to_cube" DurationType="OneShot" DurationMin="0.414542" DurationMax="0.414542">
 					<IncludedMemoryFiles>
 						<File Id="902469190" Language="SFX">
 							<ShortName>Slime to cube.wav</ShortName>
@@ -283,7 +283,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2792155208" Name="UI_Pause" ObjectPath="\Events\Default Work Unit\UI_Pause" DurationType="OneShot" DurationMin="0.864000" DurationMax="0.864000">
+				<Event Id="2792155208" Name="UI_Pause" ObjectPath="\Events\Default Work Unit\UI_Pause" DurationType="OneShot" DurationMin="0.864" DurationMax="0.864">
 					<IncludedMemoryFiles>
 						<File Id="221592157" Language="SFX">
 							<ShortName>Open_Menu.wav</ShortName>
@@ -313,7 +313,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="635441903">
+		<SoundBank Id="3604647259" Language="SFX" Hash="3118278380">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>

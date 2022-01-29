@@ -85,23 +85,6 @@
 				</Event>
 				<Event Name="Interupteur_Magnet_Negative" ID="{3FAA258E-F772-48A1-8D2C-7BD8076FF50A}">
 					<ChildrenList>
-						<Action Name="" ID="{16C6CB3D-F285-44BE-AFCA-DBB9B7BBA395}" ShortID="478916238">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Interupteur" ID="{7C38A0CA-EA38-4AE5-860D-C5F84788132F}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{F890ED14-CBFA-4C9B-BBB0-8B14D93E47F6}" ShortID="675858252">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Magnet  positive" ID="{EBE90E1C-B645-436D-B3F8-9CCD114860BB}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{4EB672DB-C3F6-4548-B17B-AF6A98A2B518}" ShortID="329213062">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="2"/>
@@ -185,6 +168,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Laser Beam" ID="{746B1335-D690-4ED8-BDC9-F31272DCC94A}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{98675447-4C8A-4773-BA7C-208C2DE1F2F9}" ShortID="262261027">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Laser Beam_End" ID="{4EA7BE2E-D073-468F-A2B9-9EA400069248}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -311,7 +304,7 @@
 						<Action Name="" ID="{B57862D6-2A48-4CCB-8299-1A40B2EC327E}" ShortID="159800264">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Slime To Cube" ID="{77263FB2-EB76-4316-8470-FB1B639713C3}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+									<ObjectRef Name="Slime to cube" ID="{BFCD1D3A-02FD-4EC5-AD30-E0DC42B49298}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
