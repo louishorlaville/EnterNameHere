@@ -37,18 +37,18 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1467731768	SlimeSpeed			\Default Work Unit\SlimeSpeed	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	714768591	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime To Cube\VOid\Wwise Silence	
 	844867495	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube_Movement\VIDE\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	369949	Level3-Melody4_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level3-Melody4_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_3\Level3-Melody4_115bpm4-4_L4M-P0\Level3-Melody4_115bpm4-4_L4M-P0		2571440
 	25341359	Interupteur	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Interupteur_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Interupteur		120064
+	183178331	Laser Beam_End	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Laser Beam_0738A6CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Laser Beam_End		125768
 	191068810	Mushroom sound	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Mushroom sound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Mushroom sound		336064
 	200400045	Level2-Melody4_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level2-Melody4_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_2\Level2-Melody4_115bpm4-4_L4M-P0\Level2-Melody4_115bpm4-4_L4M-P0		2571440
 	221592157	Open_Menu	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Open_Menu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Open_Menu		165952
 	243699287	Slime Jump Wouhou	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime Jump Wouhou_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime_Jump\SlimeJump_Whoopie\Slime Jump Wouhou		102408
 	248286567	Level2-Melody3_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level2-Melody3_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_2\Level2-Melody3_115bpm4-4_L4M-P0\Level2-Melody3_115bpm4-4_L4M-P0		2714104
-	349211830	Laser Beam	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Laser Beam_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Laser Beam		966600
+	349211830	Laser Beam	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Laser Beam_CD2FF58E.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Laser Beam		389752
 	359038967	Slime spike death	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime spike death_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime spike death		146528
 	398150341	Magnet Repulse	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Magnet Repulse_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Magnet_Atract_Repulse\Magnet Repulse		216064
 	458765081	Slime_Move	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime_Move_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime_Move		864064
@@ -67,9 +67,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	808866942	Level2-Melody2_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level2-Melody2_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_2\Level2-Melody2_115bpm4-4_L4M-P0\Level2-Melody2_115bpm4-4_L4M-P0		2429152
 	814428059	Level3-Melody1_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level3-Melody1_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_3\Level3-Melody1_115bpm4-4_L4M-P0\Level3-Melody1_115bpm4-4_L4M-P0		2428776
 	814445167	Level1-Melody4_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody4_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody4_115bpm4-4_L4M-P0\Level1-Melody4_115bpm4-4_L4M-P0		2999432
-	875125978	Level-Intro_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level-Intro_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level-Intro_115bpm4-4_L4M-P0\Level-Intro_115bpm4-4_L4M-P0		2000788
+	875125978	Level-Intro_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level-Intro_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_3\Level-Intro_115bpm4-4_L4M-P0\Level-Intro_115bpm4-4_L4M-P0		2000788
 	886583982	Level1-Melody3_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody3_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody3_115bpm4-4_L4M-P0\Level1-Melody3_115bpm4-4_L4M-P0		2999432
-	902469190	Slime to cube	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime to cube_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime To Cube\Slime to cube		79656
+	902469190	Slime to cube	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime to cube_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime to cube		79656
 	945211549	Wooden Box Destruction	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Wooden Box Destruction_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Wooden Box Destruction		154788
 	965247569	Cube Woosh fall	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Woosh fall_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube Woosh fall		189620
 	972262073	Cube to slime	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube to slime_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube to slime		341232
