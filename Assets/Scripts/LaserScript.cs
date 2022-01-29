@@ -26,6 +26,4 @@ public class LaserScript : MonoBehaviour
         LaserBeam.SetActive(false);
         Invoke("beginFiring", cooldownDuration);
     }
-
-    
 }

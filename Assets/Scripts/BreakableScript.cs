@@ -19,6 +19,8 @@ public class BreakableScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.LogError(collision.GetComponent<Rigidbody2D>().velocity.magnitude);
+
         if(collision.gameObject.tag == "Player" && collision.GetComponent<CharacterMain>().isCircle == false && collision.GetComponent<Rigidbody2D>().velocity.magnitude > minimumSpeedToBreak)
         {
             var velocity = collision.GetComponent<Rigidbody2D>().velocity;
