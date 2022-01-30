@@ -301,6 +301,7 @@
 						<Action Name="" ID="{86CCAA2B-48C9-479D-9D49-00AFCDF35181}" ShortID="560672001">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -333,6 +334,7 @@
 						<Action Name="" ID="{3D8F7025-A620-4C88-9E68-1EF842689A2E}" ShortID="483456189">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

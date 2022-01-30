@@ -38,7 +38,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="2404686179">
+		<SoundBank Id="2436553819" Language="SFX" Hash="2380185571">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
@@ -277,7 +277,7 @@
 				<GameParameter Id="1467731768" Name="SlimeSpeed" ObjectPath="\Game Parameters\Default Work Unit\SlimeSpeed"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="2816874330">
+		<SoundBank Id="3604647259" Language="SFX" Hash="2832184421">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
