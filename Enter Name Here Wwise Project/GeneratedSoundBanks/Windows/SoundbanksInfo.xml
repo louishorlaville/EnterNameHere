@@ -38,7 +38,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="4276287498">
+		<SoundBank Id="2436553819" Language="SFX" Hash="2404686179">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
@@ -277,7 +277,7 @@
 				<GameParameter Id="1467731768" Name="SlimeSpeed" ObjectPath="\Game Parameters\Default Work Unit\SlimeSpeed"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="127937120">
+		<SoundBank Id="3604647259" Language="SFX" Hash="2816874330">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
@@ -306,7 +306,38 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2223599963" Name="MainMenuStop" ObjectPath="\Events\Default Work Unit\MainMenuStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3380345081" Name="Music_lvl2" ObjectPath="\Events\Default Work Unit\Music_lvl2" DurationType="Infinite"/>
+				<Event Id="3380345080" Name="Music_lvl3" ObjectPath="\Events\Default Work Unit\Music_lvl3" DurationType="Infinite"/>
 				<Event Id="599938019" Name="Music_MainMenu" ObjectPath="\Events\Default Work Unit\Music_MainMenu" DurationType="OneShot" DurationMin="32.652084" DurationMax="32.652084"/>
+				<Event Id="1191994856" Name="Musique_lvl_one" ObjectPath="\Events\Default Work Unit\Musique_lvl_one" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="459933611" Language="SFX">
+							<ShortName>Level1-Melody1_115bpm4-4_L4M-P0.wav</ShortName>
+							<Path>SFX\Level1-Melody1_115bpm4-4_L4M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="624279310" Language="SFX">
+							<ShortName>Level1-NoMelody_115bpm4-4_L8M-P0.wav</ShortName>
+							<Path>SFX\Level1-NoMelody_115bpm4-4_L8M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="784518471" Language="SFX">
+							<ShortName>Level1-Melody2_115bpm4-4_L4M-P0.wav</ShortName>
+							<Path>SFX\Level1-Melody2_115bpm4-4_L4M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="814445167" Language="SFX">
+							<ShortName>Level1-Melody4_115bpm4-4_L4M-P0.wav</ShortName>
+							<Path>SFX\Level1-Melody4_115bpm4-4_L4M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="875125978" Language="SFX">
+							<ShortName>Level-Intro_115bpm4-4_L4M-P0.wav</ShortName>
+							<Path>SFX\Level-Intro_115bpm4-4_L4M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="886583982" Language="SFX">
+							<ShortName>Level1-Melody3_115bpm4-4_L4M-P0.wav</ShortName>
+							<Path>SFX\Level1-Melody3_115bpm4-4_L4M-P0_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="644826122" Language="SFX">

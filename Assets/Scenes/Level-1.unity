@@ -19110,7 +19110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a027e5a7f9ec7547b3ccc66eb565db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerObject: {fileID: 0}
+  triggerObject: {fileID: 366809751}
 --- !u!61 &1307575580
 BoxCollider2D:
   m_ObjectHideFlags: 0
