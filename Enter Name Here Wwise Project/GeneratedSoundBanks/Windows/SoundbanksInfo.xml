@@ -277,7 +277,7 @@
 				<GameParameter Id="1467731768" Name="SlimeSpeed" ObjectPath="\Game Parameters\Default Work Unit\SlimeSpeed"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="2832184421">
+		<SoundBank Id="3604647259" Language="SFX" Hash="2451416046">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
