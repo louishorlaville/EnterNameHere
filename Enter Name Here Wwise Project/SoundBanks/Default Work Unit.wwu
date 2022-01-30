@@ -44,6 +44,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Intro" ID="{75573796-0B47-4025-A242-4E3B4A5970D5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Enter Name Here Cinematic" ID="{9F0CC8D8-1F7B-4E8B-A772-6E3A135487A9}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

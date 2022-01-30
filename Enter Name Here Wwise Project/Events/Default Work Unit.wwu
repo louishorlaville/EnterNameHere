@@ -444,6 +444,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Intro_Game" ID="{4E78B154-DC18-4524-9968-CE5F02EADAFA}">
+					<ChildrenList>
+						<Action Name="" ID="{F977E190-F769-4CA4-B9D1-8B6DD7C27793}" ShortID="752196754">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enter Name Here Cinematic" ID="{9F0CC8D8-1F7B-4E8B-A772-6E3A135487A9}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

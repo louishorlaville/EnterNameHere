@@ -1467,6 +1467,34 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="Enter Name Here Cinematic" ID="{9F0CC8D8-1F7B-4E8B-A772-6E3A135487A9}" ShortID="109897250">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Enter Name Here Cinematic" ID="{095D5F6E-1AC2-4935-A0B1-3EC05035334A}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.991907514450867"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.440847784200386"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Enter Name Here Cinematic.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="476228923"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Enter Name Here Cinematic" ID="{095D5F6E-1AC2-4935-A0B1-3EC05035334A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -632,7 +632,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932425691}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: a60d427f6aa02724da3d938aab50e3ff, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 133436a0c7185a341ada0b4b5c6ab81d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -693,7 +693,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 34e50f125cb98b243b39ec0cdf941691, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -822,6 +822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2003611911}
   - component: {fileID: 2003611910}
+  - component: {fileID: 2003611912}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -868,3 +869,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2003611912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003611909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311706335633642248953cbeb3e83dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4c013284f4f789c41bf2f9ac029dd226, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
