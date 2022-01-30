@@ -19,16 +19,16 @@ public class CubeCollisionDetectionScript : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!player.GetComponent<CharacterMain>().isCircle && canCheck)
         {
-            player.GetComponent<CharacterMain>().EmitSoundCubeMovement();
-            canCheck = false; 
+            player.GetComponent<CharacterMain>().EmitSoundBounce();
+            canCheck = false;
             StartCoroutine(DelayBeforeCollisionCheck(2f));
         }
     }
-
+   
     IEnumerator DelayBeforeCollisionCheck(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
