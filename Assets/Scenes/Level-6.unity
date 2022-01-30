@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 72861477}
   - component: {fileID: 72861476}
   - component: {fileID: 72861475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2979,7 +2979,7 @@ GameObject:
   - component: {fileID: 329081342}
   - component: {fileID: 329081341}
   - component: {fileID: 329081340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7734,7 +7734,7 @@ GameObject:
   - component: {fileID: 726566076}
   - component: {fileID: 726566075}
   - component: {fileID: 726566074}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20233,6 +20233,14 @@ PrefabInstance:
     - target: {fileID: 5249919762364850822, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5350509046729188784, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6312523003152728418, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6379931603996153023, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
       propertyPath: m_Enabled
