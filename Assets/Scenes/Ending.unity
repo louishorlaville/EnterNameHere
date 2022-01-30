@@ -1393,6 +1393,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crossfade: {fileID: 1303635368}
+  Princess:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b3aa27a9101e7f54687001aade9a2074, type: 2}
+  Fall:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f782e2224496c0446b0d3ef93d8d2e9d, type: 2}
+  Squish:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: dd70089d08ed1ad4eaeeb0db900fa24d, type: 2}
 --- !u!1 &521347529
 GameObject:
   m_ObjectHideFlags: 0
