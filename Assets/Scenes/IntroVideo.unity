@@ -740,6 +740,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  video: {fileID: 1932425692}
 --- !u!1 &1975995614
 GameObject:
   m_ObjectHideFlags: 0
