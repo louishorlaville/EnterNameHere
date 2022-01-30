@@ -12952,7 +12952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155308, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: mushroomForce
-      value: 275000
+      value: 400000
       objectReference: {fileID: 0}
     - target: {fileID: 5490492766095155309, guid: e929c0095a2b3b943989194b7be48427, type: 3}
       propertyPath: m_Name
