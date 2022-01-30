@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1125500713" Language="SFX" Hash="279059953">
+		<SoundBank Id="1125500713" Language="SFX" Hash="3726859540">
 			<ObjectPath>\SoundBanks\Default Work Unit\Intro</ObjectPath>
 			<ShortName>Intro</ShortName>
 			<Path>Intro.bnk</Path>
@@ -21,7 +21,7 @@
 			<IncludedMemoryFiles>
 				<File Id="476228923" Language="SFX">
 					<ShortName>Enter Name Here Cinematic.wav</ShortName>
-					<Path>SFX\Enter Name Here Cinematic_37E5CB16.wem</Path>
+					<Path>SFX\Enter Name Here Cinematic_C5E078ED.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

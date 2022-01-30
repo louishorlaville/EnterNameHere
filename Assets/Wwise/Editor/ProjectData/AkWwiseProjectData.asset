@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 63aaf8ef28717a42bbdab49f917781f3
     GuidInternal: 
-    m_lastTime: -8585580906104462404
+    m_lastTime: -8585580901192087844
     List:
     - name: Banquelvlterre
       guid: 24b8e8145fa6c3499f8dff3d9d37ee36
@@ -401,7 +401,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1763ca6569f59d43a31d32805dfe72dd
     GuidInternal: 
-    m_lastTime: -8585580906104246710
+    m_lastTime: -8585580901210496523
     List:
     - name: Ambiance_Level_Dark
       guid: 3027fe3116c10146b22e93218723a3de
@@ -1445,8 +1445,8 @@ MonoBehaviour:
     m_lastTime: -8585581912133755195
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 2e0000008400000085000000fc000000fd000000
+  ExpandedWaapiItemIds: 0200000003000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
