@@ -206,7 +206,7 @@ MonoBehaviour:
   rollSpeed: 5
   rollRotationSpeed: 85
   collisionBounceHeight: 130
-  magnetPower: 1000
+  magnetPower: 100
   SlimeMovement:
     idInternal: 0
     valueGuidInternal: 
