@@ -2908,7 +2908,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 95fa9107802167e44acbf8d345249c01, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: f798ac53a23c9314bb8c01db2af95a8f, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -4328,11 +4328,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491413294415040226, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: -21.9
       objectReference: {fileID: 0}
     - target: {fileID: 7491413294415040226, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 80
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 7491413294415040226, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13867,7 +13867,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4199ae2e5cb9e394a954472ccba51ef7, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: b47b143344a472d4f959408b6d337dab, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

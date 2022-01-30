@@ -14,10 +14,22 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7F2F9264-D33E-4ED6-A037-2FE761A2825A}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -32,6 +44,11 @@
 							<ChildrenList>
 								<BlendContainer Name="SlimeJump_Whoopie" ID="{36E578F5-35D4-4F3F-A7BD-269B1A54E983}" ShortID="61552755">
 									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>10</Value>
@@ -98,6 +115,26 @@
 								</BlendContainer>
 								<Sound Name="Slime jump_01" ID="{7EC3851F-097B-46D6-B697-F6D7EBA71B70}" ShortID="202662236">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{37B8CDF2-09A3-4870-A7B4-71F5CEB8EB81}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C02F93BA-87C7-4254-B5B3-AA5C49123CCB}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="152"/>
+															<Property Name="Min" Type="Real64" Value="-328"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>90</Value>
@@ -129,24 +166,6 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
-						<SwitchContainer Name="Slime_Morphing" ID="{6DC0B0E9-EE51-4B2A-9B7E-E800C7F0B2A8}" ShortID="1006460163">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Slime" ID="{AF32E7F6-5B76-40B5-96BC-97F92D6BDC0B}" WorkUnitID="{629CA6BF-0198-44F3-B665-50CD2289E8BA}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Slime_Form" ID="{004473F3-0B5D-4859-9CF3-F0807D80B4AA}" WorkUnitID="{629CA6BF-0198-44F3-B665-50CD2289E8BA}"/>
-								</Reference>
-							</ReferenceList>
-							<ObjectLists/>
-							<GroupingInfo/>
-						</SwitchContainer>
 						<Sound Name="Death By Laser Beam" ID="{02CAEFF4-70C5-4CCF-9D19-483D213F9BC8}" ShortID="1034671369">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -202,9 +221,26 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{73F36738-90E8-4186-8C7E-EAD927AF7298}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-328"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -230,121 +266,6 @@
 								<ActiveSource Name="Cube Magnet to surface" ID="{E2A32B46-5579-4C59-8443-878A2EC0394F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Cube Woosh fall" ID="{BD86774E-E498-4089-A10A-CC2FF96F224E}" ShortID="862293804">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Cube Woosh fall" ID="{5207270C-A339-4492-B72A-75435487E0CC}">
-									<Language>SFX</Language>
-									<AudioFile>Cube Woosh fall.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="965247569"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Cube Woosh fall" ID="{5207270C-A339-4492-B72A-75435487E0CC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Ice Slide" ID="{5B9E5B0C-CFC5-4B30-B022-269214271FA0}" ShortID="1009407150">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Ice Slide" ID="{8572C498-A9E3-4A22-9F2F-E383169D4515}">
-									<Language>SFX</Language>
-									<AudioFile>Ice Slide.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="658569221"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Ice Slide" ID="{8572C498-A9E3-4A22-9F2F-E383169D4515}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<SwitchContainer Name="Slime_Rebound" ID="{1394C1C5-69DB-4236-8CCF-8A698FEF7C29}" ShortID="686399486">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="SLime Rebound-dIRT" ID="{60F39A83-9461-4168-80B1-D4C6924D7EBA}" ShortID="595943514">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SLime Rebound-dIRT" ID="{7CEE3D98-5968-45C0-9EFA-CB40E61081D6}">
-											<Language>SFX</Language>
-											<AudioFile>SLime Rebound-dIRT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="141748639"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="SLime Rebound-dIRT" ID="{7CEE3D98-5968-45C0-9EFA-CB40E61081D6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SLime Rebound-Metal" ID="{EC1473AA-084B-4C76-998D-FD5AF0BCEF53}" ShortID="512923321">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SLime Rebound-Metal" ID="{F65B397A-2DC8-4830-AF07-C593DFBCE073}">
-											<Language>SFX</Language>
-											<AudioFile>SLime Rebound-Metal.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="13683344"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="SLime Rebound-Metal" ID="{F65B397A-2DC8-4830-AF07-C593DFBCE073}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists/>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="SLime Rebound-dIRT" ID="{60F39A83-9461-4168-80B1-D4C6924D7EBA}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="SLime Rebound-Metal" ID="{EC1473AA-084B-4C76-998D-FD5AF0BCEF53}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-							</GroupingInfo>
-						</SwitchContainer>
 						<Sound Name="Slime spike death" ID="{A47D3061-D2F6-41A8-8B55-D0B8BEAD8104}" ShortID="455443999">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -409,6 +330,9 @@
 									</RTPCList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{9A7D54E9-E6AC-48AC-9E80-32CD0B64B319}" ShortID="288806799">
 											<ReferenceList>
@@ -470,6 +394,26 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Cube to slime" ID="{548857B3-09B1-4ECB-B62E-26A3A7FD164F}" ShortID="706360683">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{40F58530-FFEB-40B0-9CB4-FB76972544AF}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="126"/>
+													<Property Name="Min" Type="Real64" Value="-227"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
@@ -501,9 +445,27 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8DCA7334-AAC0-48B2-A5A8-361EC9023DB1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="101"/>
+													<Property Name="Min" Type="Real64" Value="-278"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -532,6 +494,9 @@
 						<Sound Name="Cube Movement" ID="{733A4CCC-0FD4-4C26-9F7F-4410BDAA2745}" ShortID="302888120">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{28A6FC8E-EB5A-4D88-BBEF-81D62516458B}" ShortID="104725052">
 											<ReferenceList>
@@ -593,9 +558,22 @@
 					<ChildrenList>
 						<Sound Name="Interupteur" ID="{7C38A0CA-EA38-4AE5-860D-C5F84788132F}" ShortID="63725203">
 							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3569F161-7D8C-4014-BE3B-635BDF1713BE}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="126"/>
+													<Property Name="Min" Type="Real64" Value="-278"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>10</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -619,47 +597,6 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Interupteur" ID="{AF5E4857-C54E-48F0-9FB5-C18F10089ABC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Laser Beam" ID="{746B1335-D690-4ED8-BDC9-F31272DCC94A}" ShortID="75478269">
-							<PropertyList>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Laser Beam" ID="{25D19914-4483-42BB-8887-633D5A27FBDC}" WorkUnitID="{8AD3AA2E-96FF-4700-8F28-6BB779B50FBD}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Laser Beam" ID="{5BF030F7-57D2-40AC-A8E0-A8D09334E5CC}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.50194924132948"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="2.02962084537574"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Laser Beam.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="349211830"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Laser Beam" ID="{5BF030F7-57D2-40AC-A8E0-A8D09334E5CC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Magnet  negative" ID="{884D9430-70C0-4041-B472-7BB11D540400}" ShortID="974654041">
@@ -696,36 +633,6 @@
 								<ActiveSource Name="Magnet  negative" ID="{C7A42DA1-769A-437D-B2DB-2C8EAF934060}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Magnet  positive" ID="{EBE90E1C-B645-436D-B3F8-9CCD114860BB}" ShortID="568878775">
-							<PropertyList>
-								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Laser Beam" ID="{25D19914-4483-42BB-8887-633D5A27FBDC}" WorkUnitID="{8AD3AA2E-96FF-4700-8F28-6BB779B50FBD}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Magnet  positive" ID="{D585B8FB-A268-4E45-95C2-8FA962B53E5F}">
-									<Language>SFX</Language>
-									<AudioFile>Magnet  positive.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="828571607"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Magnet  positive" ID="{D585B8FB-A268-4E45-95C2-8FA962B53E5F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Wooden Box Destruction" ID="{3C769F92-4108-4856-8121-A00A0082F7DA}" ShortID="265889678">
 							<PropertyList>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
@@ -735,6 +642,19 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{05FD6F50-6F1D-4A46-8A50-43366B99453D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="101"/>
+													<Property Name="Min" Type="Real64" Value="-253"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -742,7 +662,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-17</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -768,95 +688,6 @@
 								<ActiveSource Name="Wooden Box Destruction" ID="{DC7BD17C-AB8B-4A11-BB7E-66FB70DD0B6D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<SwitchContainer Name="Magnet_Atract_Repulse" ID="{D7FACD90-2072-4B43-B3F0-FE8CFC2CC7AA}" ShortID="360398859">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-								</Reference>
-								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="None" ID="{53C38677-0942-4690-A27F-E26E2D0B8244}" WorkUnitID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Magnet_Polarity" ID="{7ACEBB70-7505-44F7-BF27-80132C0B4740}" WorkUnitID="{5E5F2198-BF37-4620-BBB6-D88D2EA80823}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Magnet Attract" ID="{EA1E81B9-BAFA-4927-B0AA-9F8DFD24063C}" ShortID="984067462">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Magnet Attract" ID="{B9B56F9B-E368-4425-95F2-1648D12A802A}">
-											<Language>SFX</Language>
-											<AudioFile>Magnet Attract.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="761757867"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Magnet Attract" ID="{B9B56F9B-E368-4425-95F2-1648D12A802A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Magnet Repulse" ID="{BF2E6125-0077-43D7-96F3-06BA83C8DA5E}" ShortID="40150734">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Magnet Repulse" ID="{5A3BAA17-B27E-4FBD-A970-2DE192F91AB0}">
-											<Language>SFX</Language>
-											<AudioFile>Magnet Repulse.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="398150341"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Magnet Repulse" ID="{5A3BAA17-B27E-4FBD-A970-2DE192F91AB0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists/>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="Magnet Repulse" ID="{BF2E6125-0077-43D7-96F3-06BA83C8DA5E}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="Magnet Attract" ID="{EA1E81B9-BAFA-4927-B0AA-9F8DFD24063C}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Negative" ID="{1B7BF135-CEB1-4C22-9127-5F71DA6C5B91}"/>
-										<ItemList>
-											<ItemRef Name="Magnet Attract" ID="{EA1E81B9-BAFA-4927-B0AA-9F8DFD24063C}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Positive" ID="{9E160AC2-7970-449A-AAB1-93C25DA0013B}"/>
-										<ItemList>
-											<ItemRef Name="Magnet Repulse" ID="{BF2E6125-0077-43D7-96F3-06BA83C8DA5E}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
 						<Sound Name="Mushroom sound" ID="{E6D23614-9CBC-448B-87A5-BC0F641981B8}" ShortID="368503552">
 							<PropertyList>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
@@ -873,7 +704,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -899,14 +730,24 @@
 								<ActiveSource Name="Mushroom sound" ID="{94422180-41D2-4264-87EB-C4262427F145}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Laser Beam_End" ID="{4EA7BE2E-D073-468F-A2B9-9EA400069248}" ShortID="565400334">
+						<ActorMixer Name="Laser Beam" ID="{F204D6E3-9637-4CB5-9F01-51D5F3D70E54}" ShortID="227976339">
 							<PropertyList>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B8E0BBF6-D787-4EF1-AB23-8D56639BE33B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="177"/>
+													<Property Name="Min" Type="Real64" Value="-253"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -922,25 +763,92 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Laser Beam" ID="{9999CCB9-4A74-46C6-85FA-B3A98CBF13BC}">
+								<Sound Name="Laser Beam" ID="{746B1335-D690-4ED8-BDC9-F31272DCC94A}" ShortID="75478269">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.116394026974952"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0872955202312138"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="4.37932526493256"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Laser Beam.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="183178331"/>
-									</MediaIDList>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Laser Beam" ID="{25D19914-4483-42BB-8887-633D5A27FBDC}" WorkUnitID="{8AD3AA2E-96FF-4700-8F28-6BB779B50FBD}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Laser Beam" ID="{5BF030F7-57D2-40AC-A8E0-A8D09334E5CC}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.50194924132948"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.02962084537574"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Laser Beam.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="349211830"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Laser Beam" ID="{5BF030F7-57D2-40AC-A8E0-A8D09334E5CC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Laser Beam_End" ID="{4EA7BE2E-D073-468F-A2B9-9EA400069248}" ShortID="565400334">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Laser Beam" ID="{25D19914-4483-42BB-8887-633D5A27FBDC}" WorkUnitID="{8AD3AA2E-96FF-4700-8F28-6BB779B50FBD}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Laser Beam" ID="{9999CCB9-4A74-46C6-85FA-B3A98CBF13BC}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.116394026974952"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0872955202312138"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.37932526493256"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Laser Beam.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="183178331"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Laser Beam" ID="{9999CCB9-4A74-46C6-85FA-B3A98CBF13BC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Laser Beam" ID="{9999CCB9-4A74-46C6-85FA-B3A98CBF13BC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</ActorMixer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{1BE717A5-50E5-417C-983E-1517E0FAEF88}" ShortID="29497022">
@@ -1271,129 +1179,6 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
-				<Sound Name="Tapis_Roulant" ID="{59F7CAE6-91D1-4200-934B-841319D8DC41}" ShortID="805455873">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Tapis_Roulant" ID="{510DD614-1F5A-4F0C-825F-B084BE6A2DD0}">
-							<Language>SFX</Language>
-							<AudioFile>Tapis_Roulant.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="179167550"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Tapis_Roulant" ID="{510DD614-1F5A-4F0C-825F-B084BE6A2DD0}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Pivot Platform" ID="{15FF737B-C79F-40FC-93B8-75110A241254}" ShortID="173292588">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Pivot Platform" ID="{DDE989DA-EBC4-48A4-9FA3-0E5EEFABBBB5}">
-							<Language>SFX</Language>
-							<AudioFile>Pivot Platform.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="755296600"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Pivot Platform" ID="{DDE989DA-EBC4-48A4-9FA3-0E5EEFABBBB5}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Rope_Swing" ID="{9B208D56-E68A-43FD-A38D-D43D89BCD15A}" ShortID="86784234">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Rope_Swing" ID="{07C64A96-9052-4AAF-B3E3-5CC6CF3F68DB}">
-							<Language>SFX</Language>
-							<AudioFile>Rope_Swing.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="784512412"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Rope_Swing" ID="{07C64A96-9052-4AAF-B3E3-5CC6CF3F68DB}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Rotating_Block" ID="{6002309B-C3C7-49A1-9F10-46C6975A2917}" ShortID="534566678">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Rotating_Block" ID="{A3AA29DB-47EC-4028-BDA3-205257C3A8C9}">
-							<Language>SFX</Language>
-							<AudioFile>Rotating_Block.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="22131772"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Rotating_Block" ID="{A3AA29DB-47EC-4028-BDA3-205257C3A8C9}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Ambiance Dark" ID="{6304FA34-8F55-45AE-88B0-90BAE567A31B}" ShortID="327605620">
-					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-23</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Ambiance Dark" ID="{944E1ABA-BA08-4E2D-8DD5-6429283E1577}">
-							<Language>SFX</Language>
-							<AudioFile>Ambiance Dark.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1059872870"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Ambiance Dark" ID="{944E1ABA-BA08-4E2D-8DD5-6429283E1577}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Folder Name="Ending" ID="{C8A58190-4A77-4EF4-A739-897627307CD5}" ShortID="928219641">
 					<ChildrenList>
 						<Sound Name="Fall -end" ID="{6E284D39-196E-4CAA-BAF1-B1F4D83D2711}" ShortID="668067868">
@@ -1493,6 +1278,37 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Enter Name Here Cinematic" ID="{095D5F6E-1AC2-4935-A0B1-3EC05035334A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Ambiance Level Dark" ID="{D8A20DEB-B291-4A16-862B-D743C9A7D7D0}" ShortID="748297053">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ambiance Level Dark" ID="{A71F0D87-11AE-4ECC-ADC0-9693FC231B6B}">
+							<Language>SFX</Language>
+							<AudioFile>Ambiance Level Dark.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="856829708"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Ambiance Level Dark" ID="{A71F0D87-11AE-4ECC-ADC0-9693FC231B6B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

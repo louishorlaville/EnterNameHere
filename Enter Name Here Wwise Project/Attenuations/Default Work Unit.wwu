@@ -19,7 +19,7 @@
 										</Point>
 										<Point>
 											<XPos>59.999</XPos>
-											<YPos>-0</YPos>
+											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
@@ -71,22 +71,17 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>41.98576</XPos>
+											<XPos>45.69437</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>63.44171</XPos>
-											<YPos>-200</YPos>
+											<XPos>79.4702</XPos>
+											<YPos>-5.60659</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>63.44271</XPos>
-											<YPos>-200</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>63.44371</XPos>
+											<XPos>91.12383</XPos>
 											<YPos>-200</YPos>
 											<Flags>0</Flags>
 										</Point>

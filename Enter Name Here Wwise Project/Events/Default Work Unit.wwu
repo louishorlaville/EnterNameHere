@@ -14,34 +14,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Cube_Impact_fall" ID="{EAC6DC13-71C5-418E-B578-72363C722019}">
-					<ChildrenList>
-						<Action Name="" ID="{FA237BF4-0687-4DC4-B7F4-58719F317344}" ShortID="707720440">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Cube Impact fall" ID="{1FDE3651-24AA-45A1-A7E1-46E69C8B330A}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Cube_Stuck_To_Magnet" ID="{903C72A1-AE64-49C7-984D-AFCF77FF986E}">
 					<ChildrenList>
 						<Action Name="" ID="{583870DD-682E-4001-87D8-11D128245D38}" ShortID="1056100169">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Cube Magnet to surface" ID="{0BA81D53-225C-4751-8D44-F4B9B0D3D5B4}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Cube_Dash_Down" ID="{88365B28-4250-4E1C-9DB8-F065A61DFD82}">
-					<ChildrenList>
-						<Action Name="" ID="{F14AB833-4305-4B12-AFCD-1647D0AE8FFA}" ShortID="479710677">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Cube Woosh fall" ID="{BD86774E-E498-4089-A10A-CC2FF96F224E}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -89,17 +67,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Cube Magnet to surface" ID="{0BA81D53-225C-4751-8D44-F4B9B0D3D5B4}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Cube_Ice_Slide" ID="{D896F0D7-8E52-4EA1-AC83-EBA76D7C7E65}">
-					<ChildrenList>
-						<Action Name="" ID="{8C8C4753-10C7-47A1-B56D-8BAA67631188}" ShortID="57241249">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ice Slide" ID="{5B9E5B0C-CFC5-4B30-B022-269214271FA0}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -154,17 +121,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Laser Beam_End" ID="{4EA7BE2E-D073-468F-A2B9-9EA400069248}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Magnet_Behavior" ID="{73741315-4A01-4588-BE7A-C75B941D4863}">
-					<ChildrenList>
-						<Action Name="" ID="{6FB5E201-5BC6-4A91-83B3-13D61DFE7701}" ShortID="442414620">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Magnet_Atract_Repulse" ID="{D7FACD90-2072-4B43-B3F0-FE8CFC2CC7AA}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -305,14 +261,14 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ambiance Dark" ID="{6304FA34-8F55-45AE-88B0-90BAE567A31B}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+									<ObjectRef Name="Ambiance Level Dark" ID="{D8A20DEB-B291-4A16-862B-D743C9A7D7D0}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{42B8DFA4-0731-4B1D-A2D3-9E5DB934D475}" ShortID="831348480">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ambiance Dark" ID="{6304FA34-8F55-45AE-88B0-90BAE567A31B}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+									<ObjectRef Name="Ambiance Level Dark" ID="{D8A20DEB-B291-4A16-862B-D743C9A7D7D0}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

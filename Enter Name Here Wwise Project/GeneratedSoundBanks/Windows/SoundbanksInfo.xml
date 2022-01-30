@@ -30,36 +30,20 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="4107110846">
+		<SoundBank Id="2436553819" Language="SFX" Hash="3573484547">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
 			<IncludedEvents>
 				<Event Id="665468665" Name="Ambiance_Level_Dark" ObjectPath="\Events\Default Work Unit\Ambiance_Level_Dark" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="1059872870" Language="SFX">
-							<ShortName>Ambiance Dark.wav</ShortName>
-							<Path>SFX\Ambiance Dark_D79FB2B7.wem</Path>
+						<File Id="856829708" Language="SFX">
+							<ShortName>Ambiance Level Dark.wav</ShortName>
+							<Path>SFX\Ambiance Level Dark_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2324566312" Name="Cube_Dash_Down" ObjectPath="\Events\Default Work Unit\Cube_Dash_Down" DurationType="OneShot" DurationMin="0.987271" DurationMax="0.987271">
-					<IncludedMemoryFiles>
-						<File Id="965247569" Language="SFX">
-							<ShortName>Cube Woosh fall.wav</ShortName>
-							<Path>SFX\Cube Woosh fall_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3739303937" Name="Cube_Impact_fall" ObjectPath="\Events\Default Work Unit\Cube_Impact_fall" DurationType="OneShot" DurationMin="0.381875" DurationMax="0.381875">
-					<IncludedMemoryFiles>
-						<File Id="1003139761" Language="SFX">
-							<ShortName>Cube Impact fall.wav</ShortName>
-							<Path>SFX\Cube Impact fall_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="391978585" Name="Cube_Magnet_to_surface" ObjectPath="\Events\Default Work Unit\Cube_Magnet_to_surface" DurationType="OneShot" DurationMin="0.5495" DurationMax="0.5495">
+				<Event Id="391978585" Name="Cube_Magnet_to_surface" ObjectPath="\Events\Default Work Unit\Cube_Magnet_to_surface" DurationType="OneShot" DurationMin="0.5495" DurationMax="0.664124">
 					<IncludedMemoryFiles>
 						<File Id="642257278" Language="SFX">
 							<ShortName>Cube Magnet to surface.wav</ShortName>
@@ -75,7 +59,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="591287882" Name="Cube_Stuck_To_Magnet" ObjectPath="\Events\Default Work Unit\Cube_Stuck_To_Magnet" DurationType="OneShot" DurationMin="0.5495" DurationMax="0.5495">
+				<Event Id="591287882" Name="Cube_Stuck_To_Magnet" ObjectPath="\Events\Default Work Unit\Cube_Stuck_To_Magnet" DurationType="OneShot" DurationMin="0.5495" DurationMax="0.664124">
 					<IncludedMemoryFiles>
 						<File Id="642257278" Language="SFX">
 							<ShortName>Cube Magnet to surface.wav</ShortName>
@@ -83,7 +67,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3425940391" Name="Cube_to_slime" ObjectPath="\Events\Default Work Unit\Cube_to_slime" DurationType="OneShot" DurationMin="1.776917" DurationMax="1.776917">
+				<Event Id="3425940391" Name="Cube_to_slime" ObjectPath="\Events\Default Work Unit\Cube_to_slime" DurationType="OneShot" DurationMin="1.652186" DurationMax="2.025872">
 					<IncludedMemoryFiles>
 						<File Id="972262073" Language="SFX">
 							<ShortName>Cube to slime.wav</ShortName>
@@ -107,7 +91,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2327439314" Name="Interupteur" ObjectPath="\Events\Default Work Unit\Interupteur" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
+				<Event Id="2327439314" Name="Interupteur" ObjectPath="\Events\Default Work Unit\Interupteur" DurationType="OneShot" DurationMin="0.581128" DurationMax="0.733869">
 					<IncludedMemoryFiles>
 						<File Id="25341359" Language="SFX">
 							<ShortName>Interupteur.wav</ShortName>
@@ -115,7 +99,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3307081041" Name="Item_Destruction" ObjectPath="\Events\Default Work Unit\Item_Destruction" DurationType="OneShot" DurationMin="0.805854" DurationMax="0.805854">
+				<Event Id="3307081041" Name="Item_Destruction" ObjectPath="\Events\Default Work Unit\Item_Destruction" DurationType="OneShot" DurationMin="0.760186" DurationMax="0.932661">
 					<IncludedMemoryFiles>
 						<File Id="945211549" Language="SFX">
 							<ShortName>Wooden Box Destruction.wav</ShortName>
@@ -123,7 +107,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="733612088" Name="Laser_Beam" ObjectPath="\Events\Default Work Unit\Laser_Beam" MaxAttenuation="100." DurationType="OneShot" DurationMin="2.154716" DurationMax="2.154716">
+				<Event Id="733612088" Name="Laser_Beam" ObjectPath="\Events\Default Work Unit\Laser_Beam" MaxAttenuation="100." DurationType="OneShot" DurationMin="2.091087" DurationMax="2.348995">
 					<IncludedMemoryFiles>
 						<File Id="183178331" Language="SFX">
 							<ShortName>Laser Beam.wav</ShortName>
@@ -134,31 +118,6 @@
 							<Path>SFX\Laser Beam_98890164.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2155389612" Name="Magnet_Behavior" ObjectPath="\Events\Default Work Unit\Magnet_Behavior" DurationType="OneShot" DurationMin="1.125" DurationMax="1.125">
-					<IncludedMemoryFiles>
-						<File Id="398150341" Language="SFX">
-							<ShortName>Magnet Repulse.wav</ShortName>
-							<Path>SFX\Magnet Repulse_10C4C929.wem</Path>
-						</File>
-						<File Id="761757867" Language="SFX">
-							<ShortName>Magnet Attract.wav</ShortName>
-							<Path>SFX\Magnet Attract_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{53C38677-0942-4690-A27F-E26E2D0B8244}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{1B7BF135-CEB1-4C22-9127-5F71DA6C5B91}">
-							<Media>
-								<File Id="761757867"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{9E160AC2-7970-449A-AAB1-93C25DA0013B}">
-							<Media>
-								<File Id="398150341"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 				</Event>
 				<Event Id="2874863639" Name="Magnet_Negative" ObjectPath="\Events\Default Work Unit\Magnet_Negative" MaxAttenuation="100." DurationType="OneShot" DurationMin="28.402374" DurationMax="28.402374">
 					<IncludedMemoryFiles>
@@ -261,7 +220,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2006797914" Name="Slime_Jump" ObjectPath="\Events\Default Work Unit\Slime_Jump" DurationType="OneShot" DurationMin="0.201958" DurationMax="0.533042">
+				<Event Id="2006797914" Name="Slime_Jump" ObjectPath="\Events\Default Work Unit\Slime_Jump" DurationType="OneShot" DurationMin="0.184983" DurationMax="0.533042">
 					<IncludedMemoryFiles>
 						<File Id="243699287" Language="SFX">
 							<ShortName>Slime Jump Wouhou.wav</ShortName>
@@ -281,7 +240,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3678733195" Name="Slime_to_cube" ObjectPath="\Events\Default Work Unit\Slime_to_cube" DurationType="OneShot" DurationMin="0.414542" DurationMax="0.414542">
+				<Event Id="3678733195" Name="Slime_to_cube" ObjectPath="\Events\Default Work Unit\Slime_to_cube" DurationType="OneShot" DurationMin="0.391049" DurationMax="0.486751">
 					<IncludedMemoryFiles>
 						<File Id="902469190" Language="SFX">
 							<ShortName>Slime to cube.wav</ShortName>
@@ -309,15 +268,6 @@
 			<GameParameters>
 				<GameParameter Id="1467731768" Name="SlimeSpeed" ObjectPath="\Game Parameters\Default Work Unit\SlimeSpeed"/>
 			</GameParameters>
-			<StateGroups>
-				<StateGroup Id="4033083518" Name="Magnet_Polarity" ObjectPath="\States\Default Work Unit\Magnet_Polarity" GUID="{7ACEBB70-7505-44F7-BF27-80132C0B4740}">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Magnet_Polarity\None" GUID="{53C38677-0942-4690-A27F-E26E2D0B8244}"/>
-						<State Id="1192865152" Name="Positive" ObjectPath="\States\Default Work Unit\Magnet_Polarity\Positive" GUID="{9E160AC2-7970-449A-AAB1-93C25DA0013B}"/>
-						<State Id="4219547688" Name="Negative" ObjectPath="\States\Default Work Unit\Magnet_Polarity\Negative" GUID="{1B7BF135-CEB1-4C22-9127-5F71DA6C5B91}"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="3604647259" Language="SFX" Hash="3118668806">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>

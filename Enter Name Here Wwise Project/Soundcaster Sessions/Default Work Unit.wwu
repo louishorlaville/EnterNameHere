@@ -68,7 +68,9 @@
 						<CurrentStateRef Name="None" ID="{53C38677-0942-4690-A27F-E26E2D0B8244}"/>
 						<CurrentStateRef Name="None" ID="{10A9F233-D1F3-453B-8D92-A5F8D7208430}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Cube" ID="{4FFB706B-79D3-4C5C-BBE4-32968944A8AE}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
