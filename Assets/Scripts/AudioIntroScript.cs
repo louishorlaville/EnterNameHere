@@ -14,6 +14,7 @@ public class AudioIntroScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -22,8 +23,14 @@ public class AudioIntroScript : MonoBehaviour
         StartCoroutine("CheckIfDone");
         if (canCheck && !video.isPlaying)
         {
-            print(video.isPlaying);
-            SceneManager.LoadScene(toScene);
+            if (SceneManager.GetActiveScene().name == "CreditsVideo")
+            {
+                StartCoroutine("DelayCredits");
+            }
+            else
+            {
+                SceneManager.LoadScene(toScene);
+            }
         }
     }
 
@@ -31,5 +38,12 @@ public class AudioIntroScript : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         canCheck = true;
+    }
+
+    public IEnumerator DelayCredits()
+    {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(toScene);
+
     }
 }
