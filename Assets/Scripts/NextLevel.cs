@@ -35,7 +35,7 @@ public class NextLevel : MonoBehaviour
 		}
 		else
 		{
-			SceneManager.LoadScene("MainMenu");
+			SceneManager.LoadScene("Ending");
 		}
 	}
 }
