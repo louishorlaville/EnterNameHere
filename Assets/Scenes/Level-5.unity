@@ -7731,6 +7731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 695241299364121972, guid: 99119f699487e434a809f95dec7c9d47, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99119f699487e434a809f95dec7c9d47, type: 3}
 --- !u!95 &897249755 stripped
@@ -20668,10 +20672,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8332549248008169867, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320548, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: m_Name
       value: ButtonBase
@@ -20682,11 +20682,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320552, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 200
+      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320552, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 68
+      value: 67.5
       objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320552, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20720,30 +20720,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320555, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: InteractObject
       value: 
       objectReference: {fileID: 170605828}
-    - target: {fileID: 8332549249020320555, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: Button.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 75cf8ef38032592418018c319fe28df5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
---- !u!4 &2108905316 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8332549249020320552, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-  m_PrefabInstance: {fileID: 2108905315}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2108905317 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8332549248008169862, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-  m_PrefabInstance: {fileID: 2108905315}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2111161187
 GameObject:
   m_ObjectHideFlags: 0

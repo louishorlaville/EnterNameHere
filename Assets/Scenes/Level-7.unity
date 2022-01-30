@@ -1327,14 +1327,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
-    - target: {fileID: 695241299364121972, guid: 99119f699487e434a809f95dec7c9d47, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 695241299609320464, guid: 99119f699487e434a809f95dec7c9d47, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1213945246}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99119f699487e434a809f95dec7c9d47, type: 3}
 --- !u!1 &44088609 stripped
@@ -2378,10 +2370,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8332549248008169867, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320548, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: m_Name
       value: ButtonBase (3)
@@ -2430,26 +2418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320555, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: InteractObject
       value: 
-      objectReference: {fileID: 397558794}
+      objectReference: {fileID: 26596653}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
 --- !u!1001 &127957995
@@ -4219,10 +4191,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8332549248008169867, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320548, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: m_Name
       value: ButtonBase
@@ -4271,30 +4239,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320555, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: InteractObject
       value: 
-      objectReference: {fileID: 26596653}
-    - target: {fileID: 8332549249020320555, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: Button.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 75cf8ef38032592418018c319fe28df5, type: 2}
+      objectReference: {fileID: 1593246027}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
 --- !u!1 &233204844 stripped
@@ -15900,11 +15848,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6987113616267998307, guid: ff03a8510993a8c46aacb5c7d37e38bf, type: 3}
   m_PrefabInstance: {fileID: 848720265}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &850001299 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8332549249020320552, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-  m_PrefabInstance: {fileID: 231192894}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &850668987
 GameObject:
   m_ObjectHideFlags: 0
@@ -16111,7 +16054,7 @@ GameObject:
   - component: {fileID: 863747321}
   - component: {fileID: 863747323}
   - component: {fileID: 863747322}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18774,10 +18717,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8332549248008169867, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320548, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: m_Name
       value: ButtonBase (1)
@@ -18826,26 +18765,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320555, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: InteractObject
       value: 
-      objectReference: {fileID: 2031642026}
+      objectReference: {fileID: 397558794}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
 --- !u!1 &972199368 stripped
@@ -18881,7 +18804,7 @@ GameObject:
   - component: {fileID: 991563723}
   - component: {fileID: 991563725}
   - component: {fileID: 991563724}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21189,10 +21112,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8332549248008169867, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320548, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: m_Name
       value: ButtonBase (2)
@@ -21241,26 +21160,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332549249020320553, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332549249020320555, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: InteractObject
       value: 
-      objectReference: {fileID: 1593246027}
+      objectReference: {fileID: 2031642026}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
 --- !u!1 &1088783264
@@ -23347,83 +23250,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1212292396
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1464841187}
-    m_Modifications:
-    - target: {fileID: 249217627336563521, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 249217627336563521, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 249217627336563521, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1502482183
-      objectReference: {fileID: 0}
-    - target: {fileID: 6553995696686548820, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_Name
-      value: Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.61375225
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8468675
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0021
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.3164
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506016491435382687, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d3eb88e79430b3c4ebbfe5764fccdd88, type: 3}
 --- !u!1001 &1213945245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27695,11 +27521,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1464841187 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8332549248008169862, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
-  m_PrefabInstance: {fileID: 231192894}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1469712444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38798,7 +38619,7 @@ GameObject:
   - component: {fileID: 2031425841}
   - component: {fileID: 2031425843}
   - component: {fileID: 2031425842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40470,7 +40291,7 @@ GameObject:
   - component: {fileID: 2115415686}
   - component: {fileID: 2115415688}
   - component: {fileID: 2115415687}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41373,6 +41194,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 712791244741477609, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1381455012363564115, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -41432,6 +41257,14 @@ PrefabInstance:
     - target: {fileID: 5249919762364850822, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5350509046729188784, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6312523003152728418, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6379931603996153023, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
       propertyPath: m_Enabled
