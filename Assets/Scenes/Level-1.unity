@@ -10748,7 +10748,7 @@ GameObject:
   - component: {fileID: 739317613}
   - component: {fileID: 739317615}
   - component: {fileID: 739317614}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12670,7 +12670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 917843646}
   - component: {fileID: 917843647}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12911,7 +12911,7 @@ GameObject:
   - component: {fileID: 927062314}
   - component: {fileID: 927062316}
   - component: {fileID: 927062315}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13825,7 +13825,7 @@ GameObject:
   - component: {fileID: 1022678706}
   - component: {fileID: 1022678708}
   - component: {fileID: 1022678707}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19911,7 +19911,7 @@ GameObject:
   - component: {fileID: 1410284076}
   - component: {fileID: 1410284078}
   - component: {fileID: 1410284077}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20167,7 +20167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433102164}
   - component: {fileID: 1433102165}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23393,7 +23393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1672908349}
   - component: {fileID: 1672908350}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24846,7 +24846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1789063516}
   - component: {fileID: 1789063517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24978,7 +24978,7 @@ GameObject:
   - component: {fileID: 1796838841}
   - component: {fileID: 1796838843}
   - component: {fileID: 1796838842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27204,7 +27204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1974080851}
   - component: {fileID: 1974080852}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

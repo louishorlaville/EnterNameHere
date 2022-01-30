@@ -573,7 +573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 49423001}
   - component: {fileID: 49423002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +607,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.1735092, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -618,7 +618,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.65298164, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &50474611
 GameObject:
@@ -630,7 +630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 50474612}
   - component: {fileID: 50474613}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5634,7 +5634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 486012660}
   - component: {fileID: 486012661}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10997,7 +10997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 920586535}
   - component: {fileID: 920586536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11991,6 +11991,14 @@ PrefabInstance:
     - target: {fileID: 5249919762364850822, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5350509046729188784, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6312523003152728418, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6379931603996153023, guid: ad949182fed51154fbfba67c25ae1fee, type: 3}
       propertyPath: m_Enabled
@@ -24209,6 +24217,10 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1328158056}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: groundBounceHeight
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
 --- !u!1001 &1936934214
@@ -25407,7 +25419,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026617460}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
