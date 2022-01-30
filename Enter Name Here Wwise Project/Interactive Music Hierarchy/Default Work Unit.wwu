@@ -1981,6 +1981,11 @@
 				<MusicSegment Name="End_Credit_Audio" ID="{11A3B053-7571-40D1-BE3D-28F7095B0AE5}" ShortID="772545763">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="24934.3333333333"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -2044,7 +2049,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>15.87166</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
