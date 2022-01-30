@@ -275,7 +275,7 @@
 						<Action Name="" ID="{08689EE8-B691-49E2-B96D-E6CCD5132F3D}" ShortID="283933786">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Cube_Movement" ID="{953024BD-4CA3-42FF-AE33-2AA2B92DB365}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+									<ObjectRef Name="Cube Movement" ID="{733A4CCC-0FD4-4C26-9F7F-4410BDAA2745}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -403,6 +403,56 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Main-Menu_100bpm4-4_L8M-P0" ID="{B5559231-6490-4A35-B774-A08C11B4C054}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="End_Fall" ID="{C20A55E3-F82A-4A16-A1FE-6629C6994DA0}">
+					<ChildrenList>
+						<Action Name="" ID="{AFB44917-B615-4061-8720-CC689681408D}" ShortID="936662735">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fall -end" ID="{6E284D39-196E-4CAA-BAF1-B1F4D83D2711}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="End_Squish" ID="{F30E39ED-05C5-4C89-A6F2-48D55BACB69A}">
+					<ChildrenList>
+						<Action Name="" ID="{E61D8900-6E5D-4013-BB85-C48E65517490}" ShortID="321371430">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Squish - End" ID="{B592D6D7-7323-40AE-9C6B-FA32DA2ECA0F}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="End_Princess" ID="{61CE9671-4D59-442D-B998-F86B0E284DC9}">
+					<ChildrenList>
+						<Action Name="" ID="{5BB63C48-C27F-452B-867A-23CA92A15ACA}" ShortID="682565053">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Princess - end" ID="{A40841D3-D378-4724-9B28-C36D09C87B62}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Intro_Game" ID="{4E78B154-DC18-4524-9968-CE5F02EADAFA}">
+					<ChildrenList>
+						<Action Name="" ID="{F977E190-F769-4CA4-B9D1-8B6DD7C27793}" ShortID="752196754">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enter Name Here Cinematic" ID="{9F0CC8D8-1F7B-4E8B-A772-6E3A135487A9}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

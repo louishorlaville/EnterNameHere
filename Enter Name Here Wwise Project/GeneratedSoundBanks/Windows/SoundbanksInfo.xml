@@ -11,21 +11,35 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1315034536">
+		<SoundBank Id="1125500713" Language="SFX" Hash="3726859540">
+			<ObjectPath>\SoundBanks\Default Work Unit\Intro</ObjectPath>
+			<ShortName>Intro</ShortName>
+			<Path>Intro.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2261613202" Name="Intro_Game" ObjectPath="\Events\Default Work Unit\Intro_Game" DurationType="OneShot" DurationMin="77.26667" DurationMax="77.26667"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="476228923" Language="SFX">
+					<ShortName>Enter Name Here Cinematic.wav</ShortName>
+					<Path>SFX\Enter Name Here Cinematic_C5E078ED.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1729473507">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="4207809228">
+		<SoundBank Id="2436553819" Language="SFX" Hash="298619281">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
 			<IncludedEvents>
-				<Event Id="665468665" Name="Ambiance_Level_Dark" ObjectPath="\Events\Default Work Unit\Ambiance_Level_Dark" DurationType="OneShot" DurationMin="46.101021" DurationMax="46.101021">
+				<Event Id="665468665" Name="Ambiance_Level_Dark" ObjectPath="\Events\Default Work Unit\Ambiance_Level_Dark" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1059872870" Language="SFX">
 							<ShortName>Ambiance Dark.wav</ShortName>
-							<Path>SFX\Ambiance Dark_10C4C929.wem</Path>
+							<Path>SFX\Ambiance Dark_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -53,7 +67,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2048743322" Name="Cube_Movement" ObjectPath="\Events\Default Work Unit\Cube_Movement" DurationType="Infinite">
+				<Event Id="2048743322" Name="Cube_Movement" ObjectPath="\Events\Default Work Unit\Cube_Movement" DurationType="OneShot" DurationMin="0.501188" DurationMax="0.501188">
 					<IncludedMemoryFiles>
 						<File Id="637930242" Language="SFX">
 							<ShortName>Cube Movement.wav</ShortName>
@@ -125,15 +139,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="733612088" Name="Laser_Beam" ObjectPath="\Events\Default Work Unit\Laser_Beam" DurationType="OneShot" DurationMin="2.154716" DurationMax="2.154716">
+				<Event Id="733612088" Name="Laser_Beam" ObjectPath="\Events\Default Work Unit\Laser_Beam" MaxAttenuation="100." DurationType="OneShot" DurationMin="2.154716" DurationMax="2.154716">
 					<IncludedMemoryFiles>
 						<File Id="183178331" Language="SFX">
 							<ShortName>Laser Beam.wav</ShortName>
-							<Path>SFX\Laser Beam_0738A6CA.wem</Path>
+							<Path>SFX\Laser Beam_4C718F96.wem</Path>
 						</File>
 						<File Id="349211830" Language="SFX">
 							<ShortName>Laser Beam.wav</ShortName>
-							<Path>SFX\Laser Beam_CD2FF58E.wem</Path>
+							<Path>SFX\Laser Beam_98890164.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -313,11 +327,35 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="3118278380">
+		<SoundBank Id="3604647259" Language="SFX" Hash="3118668806">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1232782884" Name="End_Fall" ObjectPath="\Events\Default Work Unit\End_Fall" DurationType="OneShot" DurationMin="5.211688" DurationMax="5.211688">
+					<IncludedMemoryFiles>
+						<File Id="1006599828" Language="SFX">
+							<ShortName>Fall -end.wav</ShortName>
+							<Path>SFX\Fall -end_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1668640766" Name="End_Princess" ObjectPath="\Events\Default Work Unit\End_Princess" DurationType="OneShot" DurationMin="1.339229" DurationMax="1.339229">
+					<IncludedMemoryFiles>
+						<File Id="703804179" Language="SFX">
+							<ShortName>Princess - end.wav</ShortName>
+							<Path>SFX\Princess - end_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2166129864" Name="End_Squish" ObjectPath="\Events\Default Work Unit\End_Squish" DurationType="OneShot" DurationMin="0.684021" DurationMax="0.684021">
+					<IncludedMemoryFiles>
+						<File Id="221097617" Language="SFX">
+							<ShortName>Squish - End.wav</ShortName>
+							<Path>SFX\Squish - End_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="599938019" Name="Music_MainMenu" ObjectPath="\Events\Default Work Unit\Music_MainMenu" DurationType="OneShot" DurationMin="32.652084" DurationMax="32.652084"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
