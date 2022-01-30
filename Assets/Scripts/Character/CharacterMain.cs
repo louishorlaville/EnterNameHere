@@ -294,10 +294,10 @@ public class CharacterMain : MonoBehaviour
             }
             else if(isMagnet)
             {
-                isMagnet = false;
+                /*isMagnet = false;
                 firstMagnetContact = true;
                 magnetTouchContactPoint = false;
-                rb.gravityScale = gravityValue;
+                rb.gravityScale = gravityValue;*/
             }
         }
 
