@@ -23,7 +23,7 @@ public class CubeCollisionDetectionScript : MonoBehaviour
     {
         if (!player.GetComponent<CharacterMain>().isCircle && canCheck)
         {
-            player.GetComponent<CharacterMain>().EmitSoundBounce();
+            player.GetComponent<CharacterMain>().EmitSoundCubeMovement();
             canCheck = false;
             StartCoroutine(DelayBeforeCollisionCheck(2f));
         }

@@ -36,9 +36,6 @@ State	ID	Name	State Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1467731768	SlimeSpeed			\Default Work Unit\SlimeSpeed	
 
-Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	844867495	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube_Movement\VIDE\Wwise Silence	
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	369949	Level3-Melody4_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level3-Melody4_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_3\Level3-Melody4_115bpm4-4_L4M-P0\Level3-Melody4_115bpm4-4_L4M-P0		2571440
 	25341359	Interupteur	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Interupteur_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Interupteur		120064
@@ -56,7 +53,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	483736174	Level3-Melody3_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level3-Melody3_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_3\Level3-Melody3_115bpm4-4_L4M-P0\Level3-Melody3_115bpm4-4_L4M-P0		2714104
 	501737349	Slime jump	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Slime jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slime_Jump\SlimeJump_Whoopie\Slime jump		38840
 	624279310	Level1-NoMelody_115bpm4-4_L8M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-NoMelody_115bpm4-4_L8M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-NoMelody_115bpm4-4_L8M-P0\Level1-NoMelody_115bpm4-4_L8M-P0		4461720
-	637930242	Cube Movement	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Movement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube_Movement\Cube Movement		96292
+	637930242	Cube Movement	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Movement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube Movement		96292
 	638511022	Level2-3-NoMelody_115bpm4-4_L8M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level2-3-NoMelody_115bpm4-4_L8M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_3\Level2-3-NoMelody_115bpm4-4_L8M-P0\Level2-3-NoMelody_115bpm4-4_L8M-P0		4033728
 	642257278	Cube Magnet to surface	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Cube Magnet to surface_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Cube Magnet to surface		105568
 	681215386	Level3-Melody2_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level3-Melody2_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_3\Level3-Melody2_115bpm4-4_L4M-P0\Level3-Melody2_115bpm4-4_L4M-P0		2429212

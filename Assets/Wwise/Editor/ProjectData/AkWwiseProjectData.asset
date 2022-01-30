@@ -404,8 +404,8 @@ MonoBehaviour:
         guid: 3027fe3116c10146b22e93218723a3de
       Path: Events\Default Work Unit\Ambiance_Level_Dark
       maxAttenuation: 0
-      maxDuration: 46.10102
-      minDuration: 46.10102
+      maxDuration: -1
+      minDuration: -1
     - name: Cube_Dash_Down
       guid: 285b368850421c4e9db8f065a61dfd82
       id: 2324566312
@@ -489,8 +489,8 @@ MonoBehaviour:
         guid: a44c8f3620e41848b584e72dc5689c42
       Path: Events\Default Work Unit\Cube_Movement
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.501188
+      minDuration: 0.501188
     - name: Cube_Stuck_To_Magnet
       guid: a1723c9064aec749984dafcf77ff986e
       id: 591287882
@@ -1363,7 +1363,7 @@ MonoBehaviour:
     m_lastTime: -8585581912133755195
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0700000008000000
+  ExpandedWaapiItemIds: 0600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
