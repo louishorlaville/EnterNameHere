@@ -9744,7 +9744,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d1236067800f77d45910cfe7c33f79e8, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 04791221d3bd3044787d662e2440ebc7, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -24387,7 +24387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a027e5a7f9ec7547b3ccc66eb565db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerObject: {fileID: 0}
+  triggerObject: {fileID: 269463430}
 --- !u!114 &1887548332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24421,7 +24421,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 146f69943af2d704f950d2dfddbf364c, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 629301e8db323d94783b2638fb8b1edc, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
