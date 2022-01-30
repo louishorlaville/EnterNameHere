@@ -21,7 +21,7 @@ public class EndingScript : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("CreditsVideo");
     }
 
     public void FallSound()
