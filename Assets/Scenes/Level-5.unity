@@ -685,6 +685,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6869909829338847859, guid: 35a2bf71339350c45806650f1f6da928, type: 3}
   m_PrefabInstance: {fileID: 124327884}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &134869289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 134869291}
+  - component: {fileID: 134869290}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &134869290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134869289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca8b438c41a8452088a0f5c3580306d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 1299d1e07527a4cecacc3c0cd620c7ac, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &134869291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134869289}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &142769921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1470,7 +1526,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 146f69943af2d704f950d2dfddbf364c, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 629301e8db323d94783b2638fb8b1edc, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -2852,7 +2908,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d7c2f23fa5707fc479addc517a780006, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 95fa9107802167e44acbf8d345249c01, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -4326,6 +4382,22 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 268189486}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: CubetoSlime.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8211eecead021fb40b15ec7db1cd9e7f, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: SlimetoCube.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 4014ca2241e85c546b0d9bb50eecb044, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: CubeMovement.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7cc08fa6cf1ecef43a10e69bb001428b, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: SlimeMovement.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a3da53681fa40f746ad5cc01e9a26577, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
 --- !u!1001 &536546479
@@ -9786,7 +9858,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 362c711b6e8405744b636a48a7372931, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1d87d8abc4ac4f244946c94441ef27b0, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -11051,7 +11123,7 @@ PrefabInstance:
     - target: {fileID: 8654018773982469865, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
       propertyPath: LaserSound.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 7f58209ad3107cd4fb79883b1eb6d58c, type: 2}
+      objectReference: {fileID: 11400000, guid: e151b46be18d3824aac8709df59d1f83, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
 --- !u!4 &1266522417 stripped
@@ -13712,7 +13784,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a5c326d305fac674a828b788df1156be, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 4199ae2e5cb9e394a954472ccba51ef7, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -13741,7 +13813,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8bcf1efbeaa268e40a969154ba6a940a, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 3fa577a4a8ef76645b5166d4959c4cf1, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -15526,7 +15598,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 33da68a75cd22104ebfebbdc611bef06, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: c28d3fedbee3bb34eb64904614669f43, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -19037,7 +19109,7 @@ PrefabInstance:
     - target: {fileID: 8654018773982469865, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
       propertyPath: LaserSound.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 7f58209ad3107cd4fb79883b1eb6d58c, type: 2}
+      objectReference: {fileID: 11400000, guid: e151b46be18d3824aac8709df59d1f83, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
 --- !u!4 &1912415040 stripped
@@ -20052,7 +20124,7 @@ PrefabInstance:
     - target: {fileID: 8332549249020320555, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
       propertyPath: Button.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 75cf8ef38032592418018c319fe28df5, type: 2}
+      objectReference: {fileID: 11400000, guid: 947ee371c14ed094badf504d65876863, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b9733c6b0fb6149977ef3252db01b9, type: 3}
 --- !u!4 &2108905316 stripped

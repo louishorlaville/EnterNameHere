@@ -5704,7 +5704,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d1236067800f77d45910cfe7c33f79e8, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 04791221d3bd3044787d662e2440ebc7, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -18503,7 +18503,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 146f69943af2d704f950d2dfddbf364c, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 629301e8db323d94783b2638fb8b1edc, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -28768,6 +28768,22 @@ PrefabInstance:
       propertyPath: menuScriptRef
       value: 
       objectReference: {fileID: 1782545721}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: CubetoSlime.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8211eecead021fb40b15ec7db1cd9e7f, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: SlimetoCube.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 4014ca2241e85c546b0d9bb50eecb044, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: CubeMovement.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7cc08fa6cf1ecef43a10e69bb001428b, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: SlimeMovement.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a3da53681fa40f746ad5cc01e9a26577, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
 --- !u!4 &2097927033 stripped

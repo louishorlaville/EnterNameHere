@@ -883,6 +883,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29943c854ffc1154eb1739a2af0809ef, type: 3}
+--- !u!1 &72226162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 699964270725292418, guid: 29943c854ffc1154eb1739a2af0809ef, type: 3}
+  m_PrefabInstance: {fileID: 72226161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &72226163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72226162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca8b438c41a8452088a0f5c3580306d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 1299d1e07527a4cecacc3c0cd620c7ac, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
 --- !u!1001 &77305064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3440,6 +3470,22 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 715975559}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: CubetoSlime.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8211eecead021fb40b15ec7db1cd9e7f, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: SlimetoCube.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 4014ca2241e85c546b0d9bb50eecb044, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: CubeMovement.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7cc08fa6cf1ecef43a10e69bb001428b, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: SlimeMovement.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a3da53681fa40f746ad5cc01e9a26577, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
 --- !u!1001 &354259735
@@ -9526,7 +9572,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4fd6e554b708ac44889414e280e73e1f, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 9f67004eb3dec35459341a89adf74317, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -17990,7 +18036,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3800f286dea15b14a964c125cad51464, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: c28d3fedbee3bb34eb64904614669f43, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -25196,7 +25242,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 629301e8db323d94783b2638fb8b1edc, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -26225,7 +26271,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 64cd3559e36eec54990a924ef418012d, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 04791221d3bd3044787d662e2440ebc7, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -26928,7 +26974,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0c36b8566be6f2a40b357ca809b0dbe2, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1d87d8abc4ac4f244946c94441ef27b0, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

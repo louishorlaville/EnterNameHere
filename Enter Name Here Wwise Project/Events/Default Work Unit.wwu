@@ -132,16 +132,6 @@
 				</Event>
 				<Event Name="Slime_Mouvement" ID="{1C2C6FDD-628B-472E-9CF7-DFDFFA459091}">
 					<ChildrenList>
-						<Action Name="" ID="{B234F7A3-EBD6-4B0E-A025-5D0D2062F663}" ShortID="472841391">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Cube_Movement" ID="{953024BD-4CA3-42FF-AE33-2AA2B92DB365}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{B562D241-C39F-4B0D-BC5F-2A308DCF2B55}" ShortID="627472656">
 							<ReferenceList>
 								<Reference Name="Target">
