@@ -938,6 +938,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 695241299609320478, guid: 99119f699487e434a809f95dec7c9d47, type: 3}
   m_PrefabInstance: {fileID: 147883421}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &147883423 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4636618083419657405, guid: 99119f699487e434a809f95dec7c9d47, type: 3}
+  m_PrefabInstance: {fileID: 147883421}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &150747272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9842,7 +9847,7 @@ PrefabInstance:
     - target: {fileID: 3103237638807586627, guid: 316c092b4fecf86439ddd59db00bb564, type: 3}
       propertyPath: crossfade
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 147883423}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 316c092b4fecf86439ddd59db00bb564, type: 3}
 --- !u!1001 &1791986104

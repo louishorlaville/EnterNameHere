@@ -19,7 +19,7 @@ public class LevelSelectScript : MonoBehaviour
 
     public void StartIntroduction()
 	{
-		LoadLevel("MainMenu"); //ToDo Introduction Scene
+		LoadLevel("IntroVideo");
 	}
 
 	public void StartLevel1()
