@@ -8,8 +8,8 @@ public class CharacterMain : MonoBehaviour
     CircleCollider2D circleCollider;
     BoxCollider2D boxCollider;
     SpriteRenderer renderer;
-
     MenusScript menusScriptRef;
+    List<CircleCollider2D> cubeCorners = new List<CircleCollider2D>();
 
     bool canStick;
     bool toSquare;
@@ -76,11 +76,18 @@ public class CharacterMain : MonoBehaviour
         lastSlimeMovementTime = Time.time;
 
         SpeedSlime.SetGlobalValue(0);
+
+        foreach (Transform child in transform)
+        {
+            cubeCorners.Add(child.gameObject.GetComponent<CircleCollider2D>());
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         //Check inputs for shape switch
         toSquare = Input.GetKeyDown("space");
         toCircle = Input.GetKeyUp("space");
@@ -121,13 +128,12 @@ public class CharacterMain : MonoBehaviour
             }
         }
 
-        //HandleSlimeTrail();
+        HandleSlimeTrail();
     }
 
     void FixedUpdate()
     {
         float _movementH = Input.GetAxis("Horizontal");
-        print(isMagnet);
         if(bPauseMenu == false)
         {
             if(bEndLevel == false)
@@ -240,15 +246,15 @@ public class CharacterMain : MonoBehaviour
             //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
            
         }
+
         if (isMagnet)
         {
             magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower;
             magnetTouchContactPoint = true;
-            print("HEREEEEEEEEEEEEEEEEEEEEEEEEEEE");
         }
 
 
-        //HandleSlimeLandEffect(_collision);
+        HandleSlimeLandEffect(_collision);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -427,5 +433,10 @@ public class CharacterMain : MonoBehaviour
     public void EmitSoundBounce()
     {
         SlimeJump.Post(gameObject);
+    }
+
+    public void EmitSoundCubeMovement()
+    {
+        CubeMovement.Post(gameObject);
     }
 }

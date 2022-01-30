@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Negative
+  - Player Corner
   layers:
   - Default
   - TransparentFX
