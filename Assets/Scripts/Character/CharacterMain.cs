@@ -8,8 +8,8 @@ public class CharacterMain : MonoBehaviour
     CircleCollider2D circleCollider;
     BoxCollider2D boxCollider;
     SpriteRenderer renderer;
-
     MenusScript menusScriptRef;
+    List<CircleCollider2D> cubeCorners = new List<CircleCollider2D>();
 
     bool canStick;
     bool toSquare;
@@ -76,11 +76,18 @@ public class CharacterMain : MonoBehaviour
         lastSlimeMovementTime = Time.time;
 
         SpeedSlime.SetGlobalValue(0);
+
+        foreach (Transform child in transform)
+        {
+            cubeCorners.Add(child.gameObject.GetComponent<CircleCollider2D>());
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         //Check inputs for shape switch
         toSquare = Input.GetKeyDown("space");
         toCircle = Input.GetKeyUp("space");
@@ -127,7 +134,6 @@ public class CharacterMain : MonoBehaviour
     void FixedUpdate()
     {
         float _movementH = Input.GetAxis("Horizontal");
-        print(isGrounded());
         if(bPauseMenu == false)
         {
             if(bEndLevel == false)
@@ -175,8 +181,6 @@ public class CharacterMain : MonoBehaviour
                     {
                         zAxis += (Time.deltaTime * _movementH * rollRotationSpeed);
                         transform.rotation = Quaternion.Euler(0, 0, -zAxis);
-                       
-
 
                         if (isGrounded())
                         {
@@ -221,7 +225,6 @@ public class CharacterMain : MonoBehaviour
 
             if (currentBounces < maxNbBounces)
             {
-                print("here");
                 Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
                 Vector2 normal = _collision.contacts[0].normal;
                 currentBounces++;
@@ -241,13 +244,15 @@ public class CharacterMain : MonoBehaviour
             }
 
             //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
-            if (isMagnet)
-            {
-                magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower;
-                magnetTouchContactPoint = true;
-            }
+           
         }
-        
+
+        if (isMagnet)
+        {
+            magnetDirection = (Vector2)transform.position - (Vector2)transform.position + _collision.contacts[0].normal * -magnetPower;
+            magnetTouchContactPoint = true;
+        }
+
 
         HandleSlimeLandEffect(_collision);
     }
@@ -270,7 +275,9 @@ public class CharacterMain : MonoBehaviour
         if (collision.tag.Equals("Negative"))
         {
             if (!isCircle)
-            {
+            {             
+                isMagnet = true;
+
                 if (firstMagnetContact)
                 {
                     firstMagnetContact = false;
@@ -283,15 +290,14 @@ public class CharacterMain : MonoBehaviour
                 }
                 //Debug.DrawRay(transform.position, collision.gameObject.GetComponent<BoxCollider2D>().ClosestPoint(transform.position), Color.red);
 
-                isMagnet = true;
                 AttachPlayer(magnetDirection);
             }
-            else
+            else if(isMagnet)
             {
-                isMagnet = false;
+                /*isMagnet = false;
                 firstMagnetContact = true;
                 magnetTouchContactPoint = false;
-                rb.gravityScale = gravityValue;
+                rb.gravityScale = gravityValue;*/
             }
         }
 
@@ -427,5 +433,10 @@ public class CharacterMain : MonoBehaviour
     public void EmitSoundBounce()
     {
         SlimeJump.Post(gameObject);
+    }
+
+    public void EmitSoundCubeMovement()
+    {
+        CubeMovement.Post(gameObject);
     }
 }

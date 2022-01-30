@@ -10,6 +10,8 @@ public class ButtonScript : MonoBehaviour
     Vector3 PressedPosition;
     Vector3 UnpressedPosition;
     bool buttonIsPressed= false;
+    public AK.Wwise.Event Button;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +29,11 @@ public class ButtonScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-            if(collision.tag == "Player" && collision.GetComponent<CharacterMain>().isCircle == false && buttonIsPressed == false)
+        if(collision.tag == "Player" && collision.GetComponent<CharacterMain>().isCircle == false && buttonIsPressed == false)
         {
             StartCoroutine("PressButton");
             buttonIsPressed = true;
+            Button.Post(gameObject);
         }
         
     }
@@ -49,5 +52,6 @@ public class ButtonScript : MonoBehaviour
         }
         InteractObject.GetComponent<ButtonInteraction>().ButtonPressed();
         yield return null;
+        
     }
 }

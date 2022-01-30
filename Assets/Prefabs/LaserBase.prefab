@@ -246,5 +246,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LaserBeam: {fileID: 8565482223019617364}
-  firingDuration: 4
+  firingDuration: 2
   cooldownDuration: 4
