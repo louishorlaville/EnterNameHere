@@ -1394,6 +1394,79 @@
 						<ActiveSource Name="Ambiance Dark" ID="{944E1ABA-BA08-4E2D-8DD5-6429283E1577}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="Ending" ID="{C8A58190-4A77-4EF4-A739-897627307CD5}" ShortID="928219641">
+					<ChildrenList>
+						<Sound Name="Fall -end" ID="{6E284D39-196E-4CAA-BAF1-B1F4D83D2711}" ShortID="668067868">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fall -end" ID="{430C039D-92AB-4AF3-BF1B-104340E8257E}">
+									<Language>SFX</Language>
+									<AudioFile>Fall -end.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1006599828"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Fall -end" ID="{430C039D-92AB-4AF3-BF1B-104340E8257E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Princess - end" ID="{A40841D3-D378-4724-9B28-C36D09C87B62}" ShortID="275295194">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Princess - end" ID="{98AE58D1-0E77-4231-A610-ED71E472643E}">
+									<Language>SFX</Language>
+									<AudioFile>Princess - end.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="703804179"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Princess - end" ID="{98AE58D1-0E77-4231-A610-ED71E472643E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Squish - End" ID="{B592D6D7-7323-40AE-9C6B-FA32DA2ECA0F}" ShortID="1001786403">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{387D2844-4BCB-4819-AC27-45D6B3C93E73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Squish - End" ID="{13BAB3F8-5AF9-4436-B746-CB039D2D3C61}">
+									<Language>SFX</Language>
+									<AudioFile>Squish - End.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="221097617"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Squish - End" ID="{13BAB3F8-5AF9-4436-B746-CB039D2D3C61}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
