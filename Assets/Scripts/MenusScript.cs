@@ -7,11 +7,13 @@ public class MenusScript : MonoBehaviour
 {
 	public GameObject player;
 	public Animator crossface;
+	public GameObject buttons;
 
 	// Main Menu
 	public void StartGame()
 	{
-		SceneManager.LoadScene("IntroVideo"); //ToDo Introduction Scene
+		buttons.GetComponent<Animator>().SetBool("hide", true);
+		StartCoroutine("StartIntro");
 	}
 
     public void QuitGame()
@@ -51,4 +53,11 @@ public class MenusScript : MonoBehaviour
 
 		SceneManager.LoadScene(_target);
 	}
+
+	private IEnumerator StartIntro()
+    {
+		yield return new WaitForSeconds(1f);
+		SceneManager.LoadScene("IntroVideo");
+	}
+
 }
