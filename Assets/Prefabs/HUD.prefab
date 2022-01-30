@@ -563,6 +563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   crossface: {fileID: 4636618083419657405}
+  buttons: {fileID: 0}
 --- !u!1 &695241299818317557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,7 +1601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &482075825586073700
 RectTransform:
   m_ObjectHideFlags: 0
