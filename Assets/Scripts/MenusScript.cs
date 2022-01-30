@@ -6,11 +6,14 @@ using UnityEngine.SceneManagement;
 public class MenusScript : MonoBehaviour
 {
 	public GameObject player;
+	public Animator crossface;
+	public GameObject buttons;
 
 	// Main Menu
 	public void StartGame()
 	{
-		SceneManager.LoadScene("Level-1");
+		buttons.GetComponent<Animator>().SetBool("hide", true);
+		StartCoroutine("StartIntro");
 	}
 
     public void QuitGame()
@@ -33,11 +36,28 @@ public class MenusScript : MonoBehaviour
 	public void RestartLevel()
 	{
 		Scene _activeScene = SceneManager.GetActiveScene();
-		SceneManager.LoadScene(_activeScene.name);
+		StartCoroutine(TransiotionLevel(_activeScene.name));
 	}
 
 	public void MainMenu()
 	{
-		SceneManager.LoadScene("MainMenu");
+		StartCoroutine(TransiotionLevel("MainMenu"));
 	}
+
+	private IEnumerator TransiotionLevel(string _target)
+	{
+		crossface.gameObject.SetActive(true);
+		crossface.SetTrigger("startCrossfade");
+
+		yield return new WaitForSeconds(1f);
+
+		SceneManager.LoadScene(_target);
+	}
+
+	private IEnumerator StartIntro()
+    {
+		yield return new WaitForSeconds(1f);
+		SceneManager.LoadScene("IntroVideo");
+	}
+
 }

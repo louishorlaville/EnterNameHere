@@ -7873,15 +7873,19 @@ PrefabInstance:
     - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
       propertyPath: CubetoSlime.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 8b2c205871426cb4bba21f6403527a29, type: 2}
+      objectReference: {fileID: 11400000, guid: bbfa87f18905e2540a05ef7734635c83, type: 2}
     - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
       propertyPath: SlimetoCube.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 84eeaeb082093ce41a8caccdeb87f2e7, type: 2}
+      objectReference: {fileID: 11400000, guid: 4e6b180c193f8874093336171bfe59e0, type: 2}
+    - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
+      propertyPath: CubeMovement.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f9b5f097101aa114fa6fe34cbc219b16, type: 2}
     - target: {fileID: 7491413294415040239, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
       propertyPath: SlimeMovement.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: eb3ccc111c60ccd478adb14303db1458, type: 2}
+      objectReference: {fileID: 11400000, guid: 99a47565c26fdab49b4811ac710b276b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca4c9ee310e344c4da97824d2140aca7, type: 3}
 --- !u!1001 &762668675

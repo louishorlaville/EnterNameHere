@@ -36,7 +36,17 @@
 				</SoundBank>
 				<SoundBank Name="MainMenu" ID="{9696408B-DB9B-47EC-89A5-3EFC15FE738B}">
 					<ObjectInclusionList>
+						<ObjectRef Name="End_Princess" ID="{61CE9671-4D59-442D-B998-F86B0E284DC9}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="End_Fall" ID="{C20A55E3-F82A-4A16-A1FE-6629C6994DA0}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Main-Menu_100bpm4-4_L8M-P0" ID="{B5559231-6490-4A35-B774-A08C11B4C054}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="End_Squish" ID="{F30E39ED-05C5-4C89-A6F2-48D55BACB69A}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Intro" ID="{75573796-0B47-4025-A242-4E3B4A5970D5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Enter Name Here Cinematic" ID="{9F0CC8D8-1F7B-4E8B-A772-6E3A135487A9}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
