@@ -16,7 +16,18 @@ public class MenusScript : MonoBehaviour
 		StartCoroutine("StartIntro");
 	}
 
-    public void QuitGame()
+	private IEnumerator StartIntro()
+	{
+		yield return new WaitForSeconds(1f);
+		SceneManager.LoadScene("IntroVideo");
+	}
+
+	public void LoadCredits()
+	{
+		StartCoroutine(TransiotionLevel("CreditsVideo")); //ToDo
+	}
+
+	public void QuitGame()
 	{
 		Application.Quit();
 	}
@@ -44,6 +55,7 @@ public class MenusScript : MonoBehaviour
 		StartCoroutine(TransiotionLevel("MainMenu"));
 	}
 
+	// Main and Pause Menu
 	private IEnumerator TransiotionLevel(string _target)
 	{
 		crossface.gameObject.SetActive(true);
@@ -53,11 +65,4 @@ public class MenusScript : MonoBehaviour
 
 		SceneManager.LoadScene(_target);
 	}
-
-	private IEnumerator StartIntro()
-    {
-		yield return new WaitForSeconds(1f);
-		SceneManager.LoadScene("IntroVideo");
-	}
-
 }
