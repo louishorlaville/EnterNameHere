@@ -12,18 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adb8b86e9ae3497183a1fd819bd9bed, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
-=======
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     PathAndIcons:
@@ -36,11 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 9fbb192aa1ad294582f232c6d4334168
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585581912133755195
-=======
     m_lastTime: -8585581329724876257
->>>>>>> Stashed changes
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -53,11 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585581912133745235
-=======
     m_lastTime: -8585581329724866264
->>>>>>> Stashed changes
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -323,11 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 44287d38cb4b1948ac2745d6b3c93e73
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585581912151174360
-=======
     m_lastTime: -8585581329732834530
->>>>>>> Stashed changes
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -369,11 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 63aaf8ef28717a42bbdab49f917781f3
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585580901192087844
-=======
-    m_lastTime: -8585580969927177582
->>>>>>> Stashed changes
+    m_lastTime: -8585580719079430674
     List:
     - name: Banquelvlterre
       guid: 24b8e8145fa6c3499f8dff3d9d37ee36
@@ -429,11 +401,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1763ca6569f59d43a31d32805dfe72dd
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585580901210496523
-=======
-    m_lastTime: -8585580969928536519
->>>>>>> Stashed changes
+    m_lastTime: -8585580719083867592
     List:
     - name: Ambiance_Level_Dark
       guid: 3027fe3116c10146b22e93218723a3de
@@ -1042,11 +1010,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 85c3c52128456d4fbcedb17da4235f15
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585581912155004583
-=======
     m_lastTime: -8585581329732904476
->>>>>>> Stashed changes
     List:
     - name: SlimeSpeed
       guid: e83b461fc294754e949dbff537117016
@@ -1073,11 +1037,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Motion
     guid: 225213d7dbd1d042adc0930743567776
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585581912155004583
-=======
     m_lastTime: -8585581329732894472
->>>>>>> Stashed changes
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -1118,11 +1078,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory SoundSeed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585581912155004583
-=======
     m_lastTime: -8585581329732884492
->>>>>>> Stashed changes
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -1276,11 +1232,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 98215f5e37bf2046bbb6d88d2ea80823
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585581912133765613
-=======
     m_lastTime: -8585581329724906231
->>>>>>> Stashed changes
     List:
     - name: Magnet_Polarity
       guid: 70bbce7a0575f744bf2780132c0b4740
@@ -1426,11 +1378,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: bfa69c629801f344b66550cd2289e8ba
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585581912133765613
-=======
     m_lastTime: -8585581329724906231
->>>>>>> Stashed changes
     List:
     - name: Slime_Form
       guid: f37344005d0b59489cf3f0807d80b4aa
@@ -1494,15 +1442,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 4ae124cb09d08343af70ce82de415245
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585581912133755195
-=======
     m_lastTime: -8585581329724886245
->>>>>>> Stashed changes
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000003000000
->>>>>>> master
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
