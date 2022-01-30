@@ -32,6 +32,14 @@ public class AudioIntroScript : MonoBehaviour
                 SceneManager.LoadScene(toScene);
             }
         }
+
+        if(SceneManager.GetActiveScene().name == "IntroVideo")
+        {
+            if(Input.GetKey(KeyCode.Space) || Input.GetKey("return") || Input.GetKey(KeyCode.Escape))
+            {
+                SceneManager.LoadScene(toScene);
+            }
+        }
     }
 
     public IEnumerator CheckIfDone()
