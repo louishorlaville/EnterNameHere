@@ -741,6 +741,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
   video: {fileID: 1932425692}
+  toScene: Level-1
 --- !u!1 &1975995614
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,14 +7,13 @@ using UnityEngine.SceneManagement;
 
 public class AudioIntroScript : MonoBehaviour
 {
-    public AK.Wwise.Event IntroVideo;
     public VideoPlayer video;
+    public string toScene;
 
     bool canCheck = false;
     // Start is called before the first frame update
     void Start()
     {
-        IntroVideo.Post(gameObject);
     }
 
     // Update is called once per frame
@@ -24,7 +23,7 @@ public class AudioIntroScript : MonoBehaviour
         if (canCheck && !video.isPlaying)
         {
             print(video.isPlaying);
-            SceneManager.LoadScene("Level-1");
+            SceneManager.LoadScene(toScene);
         }
     }
 

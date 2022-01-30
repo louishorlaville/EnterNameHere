@@ -24,7 +24,7 @@ public class MenusScript : MonoBehaviour
 
 	public void LoadCredits()
 	{
-		StartCoroutine(TransiotionLevel("CreditsVideo")); //ToDo
+		StartCoroutine(TransiotionLevel("CreditsVideo"));
 	}
 
 	public void QuitGame()
