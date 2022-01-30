@@ -11,7 +11,7 @@ public class MenusScript : MonoBehaviour
 	// Main Menu
 	public void StartGame()
 	{
-		StartCoroutine(TransiotionLevel("Level-1")); //ToDo Introduction Scene
+		SceneManager.LoadScene("IntroVideo"); //ToDo Introduction Scene
 	}
 
     public void QuitGame()
