@@ -6,11 +6,7 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{E7780D33-5402-43EC-BE8A-B72BD7DAAB26}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Interputeur_Magnets_Positive" ID="{57608C62-A075-400C-BE54-E351686405A3}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Interupteur_Magnet_Negative" ID="{3FAA258E-F772-48A1-8D2C-7BD8076FF50A}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}"/>
+							<ObjectRef Name="Magnet_Negative" ID="{3FAA258E-F772-48A1-8D2C-7BD8076FF50A}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>

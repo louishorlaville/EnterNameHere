@@ -30,7 +30,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="298619281">
+		<SoundBank Id="2436553819" Language="SFX" Hash="4107110846">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>
@@ -107,23 +107,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3515294194" Name="Interputeur_Magnets_Positive" ObjectPath="\Events\Default Work Unit\Interputeur_Magnets_Positive" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
-					<IncludedMemoryFiles>
-						<File Id="25341359" Language="SFX">
-							<ShortName>Interupteur.wav</ShortName>
-							<Path>SFX\Interupteur_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3411360579" Name="Interupteur_Magnet_Negative" ObjectPath="\Events\Default Work Unit\Interupteur_Magnet_Negative" MaxAttenuation="100." DurationType="OneShot" DurationMin="28.402374" DurationMax="28.402374">
-					<IncludedMemoryFiles>
-						<File Id="1023647580" Language="SFX">
-							<ShortName>Magnet  negative.wav</ShortName>
-							<Path>SFX\Magnet  negative_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2709760796" Name="Interupteur_Tapis" ObjectPath="\Events\Default Work Unit\Interupteur_Tapis" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
+				<Event Id="2327439314" Name="Interupteur" ObjectPath="\Events\Default Work Unit\Interupteur" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
 					<IncludedMemoryFiles>
 						<File Id="25341359" Language="SFX">
 							<ShortName>Interupteur.wav</ShortName>
@@ -175,6 +159,14 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="2874863639" Name="Magnet_Negative" ObjectPath="\Events\Default Work Unit\Magnet_Negative" MaxAttenuation="100." DurationType="OneShot" DurationMin="28.402374" DurationMax="28.402374">
+					<IncludedMemoryFiles>
+						<File Id="1023647580" Language="SFX">
+							<ShortName>Magnet  negative.wav</ShortName>
+							<Path>SFX\Magnet  negative_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3793843481" Name="Map_Ending" ObjectPath="\Events\Default Work Unit\Map_Ending" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3973633563" Name="Mushroom_sound" ObjectPath="\Events\Default Work Unit\Mushroom_sound" DurationType="OneShot" DurationMin="1.75" DurationMax="1.75">

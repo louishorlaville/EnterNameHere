@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 63aaf8ef28717a42bbdab49f917781f3
     GuidInternal: 
-    m_lastTime: -8585580901192087844
+    m_lastTime: -8585580502275294788
     List:
     - name: Banquelvlterre
       guid: 24b8e8145fa6c3499f8dff3d9d37ee36
@@ -401,7 +401,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1763ca6569f59d43a31d32805dfe72dd
     GuidInternal: 
-    m_lastTime: -8585580901210496523
+    m_lastTime: -8585580502275354201
     List:
     - name: Ambiance_Level_Dark
       guid: 3027fe3116c10146b22e93218723a3de
@@ -624,43 +624,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.684021
       minDuration: 0.684021
-    - name: Interputeur_Magnets_Positive
-      guid: 628c605775a00c40be54e351686405a3
-      id: 3515294194
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1763ca6569f59d43a31d32805dfe72dd
-      - ElementName: Interputeur_Magnets_Positive
-        ObjectType: 3
-        guid: 628c605775a00c40be54e351686405a3
-      Path: Events\Default Work Unit\Interputeur_Magnets_Positive
-      maxAttenuation: 0
-      maxDuration: 0.625
-      minDuration: 0.625
-    - name: Interupteur_Magnet_Negative
-      guid: 8e25aa3f72f7a1488d2c7bd8076ff50a
-      id: 3411360579
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1763ca6569f59d43a31d32805dfe72dd
-      - ElementName: Interupteur_Magnet_Negative
-        ObjectType: 3
-        guid: 8e25aa3f72f7a1488d2c7bd8076ff50a
-      Path: Events\Default Work Unit\Interupteur_Magnet_Negative
-      maxAttenuation: 100
-      maxDuration: 28.402374
-      minDuration: 28.402374
-    - name: Interupteur_Tapis
+    - name: Interupteur
       guid: dedbec94d4368f429184579ef7a80436
-      id: 2709760796
+      id: 2327439314
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -668,10 +634,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1763ca6569f59d43a31d32805dfe72dd
-      - ElementName: Interupteur_Tapis
+      - ElementName: Interupteur
         ObjectType: 3
         guid: dedbec94d4368f429184579ef7a80436
-      Path: Events\Default Work Unit\Interupteur_Tapis
+      Path: Events\Default Work Unit\Interupteur
       maxAttenuation: 0
       maxDuration: 0.625
       minDuration: 0.625
@@ -743,6 +709,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.125
       minDuration: 1.125
+    - name: Magnet_Negative
+      guid: 8e25aa3f72f7a1488d2c7bd8076ff50a
+      id: 2874863639
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Magnet_Negative
+        ObjectType: 3
+        guid: 8e25aa3f72f7a1488d2c7bd8076ff50a
+      Path: Events\Default Work Unit\Magnet_Negative
+      maxAttenuation: 100
+      maxDuration: 28.402374
+      minDuration: 28.402374
     - name: Map_Ending
       guid: 0392ca4edf9bbd4a8c1208296dcf7642
       id: 3793843481

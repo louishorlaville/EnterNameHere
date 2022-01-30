@@ -14,20 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Interputeur_Magnets_Positive" ID="{57608C62-A075-400C-BE54-E351686405A3}">
-					<ChildrenList>
-						<Action Name="" ID="{0F1EA8D8-AAB6-46A5-8805-4E1F6CFBD662}" ShortID="926189817">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Interupteur" ID="{7C38A0CA-EA38-4AE5-860D-C5F84788132F}" WorkUnitID="{8A746F15-4B52-43C8-B63E-DA8317359AC0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Cube_Impact_fall" ID="{EAC6DC13-71C5-418E-B578-72363C722019}">
 					<ChildrenList>
 						<Action Name="" ID="{FA237BF4-0687-4DC4-B7F4-58719F317344}" ShortID="707720440">
@@ -72,7 +58,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Interupteur_Tapis" ID="{94ECDBDE-36D4-428F-9184-579EF7A80436}">
+				<Event Name="Interupteur" ID="{94ECDBDE-36D4-428F-9184-579EF7A80436}">
 					<ChildrenList>
 						<Action Name="" ID="{596DA464-C64C-447C-BB20-67C707F96075}" ShortID="280916048">
 							<ReferenceList>
@@ -83,7 +69,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Interupteur_Magnet_Negative" ID="{3FAA258E-F772-48A1-8D2C-7BD8076FF50A}">
+				<Event Name="Magnet_Negative" ID="{3FAA258E-F772-48A1-8D2C-7BD8076FF50A}">
 					<ChildrenList>
 						<Action Name="" ID="{4EB672DB-C3F6-4548-B17B-AF6A98A2B518}" ShortID="329213062">
 							<PropertyList>

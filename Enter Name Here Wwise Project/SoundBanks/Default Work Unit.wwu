@@ -5,11 +5,10 @@
 			<ChildrenList>
 				<SoundBank Name="Banquelvlterre" ID="{14E8B824-A65F-49C3-9F8D-FF3D9D37EE36}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Interputeur_Magnets_Positive" ID="{57608C62-A075-400C-BE54-E351686405A3}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_lvl3" ID="{A3AEADC8-1012-4083-99AA-2FC9DBB80992}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Musique_lvl_one" ID="{E55D94A0-D5FB-40CA-A2CA-82CC6B4C92F1}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Cube_Impact_fall" ID="{EAC6DC13-71C5-418E-B578-72363C722019}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Interupteur_Tapis" ID="{94ECDBDE-36D4-428F-9184-579EF7A80436}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Interupteur" ID="{94ECDBDE-36D4-428F-9184-579EF7A80436}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Death_Spike" ID="{365A91BF-C82E-42A7-B355-8B235BAD9B59}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Cube_Magnet_to_surface" ID="{64CBFD2A-2F97-43BE-9DA8-BF14472E0F8E}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Laser_Beam" ID="{5B94523B-F785-4457-8FC2-9588F1FD6927}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
@@ -21,7 +20,7 @@
 						<ObjectRef Name="Slime_Mouvement" ID="{1C2C6FDD-628B-472E-9CF7-DFDFFA459091}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Cube_Movement" ID="{368F4CA4-E420-4818-B584-E72DC5689C42}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Slime_Jump" ID="{DAE08A0A-8762-484F-BCEF-3EACF3A134B9}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Interupteur_Magnet_Negative" ID="{3FAA258E-F772-48A1-8D2C-7BD8076FF50A}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Magnet_Negative" ID="{3FAA258E-F772-48A1-8D2C-7BD8076FF50A}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Cube_Stuck_To_Magnet" ID="{903C72A1-AE64-49C7-984D-AFCF77FF986E}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_lvl2" ID="{D0DE2B55-3E72-49D2-9072-52D13DAE312C}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Map_Ending" ID="{4ECA9203-9BDF-4ABD-8C12-08296DCF7642}" WorkUnitID="{65CA6317-F569-439D-A31D-32805DFE72DD}" Origin="Manual" Filter="7"/>
