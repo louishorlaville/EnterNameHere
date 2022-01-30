@@ -5366,7 +5366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 214565867774668252, guid: 316c092b4fecf86439ddd59db00bb564, type: 3}
       propertyPath: m_Name
-      value: LevelEnd (1)
+      value: LevelEnd
       objectReference: {fileID: 0}
     - target: {fileID: 214565867898745056, guid: 316c092b4fecf86439ddd59db00bb564, type: 3}
       propertyPath: m_Sprite
@@ -5591,7 +5591,7 @@ PrefabInstance:
     - target: {fileID: 3103237638807586627, guid: 316c092b4fecf86439ddd59db00bb564, type: 3}
       propertyPath: crossfade
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1671133017}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 316c092b4fecf86439ddd59db00bb564, type: 3}
 --- !u!1001 &562681456
@@ -16255,6 +16255,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99119f699487e434a809f95dec7c9d47, type: 3}
+--- !u!95 &1671133017 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4636618083419657405, guid: 99119f699487e434a809f95dec7c9d47, type: 3}
+  m_PrefabInstance: {fileID: 1671133016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1697554518
 PrefabInstance:
   m_ObjectHideFlags: 0
