@@ -194,8 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
   sprites:
-  - {fileID: 3766885766661273901, guid: c141291ba91af02408e26d8377a1e7b9, type: 3}
-  - {fileID: 1302723820812287101, guid: c141291ba91af02408e26d8377a1e7b9, type: 3}
+  - {fileID: -2041901384909034144, guid: 4a79b260c4f85cd428584939970e9fa4, type: 3}
+  - {fileID: -1262234390574960137, guid: 4a79b260c4f85cd428584939970e9fa4, type: 3}
   isCircle: 1
   isMagnet: 0
   bPauseMenu: 0
@@ -246,9 +246,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.0081169605, y: 0.008117199}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0.02, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.51, y: 6.53}
+    oldSize: {x: 4.99, y: 4.99}
     newSize: {x: 4.62, y: 4.63}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -313,7 +313,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3766885766661273901, guid: c141291ba91af02408e26d8377a1e7b9, type: 3}
+  m_Sprite: {fileID: -2041901384909034144, guid: 4a79b260c4f85cd428584939970e9fa4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
