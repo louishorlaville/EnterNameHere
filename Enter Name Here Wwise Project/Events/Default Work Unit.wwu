@@ -193,6 +193,17 @@
 				</Event>
 				<Event Name="Musique_lvl_one" ID="{E55D94A0-D5FB-40CA-A2CA-82CC6B4C92F1}">
 					<ChildrenList>
+						<Action Name="" ID="{8AE97C2B-7145-40FF-839E-87E6452ADFF4}" ShortID="977259374">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main-Menu_100bpm4-4_L8M-P0" ID="{B5559231-6490-4A35-B774-A08C11B4C054}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{32AF11F6-58E5-46B6-BD1D-CA3D69747158}" ShortID="654888420">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -287,6 +298,17 @@
 				</Event>
 				<Event Name="Music_lvl2" ID="{D0DE2B55-3E72-49D2-9072-52D13DAE312C}">
 					<ChildrenList>
+						<Action Name="" ID="{86CCAA2B-48C9-479D-9D49-00AFCDF35181}" ShortID="560672001">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main-Menu_100bpm4-4_L8M-P0" ID="{B5559231-6490-4A35-B774-A08C11B4C054}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{31336DD8-9F45-45FA-B0A6-E44E04066845}" ShortID="214591658">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
@@ -309,6 +331,17 @@
 				</Event>
 				<Event Name="Music_lvl3" ID="{A3AEADC8-1012-4083-99AA-2FC9DBB80992}">
 					<ChildrenList>
+						<Action Name="" ID="{3D8F7025-A620-4C88-9E68-1EF842689A2E}" ShortID="483456189">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main-Menu_100bpm4-4_L8M-P0" ID="{B5559231-6490-4A35-B774-A08C11B4C054}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{C166D219-D90E-48C3-A759-31BB2C01F339}" ShortID="181836235">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
@@ -399,6 +432,21 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="End_Credit_Audio" ID="{11A3B053-7571-40D1-BE3D-28F7095B0AE5}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainMenuStop" ID="{A42486D0-2A06-45A0-8475-927BC48D7F53}">
+					<ChildrenList>
+						<Action Name="" ID="{2EABFCBC-DA55-4A00-A8DB-3AE075B3E967}" ShortID="364978527">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main-Menu_100bpm4-4_L8M-P0" ID="{B5559231-6490-4A35-B774-A08C11B4C054}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

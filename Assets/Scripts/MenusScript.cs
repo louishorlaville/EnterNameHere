@@ -7,12 +7,12 @@ public class MenusScript : MonoBehaviour
 {
 	public GameObject player;
 	public Animator crossface;
-	public GameObject buttons;
+	public Animator mainMenu;
 
 	// Main Menu
 	public void StartGame()
 	{
-		buttons.GetComponent<Animator>().SetBool("hide", true);
+		mainMenu.SetTrigger("fadeButtons");
 		StartCoroutine("StartIntro");
 	}
 

@@ -1,12 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
 	599938019	Music_MainMenu			\Default Work Unit\Music_MainMenu	
+	1191994856	Musique_lvl_one			\Default Work Unit\Musique_lvl_one	
 	1232782884	End_Fall			\Default Work Unit\End_Fall	
 	1668640766	End_Princess			\Default Work Unit\End_Princess	
 	2166129864	End_Squish			\Default Work Unit\End_Squish	
+	2223599963	MainMenuStop			\Default Work Unit\MainMenuStop	
+	3380345080	Music_lvl3			\Default Work Unit\Music_lvl3	
+	3380345081	Music_lvl2			\Default Work Unit\Music_lvl2	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	221097617	Squish - End	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Squish - End_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ending\Squish - End		65730
+	459933611	Level1-Melody1_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody1_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody1_115bpm4-4_L4M-P0\Level1-Melody1_115bpm4-4_L4M-P0		2999432
+	624279310	Level1-NoMelody_115bpm4-4_L8M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-NoMelody_115bpm4-4_L8M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-NoMelody_115bpm4-4_L8M-P0\Level1-NoMelody_115bpm4-4_L8M-P0		4461720
 	644826122	Main-Menu_100bpm4-4_L8M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Main-Menu_100bpm4-4_L8M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main-Menu_100bpm4-4_L8M-P0\Main-Menu_100bpm4-4_L8M-P0		6269264
 	703804179	Princess - end	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Princess - end_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ending\Princess - end		128630
+	784518471	Level1-Melody2_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody2_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody2_115bpm4-4_L4M-P0\Level1-Melody2_115bpm4-4_L4M-P0		2857140
+	814445167	Level1-Melody4_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody4_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody4_115bpm4-4_L4M-P0\Level1-Melody4_115bpm4-4_L4M-P0		2999432
+	875125978	Level-Intro_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level-Intro_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level-Intro_115bpm4-4_L4M-P0\Level-Intro_115bpm4-4_L4M-P0		2000788
+	886583982	Level1-Melody3_115bpm4-4_L4M-P0	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Level1-Melody3_115bpm4-4_L4M-P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level_1\Level1-Melody3_115bpm4-4_L4M-P0\Level1-Melody3_115bpm4-4_L4M-P0		2999432
 	1006599828	Fall -end	D:\EnterNameHere\Enter Name Here Wwise Project\.cache\Windows\SFX\Fall -end_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ending\Fall -end		404386
 
