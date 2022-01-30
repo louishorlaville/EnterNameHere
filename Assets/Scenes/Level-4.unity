@@ -4895,6 +4895,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 272918108}
     m_Modifications:
+    - target: {fileID: 377128766, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
+      propertyPath: DeathLaser.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 26cdddf2f86e03b42a1ed85a1a944de5, type: 2}
     - target: {fileID: 8565482223019617363, guid: 76b6bff7fbe193f488d81f6f43aaa6c0, type: 3}
       propertyPath: m_Enabled
       value: 0

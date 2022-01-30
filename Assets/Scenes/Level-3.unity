@@ -25197,11 +25197,10 @@ GameObject:
   - component: {fileID: 1889824512}
   - component: {fileID: 1889824511}
   - component: {fileID: 1889824510}
-  - component: {fileID: 1889824509}
-  - component: {fileID: 1889824508}
   - component: {fileID: 1889824507}
   - component: {fileID: 1889824506}
   - component: {fileID: 1889824505}
+  - component: {fileID: 1889824508}
   m_Layer: 0
   m_Name: Victory_Music
   m_TagString: Untagged
@@ -25221,7 +25220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a027e5a7f9ec7547b3ccc66eb565db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerObject: {fileID: 0}
+  triggerObject: {fileID: 1446185601}
 --- !u!114 &1889824506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25234,7 +25233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7737697728076450c9b81da251b69307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: 958ca0ea
+  triggerList: f7f422d6
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -25290,35 +25289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerObject: {fileID: 1446185601}
---- !u!114 &1889824509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889824504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7737697728076450c9b81da251b69307, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7f422d6
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 146f69943af2d704f950d2dfddbf364c, type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &1889824510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27178,6 +27148,10 @@ PrefabInstance:
       propertyPath: levelName
       value: Level-3
       objectReference: {fileID: 0}
+    - target: {fileID: 4040378824461949918, guid: 1b71e651cdeed7c4bb45a38fbc78a420, type: 3}
+      propertyPath: SpikeDeath.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ea653b7c03ab7340b41bb3688b43c76, type: 2}
     - target: {fileID: 4040378824461949919, guid: 1b71e651cdeed7c4bb45a38fbc78a420, type: 3}
       propertyPath: m_Name
       value: Spikes (2)

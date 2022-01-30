@@ -167,6 +167,13 @@
 							<ObjectLists/>
 						</RandomSequenceContainer>
 						<Sound Name="Death By Laser Beam" ID="{02CAEFF4-70C5-4CCF-9D19-483D213F9BC8}" ShortID="1034671369">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
@@ -267,6 +274,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Slime spike death" ID="{A47D3061-D2F6-41A8-8B55-D0B8BEAD8104}" ShortID="455443999">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24088ADF-8CCF-42A0-BC75-9BC1A39DD5A2}"/>
