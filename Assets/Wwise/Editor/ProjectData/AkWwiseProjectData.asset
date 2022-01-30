@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 9fbb192aa1ad294582f232c6d4334168
     GuidInternal: 
-    m_lastTime: -8585581912133755195
+    m_lastTime: -8585581879703600535
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8585581912133745235
+    m_lastTime: -8585581879703590546
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 44287d38cb4b1948ac2745d6b3c93e73
     GuidInternal: 
-    m_lastTime: -8585581912151174360
+    m_lastTime: -8585581879723870426
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 63aaf8ef28717a42bbdab49f917781f3
     GuidInternal: 
-    m_lastTime: -8585581169648109423
+    m_lastTime: -8585581154921820739
     List:
     - name: Banquelvlterre
       guid: 24b8e8145fa6c3499f8dff3d9d37ee36
@@ -387,8 +387,382 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1763ca6569f59d43a31d32805dfe72dd
     GuidInternal: 
-    m_lastTime: -8585581148733712034
+    m_lastTime: -8585581119258725383
     List:
+    - name: Ambiance_Level_Dark
+      guid: 3027fe3116c10146b22e93218723a3de
+      id: 665468665
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Ambiance_Level_Dark
+        ObjectType: 3
+        guid: 3027fe3116c10146b22e93218723a3de
+      Path: Events\Default Work Unit\Ambiance_Level_Dark
+      maxAttenuation: 0
+      maxDuration: 46.10102
+      minDuration: 46.10102
+    - name: Cube_Dash_Down
+      guid: 285b368850421c4e9db8f065a61dfd82
+      id: 2324566312
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Cube_Dash_Down
+        ObjectType: 3
+        guid: 285b368850421c4e9db8f065a61dfd82
+      Path: Events\Default Work Unit\Cube_Dash_Down
+      maxAttenuation: 0
+      maxDuration: 0.987271
+      minDuration: 0.987271
+    - name: Cube_Ice_Slide
+      guid: d7f096d8528ea14eac83eba76d7c7e65
+      id: 979192992
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Cube_Ice_Slide
+        ObjectType: 3
+        guid: d7f096d8528ea14eac83eba76d7c7e65
+      Path: Events\Default Work Unit\Cube_Ice_Slide
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Cube_Impact_fall
+      guid: 13dcc6eac5718e41b57872363c722019
+      id: 3739303937
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Cube_Impact_fall
+        ObjectType: 3
+        guid: 13dcc6eac5718e41b57872363c722019
+      Path: Events\Default Work Unit\Cube_Impact_fall
+      maxAttenuation: 0
+      maxDuration: 0.381875
+      minDuration: 0.381875
+    - name: Cube_Magnet_to_surface
+      guid: 2afdcb64972fbe439da8bf14472e0f8e
+      id: 391978585
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Cube_Magnet_to_surface
+        ObjectType: 3
+        guid: 2afdcb64972fbe439da8bf14472e0f8e
+      Path: Events\Default Work Unit\Cube_Magnet_to_surface
+      maxAttenuation: 0
+      maxDuration: 0.5495
+      minDuration: 0.5495
+    - name: Cube_Movement
+      guid: a44c8f3620e41848b584e72dc5689c42
+      id: 2048743322
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Cube_Movement
+        ObjectType: 3
+        guid: a44c8f3620e41848b584e72dc5689c42
+      Path: Events\Default Work Unit\Cube_Movement
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Cube_Stuck_To_Magnet
+      guid: a1723c9064aec749984dafcf77ff986e
+      id: 591287882
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Cube_Stuck_To_Magnet
+        ObjectType: 3
+        guid: a1723c9064aec749984dafcf77ff986e
+      Path: Events\Default Work Unit\Cube_Stuck_To_Magnet
+      maxAttenuation: 0
+      maxDuration: 0.5495
+      minDuration: 0.5495
+    - name: Cube_to_slime
+      guid: 1607b36452df684f8329de5a0a2c286c
+      id: 3425940391
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Cube_to_slime
+        ObjectType: 3
+        guid: 1607b36452df684f8329de5a0a2c286c
+      Path: Events\Default Work Unit\Cube_to_slime
+      maxAttenuation: 0
+      maxDuration: 1.776917
+      minDuration: 1.776917
+    - name: Death_Player_Laser
+      guid: 18698c68b8825546a5a8bd7ed05853d2
+      id: 1090492715
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Death_Player_Laser
+        ObjectType: 3
+        guid: 18698c68b8825546a5a8bd7ed05853d2
+      Path: Events\Default Work Unit\Death_Player_Laser
+      maxAttenuation: 0
+      maxDuration: 2.539062
+      minDuration: 2.539062
+    - name: Death_Spike
+      guid: bf915a362ec8a742b3558b235bad9b59
+      id: 614286398
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Death_Spike
+        ObjectType: 3
+        guid: bf915a362ec8a742b3558b235bad9b59
+      Path: Events\Default Work Unit\Death_Spike
+      maxAttenuation: 0
+      maxDuration: 0.762833
+      minDuration: 0.762833
+    - name: Interputeur_Magnets_Positive
+      guid: 628c605775a00c40be54e351686405a3
+      id: 3515294194
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Interputeur_Magnets_Positive
+        ObjectType: 3
+        guid: 628c605775a00c40be54e351686405a3
+      Path: Events\Default Work Unit\Interputeur_Magnets_Positive
+      maxAttenuation: 0
+      maxDuration: 0.625
+      minDuration: 0.625
+    - name: Interupteur_Magnet_Negative
+      guid: 8e25aa3f72f7a1488d2c7bd8076ff50a
+      id: 3411360579
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Interupteur_Magnet_Negative
+        ObjectType: 3
+        guid: 8e25aa3f72f7a1488d2c7bd8076ff50a
+      Path: Events\Default Work Unit\Interupteur_Magnet_Negative
+      maxAttenuation: 100
+      maxDuration: 28.402374
+      minDuration: 28.402374
+    - name: Interupteur_Tapis
+      guid: dedbec94d4368f429184579ef7a80436
+      id: 2709760796
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Interupteur_Tapis
+        ObjectType: 3
+        guid: dedbec94d4368f429184579ef7a80436
+      Path: Events\Default Work Unit\Interupteur_Tapis
+      maxAttenuation: 0
+      maxDuration: 0.625
+      minDuration: 0.625
+    - name: Item_Destruction
+      guid: 5acaf83b3cbd8e4f8b7206f445a55d15
+      id: 3307081041
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Item_Destruction
+        ObjectType: 3
+        guid: 5acaf83b3cbd8e4f8b7206f445a55d15
+      Path: Events\Default Work Unit\Item_Destruction
+      maxAttenuation: 0
+      maxDuration: 0.805854
+      minDuration: 0.805854
+    - name: Laser_Beam
+      guid: 3b52945b85f757448fc29588f1fd6927
+      id: 733612088
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Laser_Beam
+        ObjectType: 3
+        guid: 3b52945b85f757448fc29588f1fd6927
+      Path: Events\Default Work Unit\Laser_Beam
+      maxAttenuation: 0
+      maxDuration: 2.154716
+      minDuration: 2.154716
+    - name: Magnet_Behavior
+      guid: 15137473014a8845be7ac75b941d4863
+      id: 2155389612
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Magnet_Behavior
+        ObjectType: 3
+        guid: 15137473014a8845be7ac75b941d4863
+      Path: Events\Default Work Unit\Magnet_Behavior
+      maxAttenuation: 0
+      maxDuration: 1.125
+      minDuration: 1.125
+    - name: Map_Ending
+      guid: 0392ca4edf9bbd4a8c1208296dcf7642
+      id: 3793843481
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Map_Ending
+        ObjectType: 3
+        guid: 0392ca4edf9bbd4a8c1208296dcf7642
+      Path: Events\Default Work Unit\Map_Ending
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Mushroom_sound
+      guid: 681f68d719e2304fa4c318a181b22536
+      id: 3973633563
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Mushroom_sound
+        ObjectType: 3
+        guid: 681f68d719e2304fa4c318a181b22536
+      Path: Events\Default Work Unit\Mushroom_sound
+      maxAttenuation: 0
+      maxDuration: 1.75
+      minDuration: 1.75
+    - name: Music_lvl2
+      guid: 552bded0723ed249907252d13dae312c
+      id: 3380345081
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Music_lvl2
+        ObjectType: 3
+        guid: 552bded0723ed249907252d13dae312c
+      Path: Events\Default Work Unit\Music_lvl2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_lvl3
+      guid: c8adaea31210834099aa2fc9dbb80992
+      id: 3380345080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Music_lvl3
+        ObjectType: 3
+        guid: c8adaea31210834099aa2fc9dbb80992
+      Path: Events\Default Work Unit\Music_lvl3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_MainMenu
+      guid: e0e6dd0bd4772744b78b1760b8186e33
+      id: 599938019
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Music_MainMenu
+        ObjectType: 3
+        guid: e0e6dd0bd4772744b78b1760b8186e33
+      Path: Events\Default Work Unit\Music_MainMenu
+      maxAttenuation: 0
+      maxDuration: 32.652084
+      minDuration: 32.652084
+    - name: Musique_lvl_one
+      guid: a0945de5fbd5ca40a2ca82cc6b4c92f1
+      id: 1191994856
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Musique_lvl_one
+        ObjectType: 3
+        guid: a0945de5fbd5ca40a2ca82cc6b4c92f1
+      Path: Events\Default Work Unit\Musique_lvl_one
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Slime_Jump
       guid: 0a8ae0da62874f48bcef3eacf3a134b9
       id: 2006797914
@@ -406,6 +780,142 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.533042
       minDuration: 0.201958
+    - name: Slime_Mouvement
+      guid: dd6f2c1c8b622e479cf7dfdffa459091
+      id: 1418889888
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Slime_Mouvement
+        ObjectType: 3
+        guid: dd6f2c1c8b622e479cf7dfdffa459091
+      Path: Events\Default Work Unit\Slime_Mouvement
+      maxAttenuation: 0
+      maxDuration: 4.5
+      minDuration: 4.5
+    - name: Slime_to_cube
+      guid: c61d32db2b26ec44800dec617c3c2e51
+      id: 3678733195
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Slime_to_cube
+        ObjectType: 3
+        guid: c61d32db2b26ec44800dec617c3c2e51
+      Path: Events\Default Work Unit\Slime_to_cube
+      maxAttenuation: 0
+      maxDuration: 0.414542
+      minDuration: 0.414542
+    - name: UI_Enter_Menu
+      guid: 1756e3d24ccd274eb03b17f0c0ba0af8
+      id: 2190568750
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: UI_Enter_Menu
+        ObjectType: 3
+        guid: 1756e3d24ccd274eb03b17f0c0ba0af8
+      Path: Events\Default Work Unit\UI_Enter_Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Exit_Menu
+      guid: 9a11bc157d90484b9fe87ca02620d485
+      id: 1873434020
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: UI_Exit_Menu
+        ObjectType: 3
+        guid: 9a11bc157d90484b9fe87ca02620d485
+      Path: Events\Default Work Unit\UI_Exit_Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Pause
+      guid: 50f649293065aa46a78bb7fe6be7a062
+      id: 2792155208
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: UI_Pause
+        ObjectType: 3
+        guid: 50f649293065aa46a78bb7fe6be7a062
+      Path: Events\Default Work Unit\UI_Pause
+      maxAttenuation: 0
+      maxDuration: 0.864
+      minDuration: 0.864
+    - name: UI_Select
+      guid: 73cc94ad7135a543ab7fa9834d234300
+      id: 2774129122
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: UI_Select
+        ObjectType: 3
+        guid: 73cc94ad7135a543ab7fa9834d234300
+      Path: Events\Default Work Unit\UI_Select
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Switch
+      guid: 99570c56412ab945baf1201c0fed989b
+      id: 441552802
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: UI_Switch
+        ObjectType: 3
+        guid: 99570c56412ab945baf1201c0fed989b
+      Path: Events\Default Work Unit\UI_Switch
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Victory_Music
+      guid: f0afe0d74e8ced4d8ce3db086ae2edcc
+      id: 1984291205
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1763ca6569f59d43a31d32805dfe72dd
+      - ElementName: Victory_Music
+        ObjectType: 3
+        guid: f0afe0d74e8ced4d8ce3db086ae2edcc
+      Path: Events\Default Work Unit\Victory_Music
+      maxAttenuation: 0
+      maxDuration: 8.934355
+      minDuration: 8.934355
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -418,7 +928,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 85c3c52128456d4fbcedb17da4235f15
     GuidInternal: 
-    m_lastTime: -8585581912155004583
+    m_lastTime: -8585581879730750928
     List:
     - name: SlimeSpeed
       guid: e83b461fc294754e949dbff537117016
@@ -445,7 +955,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Motion
     guid: 225213d7dbd1d042adc0930743567776
     GuidInternal: 
-    m_lastTime: -8585581912155004583
+    m_lastTime: -8585581879730740948
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -486,7 +996,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory SoundSeed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8585581912155004583
+    m_lastTime: -8585581879730730958
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -640,7 +1150,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 98215f5e37bf2046bbb6d88d2ea80823
     GuidInternal: 
-    m_lastTime: -8585581912133765613
+    m_lastTime: -8585581879703640385
     List:
     - name: Magnet_Polarity
       guid: 70bbce7a0575f744bf2780132c0b4740
@@ -786,7 +1296,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: bfa69c629801f344b66550cd2289e8ba
     GuidInternal: 
-    m_lastTime: -8585581912133765613
+    m_lastTime: -8585581879703620515
     List:
     - name: Slime_Form
       guid: f37344005d0b59489cf3f0807d80b4aa
@@ -850,10 +1360,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 4ae124cb09d08343af70ce82de415245
     GuidInternal: 
-    m_lastTime: -8585581912133755195
+    m_lastTime: -8585581879703610524
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 060000000700000008000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
