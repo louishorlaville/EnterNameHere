@@ -31,9 +31,9 @@ public class CharacterMain : MonoBehaviour
     public bool bEndLevel = false;
     public bool canBounce = true;
     public float movementSpeed;
-    public float bounceHeight;
     public float rollSpeed;
     public float rollRotationSpeed;
+    public float groundBounceHeight;
     public float collisionBounceHeight;
     public float magnetPower;
     
@@ -228,23 +228,22 @@ public class CharacterMain : MonoBehaviour
                 Vector2 _from = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y);
                 Vector2 normal = _collision.contacts[0].normal;
                 currentBounces++;
-                if (_collision.collider.gameObject.layer == 6)
+                if (_collision.gameObject.layer == 6)
                 {
-                    rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                    rb.velocity = normal * (groundBounceHeight / Mathf.Pow(2, currentBounces-1));
+                    
                 }
                 else
                 {
                     rb.velocity = new Vector2(velocityBeforeFixedUpdate.x, velocityBeforeFixedUpdate.y) + _collision.contacts[0].normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                    Debug.Log(_collision.gameObject.layer);
                 }
             }
             else
             {
                 currentBounces = 0;
                 canBounce = false;
-            }
-
-            //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
-           
+            }           
         }
 
         if (isMagnet)

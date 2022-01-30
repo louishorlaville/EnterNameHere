@@ -202,9 +202,9 @@ MonoBehaviour:
   bEndLevel: 0
   canBounce: 1
   movementSpeed: 90
-  bounceHeight: 2000
   rollSpeed: 5
   rollRotationSpeed: 85
+  groundBounceHeight: 100
   collisionBounceHeight: 130
   magnetPower: 100
   SlimeMovement:
