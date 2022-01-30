@@ -230,7 +230,9 @@ public class CharacterMain : MonoBehaviour
                 currentBounces++;
                 if (_collision.collider.gameObject.layer == 6)
                 {
-                    rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(2, currentBounces - 1));
+                    rb.velocity = normal * (collisionBounceHeight / Mathf.Pow(3, currentBounces-1));
+                    Debug.Log(_collision.gameObject.name);
+
                 }
                 else
                 {
@@ -241,10 +243,7 @@ public class CharacterMain : MonoBehaviour
             {
                 currentBounces = 0;
                 canBounce = false;
-            }
-
-            //Debug.DrawLine(_collision.transform.position, _collision.transform.position* _collision.contacts[0].normal.magnitude, Color.red);
-           
+            }           
         }
 
         if (isMagnet)
