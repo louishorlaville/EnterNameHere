@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1125500713" Language="SFX" Hash="4021760380">
+		<SoundBank Id="1125500713" Language="SFX" Hash="3480325036">
 			<ObjectPath>\SoundBanks\Default Work Unit\Intro</ObjectPath>
 			<ShortName>Intro</ShortName>
 			<Path>Intro.bnk</Path>
 			<IncludedEvents>
-				<Event Id="718146176" Name="End_Credit" ObjectPath="\Events\Default Work Unit\End_Credit" DurationType="OneShot" DurationMin="24.934334" DurationMax="24.934334">
+				<Event Id="718146176" Name="End_Credit" ObjectPath="\Events\Default Work Unit\End_Credit" DurationType="OneShot" DurationMin="25.934334" DurationMax="25.934334">
 					<IncludedMemoryFiles>
 						<File Id="743722224" Language="SFX">
 							<ShortName>End_Credit_Audio.wav</ShortName>
@@ -38,7 +38,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2436553819" Language="SFX" Hash="220070836">
+		<SoundBank Id="2436553819" Language="SFX" Hash="4276287498">
 			<ObjectPath>\SoundBanks\Default Work Unit\Banquelvlterre</ObjectPath>
 			<ShortName>Banquelvlterre</ShortName>
 			<Path>Banquelvlterre.bnk</Path>

@@ -393,6 +393,9 @@
 				<Event Name="End_Credit" ID="{5443AEAA-D1DB-4612-8771-4050B4095D28}">
 					<ChildrenList>
 						<Action Name="" ID="{28A5B45E-9604-4866-B7F3-51C2D4A68F76}" ShortID="14269331">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="End_Credit_Audio" ID="{11A3B053-7571-40D1-BE3D-28F7095B0AE5}" WorkUnitID="{329CBE49-64BB-43DE-BCCB-D10BD67A19F9}"/>
